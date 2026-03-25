@@ -9,10 +9,10 @@ wrapping on mobile pages</b></li>
     <li>format portfolio with CSS</li>
     <li>Build basic contact form</li>
     <li>Build blog page</li>
-    <li>Create template page (for blog posts)</li>
+    <li><s>Create template page (for blog posts)</s></li>
     <li>Build index page</li>
-    <li>Set up Google Search Console and 
-Google Analytics</li>
+    <li><s>build sitemap.xml</s></li>
+    <li><s>Set up Google Search Console</s></li>
 </ol>
 
 ### Notes:
