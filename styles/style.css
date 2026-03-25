@@ -1,40 +1,43 @@
 /* site navigation bar */
-ul#navBar {
-  /* Fix the nav bar at the top of the screen even when scrolling */
-  position: sticky;
-  top: 0;
-  width: 100%;
+#NavBar {
+  /* Unordered list within the NavBar element */
+  ul {
+    /* Fix the nav bar at the top of the screen even when scrolling */
+    position: sticky;
+    top: 0;
+    width: 100%;
 
-  list-style-type: none; /* removes bullet points from the list items */
-  margin: 0; /* resets default browser margins */
-  padding: 0; /* resets default browser paddings */
-  overflow: hidden; /* prevents list items from going outside the list */
-  border: 2px solid #e7e7e7; /* gray */
-  background-color: #f3f3f3; /* very light-gray */
-}
-/* list items in site navigation bar */
-ul li#navBar {
-  float: left; /* makes <li> elements float next to each other */
-  border-right: 2px solid #f3f3f3; /* very light-gray */
-}
-/* the last list item in site navigation bar */
-ul li:last-child#navBar {
-  border-right: none;
-}
-/* links in list items in site navigation bar */
-ul li a#navBar {
-  display: block; /* allows specifying padding, height, width, and margins */
-  color: white;
-  text-align: center;
-  padding: 14px 16px; 
-  text-decoration: none; /* removes underline from the link text */
-}
-/* when a link in list items in site navigation bar is hovered over
- * with the cursor */
-ul li a:hover#navBar {
-  background-color: #111111 /* black */
-}
-/* "active" class of links in list items in site navigation bar */
-ul li a.active#navBar {
-  background-color: #04AA6D; /* teal-green */
+    list-style-type: none; /* removes bullet points from the list items */
+    margin: 0; /* resets default browser margins */
+    padding: 0; /* resets default browser paddings */
+    overflow: hidden; /* prevents list items from going outside the list */
+    border: 2px solid #e7e7e7; /* gray */
+    background-color: #f3f3f3; /* very light-gray */
+  }
+  /* list items in site navigation bar */
+  ul li {
+    float: left; /* makes <li> elements float next to each other */
+    border-right: 2px solid #f3f3f3; /* very light-gray */
+  }
+  /* the last list item in site navigation bar */
+  ul li:last-child {
+    border-right: none;
+  }
+  /* links in list items in site navigation bar */
+  ul li a {
+    display: block; /* allows specifying padding, height, width, and margins */
+    color: white;
+    text-align: center;
+    padding: 14px 16px; 
+    text-decoration: none; /* removes underline from the link text */
+  }
+  /* when a link in list items in site navigation bar is hovered over
+  *  with the cursor */
+  ul li a:hover {
+    background-color: #111111 /* black */
+  }
+  /* "active" class of links in list items in site navigation bar */
+  ul li a.active {
+    background-color: #04AA6D; /* teal-green */
+  }
 }
