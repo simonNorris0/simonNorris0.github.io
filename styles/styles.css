@@ -51,13 +51,15 @@ ul#navbar li a.active {
 
   margin: 0; /* reset default browser margins */
   padding: 0; /* reset default browser padding */
-  margin-left: 10;
-  margin-right: 10;
 
   color: white; /* text color */
   font-size: small;
 
   background-color: #636363; /* dark gray */
+}
+/* paragraph elements in the site footer */
+#footer p {
+  margin-left: 7px;
 }
 /* all links in the site footer */
 #footer a {
