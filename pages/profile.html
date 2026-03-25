@@ -5,9 +5,26 @@
     <meta name="viewport" content="width=device-width" />
     <meta name="author" content="Simon Norris" />
     <meta name="author" content="https://www.github.com/simonNorris0" />
-    <meta name="description" content="Some information about me." />
-    <title>About Me - Simon Norris</title>
+    <meta name="description" content="Profile page for simonNorris0. Full 
+    name: Simon Norris. Location: Red Deer, Alberta. Occupation: Computer 
+    Science and Mathematics Student. Organization: Athabasca University." />
+    <title>simonNorris0 | Profile Page</title>
     <link rel="stylesheet" href="../styles/styles.css" />
+    <!-- scripts -->
+    <!-- profile page: JSON-LD strutured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "dateCreated": "2026-03-25",
+        "mainEntity": {
+          "@type": "Person",
+          "name": "Simon Norris",
+          "alternateName": "simonNorris0",
+          "description": "Computer Science and Mathematics Student"
+        }        
+      }
+    </script>
     <script src="../scripts/updateDate.js"></script>
   </head>
   <body>
@@ -17,20 +34,22 @@
         <li><a href="resume.html">Resume</a></li>
         <li><a href="portfolio.html">Project Portfolio</a></li>
         <li><a href="blog.html">Blogs</a></li>
-        <li><a class="active" href="about.html">About Me</a></li>
+        <li><a class="active" href="profile.html">About Me</a></li>
         <li><a href="contact.html">Contact Me</a></li>
       </ul>
     </nav>
     <header>
-      <h1>About Me</h1>
+      <h1>Profile Page | simonNorris0</h1>
+      <h2>Simon Norris - Computer Science and Math student</h2>
       <p class="subheading">This page is where I discuss some of my goals, 
       plans for the future, and interests. It is divided into five sections. 
       Education and Work (career), Computer Science, Mathematics, 
       Computer Engineering, and Hobbies.</p>
+
     </header>
     <main>
       <section id="career">
-        <h2>Education and Work</h2>
+        <h3>Education and Work</h3>
         <p>I am currently finishing the second year of a bachelor of science in 
         computer science. I am highly motivated to gain some information 
         technology work experience and to find a software engineering 
@@ -61,35 +80,39 @@
         more as I continue my degree how valuable understanding the mathematics 
         that underly digital systems is.</p>
         <p>The program that I am completing my degree through is an accredited 
-        Canadian university, but it is a fully remote degree. I see this as 
-        both a challenge and a benefit towards my goals. On one hand, I have 
-        felt the impacts of an independent education most prominently in the 
-        lack of networking with fellow students and teachers compared to a 
-        traditional university environment - I am working hard with digital 
-        networking platforms, and by reaching out to fellow distance learners 
-        in my program, to remedy this issue. On the other hand, I recognize 
-        that my degree provides demonstratable proficiency in the ability to 
-        be productive and to accomplish tasks while working remotely. This 
-        proven independence is a value which a traditional university does 
-        not showcase to such an extreme.</p>
+        Canadian university <a href="https://www.athabascau.ca/index.html">
+          (Athabasca University)</a>, but it is a fully remote degree. 
+        I see this as both a challenge and a benefit towards my goals. 
+        On one hand, I have felt the impacts of an independent education most 
+        prominently in the lack of networking with fellow students and teachers 
+        compared to a traditional university environment - I am working hard 
+        with digital networking platforms, and by reaching out to fellow 
+        distance learners in my program, to remedy this issue. On the other 
+        hand, I recognize that my degree provides demonstratable proficiency 
+        in the ability to be productive and to accomplish tasks while working 
+        remotely. This proven independence is a value which a traditional 
+        university does not showcase to such an extreme.</p>
+      
       </section> <!-- end of career section -->
       <section id="computerscience">
-        <h2>Computer Science</h2>
+        <h3>Computer Science</h3>
           <p>My chief interests in computer science are distributed systems, 
           computer networks, numerical algorithms and data structures, 
           computer security, and embedded computers.</p>
+      
       </section> <!-- end of computer science interests section -->
       <section id="math">
-        <h2>Mathematics</h2>
+        <h3>Mathematics</h3>
           <p>My mathematics education focuses on discrete mathematics, 
           number theory, and mathematical modelling. However, I will also be 
           taking multi-variable calculus, ODEs, and real analysis. I will end 
           up just a few classes and a final project short of a double-major in 
           mathematics. In a perfect world I would certainly like to pursue 
           further mathematics education.</p>
+      
       </section> <!-- end of math interests section -->
       <section id="computereng">
-        <h2>Computer Engineering</h2>
+        <h3>Computer Engineering</h3>
           <p>Some of the most intriguing parts of the field of computing to 
           me take place at the interface between software and hardware. I 
           feel perhaps most passionate about the design of system-level 
@@ -97,41 +120,59 @@
           directly with hardware and doing high-level design and/or analysis 
           of computing infrastructure. Interaction with the physical machine 
           components through programming is what I enjoy the most.</p>
+      
       </section> <!-- end of computer engineering interests section -->
       <section id="hobbies">
-        <h2>Hobbies</h2>
+        <h3>Hobbies</h3>
         <p>This section is just for me to ramble about my hobbies. Many 
         of the projects that will fill my portfolio run parallel to what I 
         will write about here.</p>
-        <h3>Drone Building and Programming</h3>
-        <p>I am currently working on programming the flight controller and 
-        radio frequency control module for a homemade quad-copter drone. As 
-        for the actual drone build I intend to utilize public 3D-printers and 
-        open-source STL files to create the plastic body and props. In doing 
-        research on quad-copters in my free time I have learned a lot about 
-        the advancements that made the modern quad-copter so cheap to produce 
-        and readily avaialable. Perhaps the most interesting component is not 
-        the main microcontroller but the modern motors that power the props. 
-        These motors resemble the brushless DC motors I grew up tinkering with 
-        but they have a critical improvement. The actuations of each of the 
-        four individual motors that power the four props of the drones are 
-        controlled by microcontrollers within the motors. These brushless, 
-        electronically controlled motors have a high power-to-weight ratio as 
-        a result - they were a huge advancement in the story of flight.</p>
-        <h3>Misc. Microcontrollers</h3>
-        <p>Various LEDs, sensors, and wires connected to a CPU running an 
-        infinite loop.</p>
-        <h3>Model Rockets</h3>
-        <p>I have built my first rocket and will embark on my first flight 
-        as soon as I find a suitable launch location.</p>
-        <h3>Chess</h3>
-        <p>I am currently studying Logical Chess by Irving Chernev, trying to 
-        get through a game on the board every couple of nights. 
-        I'm also playing on Chess.com when I find myself on my phone, and 
-        building a program I have called "ChessMapper" as a single-user tool 
-        for studying chess games.</p>
-        <p><a href="https://www.chess.com/member/mathdaemon">
-          My Chess.com Profile</a></p>
+        
+        <section id="drones">
+          <h4>Drone Building and Programming</h4>
+          <p>I am currently working on programming the flight controller and 
+          radio frequency control module for a homemade quad-copter drone. As 
+          for the actual drone build I intend to utilize public 3D-printers and 
+          open-source STL files to create the plastic body and props. In doing 
+          research on quad-copters in my free time I have learned a lot about 
+          the advancements that made the modern quad-copter so cheap to produce 
+          and readily avaialable. Perhaps the most interesting component is not 
+          the main microcontroller but the modern motors that power the props. 
+          These motors resemble the brushless DC motors I grew up tinkering with 
+          but they have a critical improvement. The actuations of each of the 
+          four individual motors that power the four props of the drones are 
+          controlled by microcontrollers within the motors. These brushless, 
+          electronically controlled motors have a high power-to-weight ratio as 
+          a result - they were a huge advancement in the story of flight.</p>
+        
+        </section> <!-- end of drones sub-section --> 
+        <section id="microcontrollers">
+          <h4>Misc. Microcontrollers</h4>
+          <p>Various LEDs, sensors, and wires connected to a CPU running an 
+          infinite loop.</p>
+        
+        </section> <!-- end of microcontrollers sub-section -->
+        <section id="modelrockets">
+          <h4>Model Rockets</h4>
+          <p>I have built my first rocket and will embark on my first flight 
+          as soon as I find a suitable launch location.</p>
+        
+        </section> <!-- end of model rockets sub-section -->
+        <section id="chess">
+          <h4>Chess</h4>
+          <p>I am currently studying 
+          <a href="https://www.goodreads.com/book/show/85086.Logical_Chess">
+            Logical Chess by Irving Chernev</a>, trying to get through a game 
+          on the board every couple of nights. I'm also playing on 
+          <a href="https://www.chess.com">Chess.com</a> when I find myself on 
+          my phone, and building a program I have called 
+          <a href="portfolio.html#chessmapper">"ChessMapper"</a> as a 
+          single-user tool for studying chess games.</p>
+        
+          <p><a href="https://www.chess.com/member/mathdaemon">
+            My Chess.com Profile</a></p>
+      
+        </section> <!-- end of chess sub-section -->
       </section> <!-- end of hobbies section -->
     </main>
     <footer> <!-- site footer -->
