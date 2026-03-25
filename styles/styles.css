@@ -1,5 +1,5 @@
-/* site navigation bar: unordered list with the "navbar" class */
-ul.navbar {
+/* site navigation bar: unordered list with the "navbar" ID */
+ul#navbar {
   /* Fix the site navigation bar at the top of the screen even 
    * when scrolling */
   position: sticky;
@@ -14,16 +14,16 @@ ul.navbar {
   background-color: #636363; /* dark gray */
 }
 /* list items in site navigation bar */
-ul.navbar li {
+ul#navbar li {
     float: left; /* makes <li> elements float next to each other */
     border-right: 2px solid #8e7cc3; /* light purple */
 }
 /* the last list item in site navigation bar */
-ul.navbar li:last-child {
+ul#navbar li:last-child {
     border-right: none;
 }
 /* links in list items in site navigation bar */
-ul.navbar li a {
+ul#navbar li a {
   display: block; /* allows specifying padding, height, width, and margins */
   color: white; /* text color */
   text-align: center;
@@ -32,16 +32,16 @@ ul.navbar li a {
 }
 /* when a link in list items in site navigation bar is hovered over
 *  with the cursor */
-ul.navbar li a:hover {
+ul#navbar li a:hover {
   background-color: #111111 /* black */
 }
 /* "active" class of links in list items in site navigation bar */
-ul.navbar li a.active {
+ul#navbar li a.active {
   background-color: #8e7cc3; /* light purple */
 }
 
 /* site footer */
-footer {
+#footer {
   /* fix the site footer at the bottom of the screen */
   position: fixed;
   left: 0;
@@ -52,13 +52,13 @@ footer {
   color: white; /* text color */
 }
 /* links in the site footer */
-footer a {
+#footer a {
   display: block; /* allows specifying padding, height, width, and margins */
   text-align: center;
   padding: 7px 8px;
   text-decoration: none; /* removes decoration from the link text */
 }
 /* when a link in the site footer is hovered over with the cursor */
-footer a:hover {
+#footer a:hover {
   background-color: #111111 /* black */
 }
