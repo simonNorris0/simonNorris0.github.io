@@ -48,17 +48,28 @@ ul#navbar li a.active {
   bottom: 0;
   width: 100%;
 
+  margin: 0; /* reset default browser margins */
+  padding: 0; /* reset default browser padding */
+
   background-color: #636363; /* dark gray */
   color: white; /* text color */
 }
-/* links in the site footer */
+/* all links in the site footer */
 #footer a {
+
+}
+/* links in the site footer within the "mylinks" span element */
+#footer .mylinks a {
+  float: left; /* makes links within the "mylinks" span element  float left 
+                * next to each other */
   display: block; /* allows specifying padding, height, width, and margins */
+  color: white; /* link text color */
   text-align: center;
   padding: 7px 8px;
   text-decoration: none; /* removes decoration from the link text */
 }
-/* when a link in the site footer is hovered over with the cursor */
-#footer a:hover {
+/* when a link in the site footer within the "mylinks" span element 
+ * is hovered over with the cursor */
+#footer .mylinks a:hover {
   background-color: #111111 /* black */
 }
