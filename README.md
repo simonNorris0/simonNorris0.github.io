@@ -3,12 +3,16 @@
 #
 ### To-Do:
 <ol>
-    <li><b>fix site navigation bar on mobile pages</b></li>
+    <li><b>fix site navigation bar and last update 
+wrapping on mobile pages</b></li>
     <li>format resume with CSS</li>
     <li>format portfolio with CSS</li>
     <li>Build basic contact form</li>
     <li>Build blog page</li>
+    <li>Create template page (for blog posts)</li>
     <li>Build index page</li>
+    <li>Set up Google Search Console and 
+Google Analytics</li>
 </ol>
 
 ### Notes:
