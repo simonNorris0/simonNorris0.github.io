@@ -51,22 +51,26 @@ ul#navbar li a.active {
 
   margin: 0; /* reset default browser margins */
   padding: 0; /* reset default browser padding */
+  margin-left: 10;
+  margin-right: 10;
+
+  color: white; /* text color */
+  font-size: small;
 
   background-color: #636363; /* dark gray */
-  color: white; /* text color */
 }
 /* all links in the site footer */
 #footer a {
-  display: inline-block; /* allows specifying padding, height, width, and margins 
-                          * while still letting the element flow inline */
   color: white; /* text color */
-  padding: 7px 8px;
   text-decoration: none; /* removes decoration from the link text 
                           * (underline) */
+  border: 2px solid #8e7cc3; /* light purple */
 }
 /* links in the site footer within the "mylinks" span element */
 #footer .mylinks a {
-
+  display: inline-block; /* allows specifying padding, height, width, and margins
+                          * while stil letting the elements flow in-line */
+  padding: 7px 8px;
 }
 /* when a link in the site footer is hovered over with the cursor */
 #footer a:hover {
