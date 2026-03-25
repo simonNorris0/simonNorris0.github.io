@@ -4,7 +4,7 @@
 ### To-Do:
 <ol>
     <li><s>Build site navigation bar</s></li>
-    <li>Build site footer</li>
+    <li><s>Build site footer</s></li>
     <li>Add basic resume</li>
     <li>Add basic portfolio</li>
     <li>Build basic contact form</li>
