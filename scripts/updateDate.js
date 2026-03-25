@@ -1,4 +1,4 @@
-// function to find the 'last updated' element and inject the last modified 
+// function to find the target element and inject the last modified 
 // date from the webpage document
 const updateLastUpdated = (elementId) => {
   const targetElement = document.getElementById(elementId);
