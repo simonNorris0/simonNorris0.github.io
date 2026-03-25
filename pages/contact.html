@@ -9,6 +9,8 @@
                 me and some address information." />
     <title>Contact Me</title>
     <link rel="stylesheet" href="../styles/styles.css" />
+    <!-- scripts -->
+    <script src="../scripts/updateDate.js"></script>
   </head>
   <body>
     <nav> <!-- site navigation bar -->
@@ -32,7 +34,7 @@
       <!-- container to keep "lastupdate" and <address> elements inline with 
            "mylinks" <span> element -->
         <div id="lastupdate">
-          <p>Last Updated: March 24, 2026</p>
+          <p>Last Updated: <span id="updateId">Loading...</span></p>
         </div>
         <address>
           <p>Simon Norris</p>

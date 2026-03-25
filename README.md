@@ -6,6 +6,7 @@
     <li><s>Build site navigation bar</s></li>
     <li><b>fix site navigation bar on mobile pages</b></li>
     <li><s>Build site footer</s></li>
+    <li><s>Add javascript to update lastupdate automatically</s></li>
     <li>Add basic resume</li>
     <li>Add basic portfolio</li>
     <li>Build basic contact form</li>
