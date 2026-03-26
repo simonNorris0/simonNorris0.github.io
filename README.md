@@ -37,7 +37,7 @@ template.html, blogposttemplate.html, and contact.html are not indexed.</p>
 ## Notes:
 
 <b>PHP, Ruby, Python, and Server-Side Programming in general are not supported 
-by the GitHub Pages service:<b> <a href=
+by the GitHub Pages service:</b> <a href=
 "https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site">
 GitHub Pages Docs</a>
 <p>The service only supports <b>static websites</b>.
