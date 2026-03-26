@@ -15,7 +15,7 @@ showcase my ability to develop a static website from raw HTML/CSS/JavaScript -
     </li>
     <li>format resume with CSS</li>
     <li>format portfolio with CSS</li>
-    <li>Build basic contact form and formal contact info (contact.html)</li>
+    <li>Build contact.html (no contact form without PHP)</li>
     <li>Build blog index page (blog.html)</li>
     <li>Publish first blog post (about programming the website)</li>
     <li>Build Home page (index.html)</li>
