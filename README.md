@@ -19,7 +19,9 @@ no CMS or frameworks are used.</p>
     <li>Build blog index page (blog.html)</li>
     <li>Publish first blog post</li>
     <li>Build Home page (index.html)</li>
-    <li>Add website to web programming portfolio</li>      
+    <li>Add website to web programming portfolio</li>
+    <li>Write PHP script to update shared information in 
+head tags across pages, and include dateModified in structured data and that script.</li>
 </ol>
 
 ### Notes:
