@@ -1,7 +1,6 @@
-#### simonNorris0.github.io
-#### Personal Webpage
-#
-<p><b>Source code for my personal static webpage, which functions as a 
+<a href="https://simonNorris0.github.io"><b>simonnorris0.github.io</b></a>
+## Personal Webpage
+<p><b>Project repository for my personal static webpage, which functions as a 
 digital resume, a project portfolio, a self-profile, and a personal blog.</b>
 </p> 
 
@@ -10,7 +9,7 @@ showcase my ability to develop a static website from raw HTML/CSS/JavaScript -
 <b>no CMS or frameworks are used</b>.</p>
 
 #
-### To-Do:
+## To-Do:
 <ol>
     <li><b>fix site navigation bar and lastupdate wrapping on mobile pages</b>
     </li>
@@ -35,10 +34,9 @@ template.html, blogposttemplate.html, and contact.html are not indexed.</p>
 <p>Ensure CSS is well formatted across multiple desktop OS and mobile devices.
 </p>
 
-### Notes:
+## Notes:
 
-## PHP, Ruby, Python, and Server-Side Programming in general are not supported 
-## by the GitHub Pages service:
+#### PHP, Ruby, Python, and Server-Side Programming in general are not supported by the GitHub Pages service:
 <a href="200~https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site">GitHub Pages Docs</a>
 <p>The service only supports <b>static websites</b>.
 
