@@ -19,5 +19,5 @@ const updateLastUpdated = (elementId) => {
 
 // run the function once HTML is loaded
 document.addEventListener('DOMContentLoaded', () => {
-  updateLastUpdated('updateId');
+  updateLastUpdated('updateId'); // target element: "updateId"
 });
