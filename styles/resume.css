@@ -38,12 +38,12 @@ h2 {
   margin: 0;
   padding: 0;
 }
-section#summary .title {
+.title {
   font-size: 16px;
-  margin-left: 10px;
 }
 section#summary p {
   font-size: 14px;
+  margin-left: 10px;
 }
 
 /** styles for screens smaller than 800px (i.e., Mobile Phones) **/
