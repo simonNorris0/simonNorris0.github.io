@@ -1,13 +1,20 @@
+* {
+  box-sizing: border-box;
+}
 html {
   background-color: #d3d3d3; /* light gray */
-}
-body {
-  padding-bottom: 40px; /* must match footer height */
 }
 a {
   color: #6850af; /* purple */
   font-weight: bold;
   text-decoration: none;
+}
+hr {
+  color: #8e7cc3; /* light purple */
+}
+body {
+  padding: 20px;
+  padding-bottom: 40px; /* must match footer height */
 }
 
 /* site navigation bar: unordered list with the "navbar" ID */
