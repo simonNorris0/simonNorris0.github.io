@@ -26,6 +26,8 @@ header {
 }
 header address {
   font-size: 14px;
+}
+header address a {
   padding-left: 10px;
   padding-right: 10px;
 }
