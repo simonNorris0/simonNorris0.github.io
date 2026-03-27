@@ -84,106 +84,170 @@
     </nav>
     <header>
       <h1>Simon Norris</h1>
-      <p class="subheading">2nd Year Computer Science Student</p>
+      <div class="occupation">Prospective Software Engineering Intern</div>
+      <br>
       <address>
-          <p class="subheading">Email: 
-          <a href="mailto:simonmjnorris@gmail.com">
-            simonmjnorris@gmail.com</a></p>
-          <p class="subheading">Personal website: 
+          <div class="subheading">Email: 
+          <a class="email" href="mailto:simonmjnorris@gmail.com">
+            simonmjnorris@gmail.com</a></div>
+          <div class="subheading">Personal website: 
           <a href="https://simonNorris0.github.io">
-            simonNorris0.github.io</a></p>
-          <p class="subheading">Red Deer, AB</p>
+            simonNorris0.github.io</a></div>
+          <div class="subheading">Red Deer, AB</div>
       </address>
     </header>
     <main>
       <section id="summary">
         <h2>Summary</h2>
-        <p><b>2nd year BSc. Computer Science (57/120 credits)</b></p>
+        <hr>
+        <div class="title"><b>2nd year BSc. Computer Science (57/120 credits)</b></div>
         <ul id="degreehighlights">
-          <li>minor in applied mathematics</li>
-          <li>current GPA: <b>(4.0/4.0)</b></li>
+          <li>minor in <b>applied mathematics</b></li>
+          <li>current GPA: <div span="gpa">4.0/4.0</span></li>
+          <li>expected graduation date: February 2027</li>
         </ul>
-        
-        <b>Programming and IT Experience:</b>
-        <ul id="programmingexperience">
-          <li>demonstratable experience building web programming projects 
-            in JavaScript, and HTML/CSS.</li>
-          <li>demonstratable experience building system-level projects 
-            in C and C++, (primarily with Red Hat, BSD, and Windows systems 
-            as well as 'baremetal' programming on Arduino microcontrollers.)</li>
-          <li>demonstratable experience automating computer system 
-            administration tasks with bash, csh, and Powershell scripts.</li>
-          <li>demonstratable experience designing, building, and testing 
-            general-purpose object-oriented concurrent programming projects in 
-            Java.</li>
-        </ul>
-
-        <p>I am highly motivated to enter the information technology and 
-        software development fields. My greatest strengths are problem-solving, 
-        logic, and analyzing systems. I approach new challenges eagerly and 
-        carefully, I work thoroughly and independently, and I am always in 
-        consideration of better solutions or new methods for solving a problem.
+        <p>I am highly motivated to enter the software engineering field. 
+        My greatest strengths are problem-solving, logic, and analyzing systems. 
+        I approach new challenges eagerly and carefully, I work thoroughly and 
+        independently, and I am always in consideration of better solutions or new 
+        methods for solving a problem.
         </p>
-
         <p>I also consider myself an effective communicator who enjoys 
         sharing their ideas.</p>
-
-        <p>Please see the Education and Work section on 
-        <a href="profile.html">my profile page</a> for more on my career 
-        goals and motivations, or visit 
-        <a href="portfolio.html">my portfolio</a> to see examples of 
-        my independent (non-school related) projects. </p>
-
       </section> <!-- end of summary section -->
+      <section id="experience">
+        <!-- ... -->
+      </section> <!-- end of work experience section -->
       <section id="education">
         <h2>Education</h2>
-        <h3>Bachelor of Science in Computer Science</h3>
-        <p class="subheading"><a href="https://www.athabascau.ca/calendar/undergraduate/program-regulations/degrees/bachelor-of-science-computing-and-information-systems-major.html">
-          Athabasca University</a></p>
-        <p class="subheading">September 2023 to Present</p>
-        <p class="subheading">Major: Computing and Information Systems</p>
-        <p class="subheading">Minor: Applied Mathematics</p>
-        <p>Current GPA: <b>4.0/4.0</b>
-
-        <p>This is a remote degree - the vast majority of my classes are 
-        asynchronous and will not impact availability. It also demonstrates 
-        my ability to work productively both remotely and independently.</p>
-      
+        <hr>
+        <section id="undergrad">
+          <h3>Bachelor of Science in Computer Science</h3>
+          <div class="institution">
+            <a href="https://www.athabascau.ca/calendar/undergraduate/program-regulations/degrees/bachelor-of-science-computing-and-information-systems-major.html">
+              Athabasca University</a>
+          </div>
+          <span class="timeperiod">September 2023 to Present</span>
+          <div class="subheading">Major: Computing and Information Systems</div>
+          <div class="subheading">Minor: Applied Mathematics</div>
+          <div class="subheading">Current GPA: <span class="gpa">4.0/4.0</span></div>
+          <p>This is a remote degree - the vast majority of my classes are 
+          asynchronous and will not impact availability. It also demonstrates 
+          my ability to work productively both remotely and independently.</p>
+        </section> <!-- end of undergrad section -->
       </section> <!-- end of education section -->
-      <section id="courses">
-        <h2>Course Highlights</h2>
-        <ul = courselist>
-          <li>Data Structures and Algorithms 
-            <a href="https://www.athabascau.ca/syllabi/comp/comp272.html">
-              COMP272</a></li>
-          <li>Operating Systems
-            <a href="https://www.athabascau.ca/syllabi/comp/comp314.html">
-              COMP315</a></li>
-          <li>Java for Programmers 
-            <a href="https://www.athabascau.ca/syllabi/comp/comp308.html">
-              COMP308</a></li>
-          <li>UNIX Administration (A) 
-            <a href="https://www.athabascau.ca/syllabi/comp/comp325.html">
-              COMP325</a></li>
-        </ul>
-
-      </section> <!-- end of courses section -->
-      <!-- ... -->
-      <!-- certifications/licenses section -->
-      <!-- awards/scholarships section -->
-      <!-- publications sections -->
-      <!-- work experience section -->
-      <!-- ... -->
+      <section id="projects">
+        <h2>Projects</h2>
+        <hr>
+        <section id="flightcontrolsystems">
+          <h3>Quad-copter Flight Control Systems</h3>
+          <span class="skillshowcase">C, C++, MicroPython, NumPy, Arduino IDE</span>
+          <span class="timeperiod">December 2024 - Present</span>
+          <div class="projectsummary">
+          <p>Ongoing project developing flight control systems, a flight controller 
+            and radio control module, for a personal quad-copter drone build.</p>
+          </div>
+          <div class="projectlinks">
+            <a href="">FlightDaemon (flight controller project page)</a>
+            <a href="">RCDaemon (radio control module project page)</a>
+          </div>
+          <ul class="projecthighlights">
+            <li>Programming flight controller for an Arduino Nano (model-name).</li>
+            <li>Programming radio controller to interface between Arduino Nano's 
+              (module-name) and (remote name)'s (transmitter name).</li>
+          </ul>
+        </section> <!-- end of flightcontrolsystems sub-section -->
+        <section id="chessmapper">
+          <h3>Single-User Chess Game Simulator</h3>
+          <span class="skillshowcase">Java, Swing, JUnit, IntelliJ IDEA, jGRASP</span>
+          <span class="timeperiod">March 2026 - Present</span>
+          <div class="projectsummary">
+          <p>Ongoing OOP Java project developing a single-user chess program; designed 
+            as a study tool for use with chess books which provide grandmaster games 
+            recorded in chess notation.</p>
+          </div>
+          <div class="projectlinks">
+            <a href="">ChessMapper Source (project source page)</a>
+            <!-- <a href="">ChessMapper App (project application page)</a> -->
+          </div>
+          <ul class="projecthighlights">
+            <li>GUI built with Swing framework.</li>
+            <li>Concurrently programmed; the main application dispatches each new game 
+              as a child thread, which in turn dispatches its own GUI.</li>
+            <li>Games can be saved as persistent objects allowing them to be loaded from 
+              the main application.</li>
+          </ul>
+        </section> <!-- end of chessmapper sub-section -->
+        <section id="unixvm">
+          <h3>UNIX Virtual Machine</h3>
+          <span class="skillshowcase">C, Python, TkInter, GNOME Boxes, Vim, SSH</span>
+          <span class="timeperiod">September 2025 - December 2025</span>
+          <div class="projectsummary">
+          <p>Set up and administered, from the CLI, an OpenBSD UNIX VM with GNOME Boxes 
+          for COMP325 (Unix Principles & Administration). Final grade: A.</p>
+          </div>
+          <ul class="projecthighlights">
+            <li>Automated system administration and built file system and network 
+              management programs with C Shell and Bash scripts.</li>
+            <li>Implemented a solution to the Dining Philospher problem in C 
+              with both IPC and Network sockets.</li>
+            <li>Developed basic X11 GUI program in Python with TkInter framework.</li>
+          </ul>
+        </section> <!-- end of unixvm sub-section -->
+        <section id="webpage">
+          <h3>Personal Webpage Build</h3>
+          <span class="skillshowcase">JavaScript, HTML/CSS, Git, JSON-LD</span>
+          <span class="timeperiod">March 2026</span>
+          <div class="projectsummary">
+          <p>Built a static website for my personal webpage; deployed using 
+          GitHub Pages;</p>
+          </div>
+          <div class="projectlinks">
+            <a href="https://github.com/simonNorris0/simonNorris0.github.io">
+              public Git repository containing website files</a>
+          </div>
+          <ul class="projecthighlights">
+            <li>Developed without any frameworks to showcase web programming fundamentals.</li>
+            <li>Ongoing use to provide project hosting, blogging, and digital resume.</li>
+            <li>May revist project to implement frameworks (React, Node.js, ...).</li>
+          </ul>
+        </section> <!-- end of webpage sub-section -->
+      </section><!-- end of projects section -->
+      <section id="skills">
+        <h2>Technical Skills</h2>
+        <hr>
+        <div class="languages">
+          <span class="subtitle">Languages: </span>
+          <p>Java, C, C++, Bash Scripting, C Shell Scripting, Python, MicroPython, 
+            JavaScript, HTML/CSS</p>
+        </div>
+        <div class="devtools">
+          <span class="subtitle">Developer Tools: </span>
+          <p>Git, Bash, SSH, JavaDoc, GNOME Boxes, Vim, IntelliJ IDEA, jGRASP, 
+            Arduino IDE, VS Code</p>
+        </div>
+        <div class="frameworks">
+          <span class="subtitle">Frameworks: </span>
+          <p>Swing, JUnit, TkInter, JSON-LD</p>
+        </div>
+        <div class="libraries">
+          <span class="subtitle">Libraries: </span>
+          <p>NumPy</p>
+        </div>
+      </section><!-- end of technical skills section -->
+      <section id="certifications">
+        <!-- ... -->
+      </section> <!-- end of certifications / licenses section -->
       <section id="links">
-        <h2>My Links</h2>
-        <p><a href="https://www.github.com/simonNorris0">
-          GitHub (github.com/simonNorris0)</a></p>
-        <p><a href="https://leetcode.com/u/simonNorris0/">
-          LeetCode (leetcode.com/u/simonNorris0)</a></p>
-        <p><a href="https://codeforces.com/profile/simonNorris0">CodeForces (codeforces.com/profile/simonNorris0)</a></p>
-        <p><a href="https://www.linkedin.in/simonNorris0">
-          LinkedIn (linkedin.in/simonNorris0)</a></p>
-      
+        <h4>My Links</h4>
+        <div><a href="https://www.github.com/simonNorris0">
+          GitHub (github.com/simonNorris0)</a></div>
+        <div><a href="https://leetcode.com/u/simonNorris0/">
+          LeetCode (leetcode.com/u/simonNorris0)</a></div>
+        <div><a href="https://codeforces.com/profile/simonNorris0">
+          CodeForces (codeforces.com/profile/simonNorris0)</a></div>
+        <div><a href="https://www.linkedin.in/simonNorris0">
+          LinkedIn (linkedin.in/simonNorris0)</a></div>
       </section><!-- end of links section -->
     </main>
     <footer> <!-- site footer -->
