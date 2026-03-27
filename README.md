@@ -11,21 +11,19 @@ showcase my ability to develop a static website from raw HTML/CSS/JavaScript -
 #
 ## To-Do:
 <ol>
-    <li><b>fix site navigation bar and lastupdate wrapping on mobile pages</b>
+    <li><b>fix site navigation bar and lastupdate wrapping on small screens</b>
     </li>
-    <li>format resume with CSS</li>
-    <li>format portfolio with CSS</li>
-    <li>Build contact.html (no contact form without PHP)</li>
-    <li>Build blog index page (blog.html)</li>
+    <li>format resume</li>
+    <li>About Me section on blog page and publish contact.html page</li>
     <li>Publish first blog post (about programming the website)</li>
-    <li>Build Home page (index.html)</li>
+    <li>Highlight website project blog post on blog index page</li>
     <li>Write script to update head tags across pages, and include dateModified 
     in structured data and that script. <b>dateModified</b> and <b>dateCreated</b> 
     should have time-stamps, need to change format used vs. format used by 
     lastUpdated element - i.e., need a second function. </li>
+    <li>Publish website as first project page (webproject1)</li>
+    <li>Highlight website blogpost and project on home page</li>
 </ol>
-
-<p>Add website to web-programming portfolio</p>
 
 <p>Ensure Google Search Console structured data remains well formatted, the 
 crawler is able to index the sitemap, and that daemonworks.html, contact.html, 

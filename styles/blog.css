@@ -1,11 +1,95 @@
+* {
+  box-sizing: border-box;
+}
 html {
   background-color: #d3d3d3; /* light gray */
 }
+a {
+  color: #6850af; /* purple */
+  font-weight: bold;
+  text-decoration: none;
+}
+header {
+  padding: 1px;
+  font-size: 30px;
+  text-align: center;
+  background: white;
+}
 body {
+  padding: 20px;
   padding-bottom: 40px; /* must match footer height */
+}
+h2 {
+  margin: 0;
+  color: #6850af; /* purple */
+}
+h3 {
+  margin: 0;
+  color: #6850af; /* purple */
+}
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* card effect for article links */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+.blogimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+.profileimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+.button {
+  background-color: #8e7cc3; /* light purple */
+  border: none;
+  color: white;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+/* creates two unequal columns that float next to each other */
+/* --------------------------------------------------------- */
+/* left column */
+.leftcolumn {
+  float: left;
+  width: 35%;
+  padding-right: 20px;
+}
+/* right column */
+.rightcolumn {
+  float: left;
+  width: 65%;
+}
+/* clear floats after the columns */
+main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the 
+ * two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 /* site navigation bar: unordered list with the "navbar" ID */
+/* -------------------------------------------------------- */
 ul#navbar {
   /* Fix the site navigation bar at the top of the screen even 
    * when scrolling */
@@ -47,8 +131,9 @@ ul#navbar li a:hover {
 ul#navbar li a.active {
   background-color: #8e7cc3; /* light purple */
 }
-/* ~~~ end of site navigation bar ~~~ */
+
 /* ~~~ site footer ~~~ */
+/* ------------------- */
 footer {
   /* fix the site footer at the bottom of the screen */
   position: fixed;
@@ -133,4 +218,3 @@ footer #mylinks a {
 footer #mylinks a:last-child {
   margin-right: 9px; /* make some room for the scroll bar */
 }
-/* ~~~ end of site footer ~~~ */

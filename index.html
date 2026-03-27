@@ -68,38 +68,80 @@
       <p class="subheading"> - Henry S. Warren, Jr., 
         <a href="https://www.goodreads.com/book/show/13705622-hacker-s-delight">
           <b>Hacker's Delight</b></a>, <i>Second Edition</i>, Addison Wesley.</p>
-
-      <p>2nd year Bachelor of Science student at <a href="https://www.athabascau.ca/science-and-technology/about/discover-our-academic-disciplines/school-of-computing-and-information-systems.html">Athabasca University, School of Computing 
-        and Information Systems</a> major in Computing and Information Systems, 
-      minor in Applied Mathematics.</p>
-
-      <b><p>Please use the site navigation bar and visit:  
-        <a href="pages/resume.html">my digital resume</a>, 
-        <a href="pages/profile.html">my profile page</a>, or  
-        <a href="pages/portfolio.html">my project portfolio</a>.
-      </b></p>
-
     </header>
     <main>
-      <h3>Important Resources for Computer Science and Mathematics Students:</h3>
-      <ul id="externalresources">
-        <li><a href="https://www.acm.org">
-            Association for Computing Machinery (ACM)</a></li>
-        <li><a href="https://www.ieee.org">
-            Institute of Electrical and Electronics Engineers (IEEE)</a></li>
-        <li><a href="https://cra.org">
-            Computing Research Association (CRA)</a></li>
-        <li><a href="https://cscan-infocan.ca">
-            CS-CAN | INFO-CAN (Canadian Students)</a></li>
-        <li><a href="https://www.ietf.org/download/rfc-index.txt">
-            Complete list of all Request for Comments (RFCs) by the 
-          Internet Engineering Task Force (IETF)</a></li>
-        <li><a href="https://www.itl.nist.gov/div898/handbook/">
-          National Institute of Standards and Technology (NIST) 
-          e-Handbook of Statistical Methods for Engineers</a></li>
-        <li><a href="https://lwn.net">Linux Weekly News (LWN)</a></li>
-      <ul>
+      <!-- the left column is the main content of the index page -->
+      <div class="leftcolumn">
+        <section id="intro" class="card">
+          <p>2nd year Bachelor of Science student at <a href=
+            "https://www.athabascau.ca/science-and-technology/about/discover-our-academic-disciplines/school-of-computing-and-information-systems.html">
+            Athabasca University, School of Computing and Information Systems
+          </a> major in Computing and Information Systems, minor in Applied 
+          Mathematics.</p>
 
+          <b><p>Please use the site navigation bar to explore.</b></p>
+          <b><p>These pages form my digital resume package:</b></p>
+          <p>
+          <a class=smallbutton href="pages/resume.html">my resume
+          </a>
+          <a class=smallbutton href="pages/profile.html">my profile page
+          </a>
+          <a class=smallbutton href="pages/portfolio.html">my project portfolio
+          </a>
+          </p>
+        </section> <!-- end of intro section -->
+        <section id="externalresouces" class="card">
+          <h3>Important Resources for Computer Science and 
+              Mathematics Students:</h3>
+          <ul>
+            <li><a href="https://www.acm.org">
+                Association for Computing Machinery (ACM)</a>
+            </li>
+            <li><a href="https://www.ieee.org">
+                Institute of Electrical and Electronics Engineers (IEEE)</a>
+            </li>
+            <li><a href="https://cra.org">Computing Research Association (CRA)
+              </a>
+            </li>
+            <li><a href="https://cscan-infocan.ca">CS-CAN | INFO-CAN (Canadian 
+                Students)</a>
+            </li>
+            <li><a href="https://www.ietf.org/download/rfc-index.txt">
+                Complete list of all Request for Comments (RFCs) by the 
+                Internet Engineering Task Force (IETF)</a>
+            </li>
+            <li><a href="https://www.itl.nist.gov/div898/handbook/">
+                National Institute of Standards and Technology (NIST) 
+                e-Handbook of Statistical Methods for Engineers</a>
+            </li>
+            <li><a href="https://lwn.net">Linux Weekly News (LWN)</a></li>
+          <ul>
+        </section> <!-- end of external resources section -->
+      </div> <!-- end of left column element (main content) -->
+      <!-- the right column is a series of cards that link to highlighted 
+           articles (projects, blog posts, etc.) -->
+      <div class="rightcolumn">
+        <!-- article card template:
+        <article class="card">
+          <h2>ARTICLE TITLE</h2>
+          <h4>Article description, Date</h4>
+          <div class="articleimg" style="height:100px;">Article Image</div>
+          <p>Article intro...</p>
+        </article>
+        -->
+        <article class="card">
+          <h2>BLOG TITLE</h2>
+          <h4>Blog description, Date</h4>
+          <div class="articleimg" style="height:100px;">Article Image</div>
+          <p>Article intro...</p>
+        </article>
+        <article class="card">
+          <h2>PROJECT TITLE</h2>
+          <h4>Project description, Date</h4>
+          <div class="articleimg" style="height:100px;">Article Image</div>
+          <p>Project intro...</p>
+        </article>
+      </div> <!-- end of right column element -->
     </main>
     <footer> <!-- site footer -->
       <div id="signature"> 

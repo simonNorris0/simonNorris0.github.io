@@ -72,75 +72,79 @@
       <p class="subheading">Portfolio of personal (non-school) programming 
       projects, microcontroller projects, drone builds, and model rockets.
       </p>
-
-      <h2>Portfolio Navigation</h2>
-      <nav> <!-- portfolio navigation -->
-        <ul id="portfolionav">
-          <li><a href="#javaprojects">Misc. Java Projects</a>
-          <ul class="submenu">
-            <li><a href="#javaproject1">ChessMapper</a></li>
-          </ul></li>
-
-          <li><a href="#osprojects">Operating System Projects</a>
-          <ul class="submenu">
-          </ul></li>
-
-          <li><a href="#webprojects">Web Programming Projects</a>
-          <ul class="submenu">
-          </ul></li>
-
-          <li><a href="#microcontrollerprojects">Microcontroller Projects</a>
-          <ul class="submenu">
-            <li><a href="#microcontrollerproject1">FlightDaemon</a></li>
-            <li><a href="#microcontrollerproject2">RCDaemon</a></li>
-          </ul></li>
-
-        </ul>
-      </nav> <!-- end of portfolio navigation -->
     </header>
     <main>
-      <h2>Project Portfolio</h2>
-      
-      <section id="javaprojects">
-        <h3>Misc. Java Projects</h3>
-        
-        <section id="javaproject1">
-        <h4>ChessMapper</h4>
-        <p>A program to display and interact with recorded chess games. The 
-        goal of this program is not to create a multiplayer or a player vs. 
-        A.I. chess program, but rather to create a program that a single user 
-        can use to simulate recorded chess games.</p>
-
-        <p><a href="https://github.com/simonNorris0/ChessMapper">
-          source code</a></p>
-        </section>
-      </section> <!-- end of java projects section -->
-      
-      <section id="osprojects">
-        <h3>Operating System Projects</h3>
-
-      </section> <!-- end of operating system projects section -->
-
-      <section id="webprojects">
-        <h3>Web Programming Projects</h3>
-
-      </section> <!-- end of web programming projects section -->
-
-      <section id="microcontrollerprojects">
-        <h3>Microcontroller Projects</h3>
-        
-        <section id="microcontrollerproject1">
-        <h4>FlightDaemon</h4>
-
-        </section>
-
-        <section id="microcontrollerproject2">
-        <h4>RCDaemon</h4>
-
-        </section>
-
-      </section> <!-- end of microcontroller projects section -->
-
+      <!-- the left column is the portfolio navigation -->
+      <div class="leftcolumn">
+        <!-- portfolio navigation -->
+        <nav id="portfoliomenu" class="card">
+          <h3>Portfolio Navigation</h3>
+          <br>
+          <ul>
+            <hr>
+            <li><b>Java Projects</b><hr><ul class="submenu">
+              <li><a class="button" href="#javaproject1">
+                  <b>ChessMapper</b></a></li>
+            </ul></li>
+            <hr>
+            <li><b>Operating System Projects</b><hr><ul class="submenu">
+            </ul></li>
+            <hr>
+            <li><b>Web Programming Projects</b><hr><ul class="submenu">
+              <li><a class="button" href="#webproject1">
+                  <b>Personal Website Build</b></a></li>
+            </ul></li>
+            <hr>
+            <li><b>Microcontroller Projects</b><hr><ul class="submenu">
+              <li><a class="button" href="#microcontrollerproject1">
+                  <b>FlightDaemon</b></a></li>
+              <li><a class="button" href="#microcontrollerproject2">
+                  <b>RCDaemon</b></a></li>
+            </ul></li>
+          </ul>
+        </nav> <!-- end of portfolio navigation -->
+      </div> <!-- end of left column element (portfolio navigation-->
+      <div class="rightcolumn"> <!-- the right column is the portfolio -->
+        <br>
+        <hr>
+        <section id="javaprojects">
+          <h3>Java Projects</h3>
+          <hr> 
+          <section id="javaproject1" class="card">
+            <h4>ChessMapper</h4>
+            <p>A program to display and interact with recorded chess games. 
+            The goal of this program is not to create a multiplayer or a 
+            player vs. A.I. chess program, but rather to create a program 
+            that a single user can use to simulate recorded chess games.</p>
+            <p><a href="https://github.com/simonNorris0/ChessMapper">
+              source code</a></p>
+          </section>
+        </section> <!-- end of java projects section -->
+        <hr>
+        <section id="osprojects">
+          <h3>Operating System Projects</h3>
+          <hr>
+        </section> <!-- end of operating system projects section -->
+        <hr>
+        <section id="webprojects">
+          <h3>Web Programming Projects</h3>
+          <hr>
+          <section id="webproject1" class="card">
+            <h4>Personal Website Build</h4>
+          </section>
+        </section> <!-- end of web programming projects section -->
+        <hr>
+        <section id="microcontrollerprojects">
+          <h3>Microcontroller Projects</h3>
+          <hr>
+          <section id="microcontrollerproject1" class="card">
+            <h4>FlightDaemon</h4>
+           </section>
+          <section id="microcontrollerproject2" class="card">
+            <h4>RCDaemon</h4>
+          </section>
+        </section> <!-- end of microcontroller projects section -->
+      </div> <!-- end of right column element (project portfolio) -->
     </main>
     <footer> <!-- site footer -->
       <div id="signature">

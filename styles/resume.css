@@ -4,8 +4,14 @@ html {
 body {
   padding-bottom: 40px; /* must match footer height */
 }
+a {
+  color: #6850af; /* purple */
+  font-weight: bold;
+  text-decoration: none;
+}
 
 /* site navigation bar: unordered list with the "navbar" ID */
+/* -------------------------------------------------------- */
 ul#navbar {
   /* Fix the site navigation bar at the top of the screen even 
    * when scrolling */
@@ -47,8 +53,8 @@ ul#navbar li a:hover {
 ul#navbar li a.active {
   background-color: #8e7cc3; /* light purple */
 }
-/* ~~~ end of site navigation bar ~~~ */
 /* ~~~ site footer ~~~ */
+/* ------------------- */
 footer {
   /* fix the site footer at the bottom of the screen */
   position: fixed;
@@ -129,7 +135,6 @@ footer #mylinks a {
   padding: 7px 7px;
   border: 2px solid #8e7cc3; /* light purple */
 }
-/* ~~~ end of site footer ~~~ */
 footer #mylinks a:last-child {
   margin-right: 9px; /* make some room for the scroll bar */
 }
