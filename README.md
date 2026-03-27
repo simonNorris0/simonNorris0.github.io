@@ -28,8 +28,8 @@ showcase my ability to develop a static website from raw HTML/CSS/JavaScript -
 <p>Add website to web-programming portfolio</p>
 
 <p>Ensure Google Search Console structured data remains well formatted, the 
-crawler is able to index the sitemap, and that daemonworks.html,
-template.html, blogposttemplate.html, and contact.html are not indexed.</p>
+crawler is able to index the sitemap, and that daemonworks.html, contact.html, 
+and all html templates are not indexed.</p>
 
 <p>Ensure CSS is well formatted across multiple desktop OS and mobile devices.
 </p>
@@ -42,6 +42,6 @@ by the GitHub Pages service:</b> <a href=
 GitHub Pages Docs</a>
 <p>The service only supports <b>static websites</b>.
 
-<p>Maintain SEO, continue to update project portfolio, blog posts, profile, 
-and resume.</p>
+<p>Maintain SEO and structured data, continue to update project portfolio, 
+blog posts, profile, and resume.</p>
 

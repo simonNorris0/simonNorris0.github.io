@@ -1,3 +1,13 @@
+// author: Simon Norris
+// author: https://github.com/simonNorris0
+//   date: March 24, 2026
+//
+// Script purpose: targets an element in the site footer of the html 
+//                 pages across the website and replaces the text 
+//                 content of that element with the html pages last 
+//                 modified date. Automates the process of keeping 
+//                 the 'last updated' date current.
+//
 // function to find the target element and inject the last modified 
 // date from the webpage document
 const updateLastUpdated = (elementId) => {

@@ -5,35 +5,96 @@
     <meta name="viewport" content="width=device-width" />
     <meta name="author" content="Simon Norris" />
     <meta name="author" content="https://www.github.com/simonNorris0" />
-    <meta name="description" content="Profile page for simonNorris0. Full 
-    name: Simon Norris. Location: Red Deer, Alberta. Occupation: Computer 
-    Science and Mathematics Student. Organization: Athabasca University." />
+    <meta name="description" content="Profile page for Simon Norris. Username: 
+                simonNorris0. Location: Red Deer, Alberta. Occupation: Computer 
+                Science and Mathematics Student. Organization: 
+                Athabasca University. Industry: Software Development." />
     <title>simonNorris0 | Profile Page</title>
     <!-- favicon -->
     <link rel="icon" href="../media/imgs/favicon.ico" />
     <link rel="stylesheet" href="../styles/styles.css" />
     <!-- scripts -->
-    <!-- profile page: JSON-LD strutured data -->
+    <!-- ProfilePage: JSON-LD strutured data -->
     <script type="application/ld+json">
       {
-        "@context": "https://schema.org",
+        "@context": "https://schema.org/",
         "@type": "ProfilePage",
+        "name": "Simon Norris | Profile Page",
+        "alernateName": "simonNorris0 | Profile Page",
+        "description": "Profile page for Simon Norris.",
         "dateCreated": "2026-03-25",
         "mainEntity": {
           "@type": "Person",
           "name": "Simon Norris",
           "alternateName": "simonNorris0",
+          "description": "Computer Science and Mathematics student at Athabasca University",
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Red Deer",
             "addressRegion": "AB",
             "addressCountry": "CA"
           },
-          "description": "Computer Science and Mathematics Student 
-at Athabasca University."
-        }        
+          "email": "mailto:simonmjnorris@gmail.com",
+          "affiliation": {
+            "@type": "Organization",
+            "name": "Athabasca University",
+            "alternateName": "AU",
+            "url": "https://www.athabascau.ca/index.html",
+            "location": {
+              "@type": "PostalAddress",
+              "addressLocality": "Athabasca",
+              "addressRegion": "AB",
+              "addressCountry": "CA"
+            }
+          },
+          "knowsLanguage": {
+            "@type": "Language",
+            "name": "English",
+            "alternateName": "en-CA"
+          },
+          "skills": [
+            "computer science", 
+            "software engineering", 
+            "applied mathematics", 
+            "statistics", 
+            "information technology", 
+            "IT", 
+            "Java programming", 
+            "C programming", 
+            "web programming", 
+            "shell scripting", 
+            "operating systems", 
+            "UNIX administration", 
+            "data structures", 
+            "algorithms", 
+            "embedded computers", 
+            "microcontrollers", 
+            "microelectronics", 
+            "control systems"
+          ],
+          "url": "https://simonnorris0.github.io"
+        },
+        "keywords": [
+          "simon norris", 
+          "simon norris red deer", 
+          "simon norris athabasca university", 
+          "simon norris au", 
+          "simon norris athabasca", 
+          "simon norris profile", 
+          "simon norris red deer profile", 
+          "simon norris athabasca university profile", 
+          "simon norris au profile", 
+          "simon norris athabasca profile", 
+          "software engineering student", 
+          "computer science student", 
+          "mathematics student"
+        ],
+        "url": "https://simonnorris0.github.io/pages/profile.html"
       }
-    </script>
+    </script> <!-- end of structured data -->
+
+    <!-- dynamically inserts last update into site footer, 
+         see ../scripts/updateDate.js -->
     <script src="../scripts/updateDate.js"></script>
   </head>
   <body>
@@ -48,11 +109,11 @@ at Athabasca University."
       </ul>
     </nav>
     <header>
-      <h1>Profile Page | simonNorris0</h1>
-      <h2>Simon Norris - Computer Science and Math student</h2>
+      <h1>Profile Page | Simon Norris</h1>
+      <h2>Computer Science and Mathematics student at Athabasca University</h2>
       <p class="subheading">This page is where I discuss some of my goals, 
-      plans for the future, and interests. It is divided into five sections. 
-      Education and Work (career), Computer Science, Mathematics, 
+      plans for the future, and interests. It is divided into six sections. 
+      Education and Work (career), Computer Science, Mathematics, Software Engineering, 
       Computer Engineering, and Hobbies.</p>
 
     </header>
@@ -109,7 +170,7 @@ at Athabasca University."
           computer networks, numerical algorithms and data structures, 
           computer security, and embedded computers.</p>
       
-      </section> <!-- end of computer science interests section -->
+      </section> <!-- end of computer science section -->
       <section id="math">
         <h3>Mathematics</h3>
           <p>My mathematics education focuses on discrete mathematics, 
@@ -118,8 +179,12 @@ at Athabasca University."
           up just a few classes and a final project short of a double-major in 
           mathematics. In a perfect world I would certainly like to pursue 
           further mathematics education.</p>
-      
-      </section> <!-- end of math interests section -->
+
+      </section> <!-- end of math section -->
+      <section id="softwareeng">
+        <h3>Software Engineering</h3>
+
+      </section> <!-- end of software engineering section -->
       <section id="computereng">
         <h3>Computer Engineering</h3>
           <p>Some of the most intriguing parts of the field of computing to 
@@ -130,7 +195,7 @@ at Athabasca University."
           of computing infrastructure. Interaction with the physical machine 
           components through programming is what I enjoy the most.</p>
       
-      </section> <!-- end of computer engineering interests section -->
+      </section> <!-- end of computer engineering section -->
       <section id="hobbies">
         <h3>Hobbies</h3>
         <p>This section is just for me to ramble about my hobbies. Many 
