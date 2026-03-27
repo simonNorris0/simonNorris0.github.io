@@ -35,11 +35,13 @@ header address a {
 }
 h2 {
   font-size: 18px;
-  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 0;
   padding: 0;
 }
 .title {
   font-size: 16px;
+  color: red;
 }
 section#summary p {
   font-size: 14px;
