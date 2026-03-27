@@ -38,11 +38,11 @@ h2 {
   margin: 0;
   padding: 0;
 }
-#summary .title {
+.title#summary {
   font-size: 16px;
   margin-left: 10px;
 }
-#summary p {
+p#summary {
   font-size: 14px;
 }
 
