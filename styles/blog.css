@@ -9,12 +9,6 @@ a {
   font-weight: bold;
   text-decoration: none;
 }
-header {
-  padding: 1px;
-  font-size: 30px;
-  text-align: center;
-  background: white;
-}
 body {
   padding: 20px;
   padding-bottom: 40px; /* must match footer height */
@@ -31,6 +25,13 @@ h4 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+header {
+  padding: 1px;
+  font-size: 30px;
+  text-align: center;
+  background: white;
+}
+
 /* card effect for article links */
 .card {
   background-color: white;
