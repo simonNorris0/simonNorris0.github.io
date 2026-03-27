@@ -41,7 +41,32 @@ h2 {
   margin-bottom: 0;
   padding: 0;
 }
-
+/** Institution name is left-aligned */
+.institution {
+  float: left;
+}
+/** Location of institution is right-aligned on same line as institution name */
+.location {
+  float: right;
+}
+/** Diploma name is left-aligned on new line */
+.diploma {
+  float: left;
+}
+/** Graduation date is right-aligned on same line as diploma name */
+.graduation {
+  float: right;
+}
+/** Diploma details are left-aligned on new line */
+.diplomadetails {
+  float: left;
+}
+/** clear floats after education section */
+section#education {
+  content: "";
+  display: table;
+  clear both;
+}
 /** styles for screens smaller than 800px (i.e., Mobile Phones) **/
 @media screen and (max-width: 800px) {
   
