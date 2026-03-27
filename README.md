@@ -11,6 +11,7 @@ showcase my ability to develop a static website from raw HTML/CSS/JavaScript -
 #
 ## To-Do:
 <ol>
+    <li>set site navbar to take up entire width of screen</li>
     <li><b>fix site navigation bar and lastupdate wrapping on small screens</b>
     </li>
     <li>format resume</li>
@@ -31,6 +32,8 @@ and all html templates are not indexed.</p>
 
 <p>Ensure CSS is well formatted across multiple desktop OS and mobile devices.
 </p>
+
+<p>print-friendly resume function?</p>
 
 ## Notes:
 
