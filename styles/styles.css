@@ -12,6 +12,20 @@ a {
 hr {
   color: #8e7cc3; /* light purple */
 }
+body {
+  padding: 20px;
+  padding-bottom: 40px; /* must match footer height */
+}
+body h2 {
+  margin: 0;
+}
+body h3 {
+  margin: 0;
+}
+body h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 header {
   padding: 1px;
   background: white;
@@ -30,26 +44,13 @@ header h2 {
 header h3 {
   padding-left: 10px;
 }
+
 .subheading {
   text-align: center;
   font-size: small;
   margin-top: 0;
   margin-left: 5px;
   margin-right: 5px;
-}
-body {
-  padding: 20px;
-  padding-bottom: 40px; /* must match footer height */
-}
-body h2 {
-  margin: 0;
-}
-body h3 {
-  margin: 0;
-}
-body h4 {
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .button {
