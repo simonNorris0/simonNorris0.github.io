@@ -122,7 +122,10 @@ main:after {
     padding: 0;
   }
 }
-
+/* allow site navigation bar to escape body framing */
+nav {
+  width: 100%;
+}
 /* site navigation bar: unordered list with the "navbar" ID */
 /* -------------------------------------------------------- */
 ul#navbar {
