@@ -47,22 +47,44 @@
         "skills": [
           "computer science", 
           "software engineering", 
-          "applied mathematics", 
-          "statistics", 
-          "information technology", 
-          "IT", 
-          "Java programming", 
-          "C programming", 
-          "web programming", 
-          "shell scripting", 
+          "applied mathematics",
+          "virtualization",
+          "virtual machines",
+          "embedded computers",
+          "microcontrollers",
+          "control systems",
+          "Java",
+          "C", 
+          "C++", 
+          "Python",
+          "MicroPython",
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "Swing", 
+          "JUnit", 
+          "TkInter", 
+          "JSON-LD",
+          "NumPy",
+          "Git",
+          "Bash",
+          "C Shell",
+          "SSH",
+          "JavaDoc",
+          "GNOME Boxes", 
+          "Vim", 
+          "IntelliJ IDEA",
+          "jGRASP",
+          "Arduino IDE", 
+          "VS Code",
+          "statistics",
+          "linear algebra",
+          "single-variable calculus",
+          "Java programming",
+          "data structures",
+          "algorithms",
           "operating systems", 
-          "UNIX administration", 
-          "data structures", 
-          "algorithms", 
-          "embedded computers", 
-          "microcontrollers", 
-          "microelectronics", 
-          "control systems"
+          "UNIX administration"
         ],
         "url": "https://simonnorris0.github.io/pages/resume.html"
       }
@@ -100,18 +122,17 @@
       <section id="summary">
         <h2>Summary</h2>
         <hr>
-        <div class="title"><b>2nd year BSc. Computer Science (57/120 credits)</b></div>
+        <div class="title"><b>2nd Year BSc. Computer Science (57/120 credits)</b></div>
         <ul id="degreehighlights">
-          <li>minor in <b>applied mathematics</b></li>
-          <li>current GPA: <div span="gpa">4.0/4.0</span></li>
-          <li>expected graduation date: February 2027</li>
+          <li>Minor in <b>Applied Mathematics</b></li>
+          <li>Current GPA: <span class="gpa">4.0/4.0</span></li>
+          <li>Expected Graduation Date: February 2027</li>
         </ul>
         <p>I am highly motivated to enter the software engineering field. 
         My greatest strengths are problem-solving, logic, and analyzing systems. 
         I approach new challenges eagerly and carefully, I work thoroughly and 
         independently, and I am always in consideration of better solutions or new 
-        methods for solving a problem.
-        </p>
+        methods for solving a problem.</p>
         <p>I also consider myself an effective communicator who enjoys 
         sharing their ideas.</p>
       </section> <!-- end of summary section -->
@@ -122,25 +143,24 @@
         <h2>Education</h2>
         <hr>
         <section id="undergrad">
-          <h3>Bachelor of Science in Computer Science</h3>
+          <div class="degree">Bachelor of Science in Computer Science, minor in Applied Mathematics</div>
           <div class="institution">
             <a href="https://www.athabascau.ca/calendar/undergraduate/program-regulations/degrees/bachelor-of-science-computing-and-information-systems-major.html">
-              Athabasca University</a>
+              Athabasca University</a> - Remote
           </div>
           <span class="timeperiod">September 2023 to Present</span>
-          <div class="subheading">Major: Computing and Information Systems</div>
-          <div class="subheading">Minor: Applied Mathematics</div>
           <div class="subheading">Current GPA: <span class="gpa">4.0/4.0</span></div>
-          <p>This is a remote degree - the vast majority of my classes are 
-          asynchronous and will not impact availability. It also demonstrates 
-          my ability to work productively both remotely and independently.</p>
-        </section> <!-- end of undergrad section -->
+          <section id="courses">
+            <!-- can display senior-level electives I have completed relevant 
+                 to my specialization here -->
+          </section> <!-- end of courses sub-section -->
+        </section> <!-- end of undergrad sub-section -->
       </section> <!-- end of education section -->
       <section id="projects">
         <h2>Projects</h2>
         <hr>
         <section id="flightcontrolsystems">
-          <h3>Quad-copter Flight Control Systems</h3>
+          <div class="project">Quad-copter Flight Control Systems</div>
           <span class="skillshowcase">C, C++, MicroPython, NumPy, Arduino IDE</span>
           <span class="timeperiod">December 2024 - Present</span>
           <div class="projectsummary">
@@ -148,7 +168,7 @@
             and radio control module, for a personal quad-copter drone build.</p>
           </div>
           <div class="projectlinks">
-            <a href="">FlightDaemon (flight controller project page)</a>
+            <a href="">FlightDaemon (flight controller project page)</a><br>
             <a href="">RCDaemon (radio control module project page)</a>
           </div>
           <ul class="projecthighlights">
@@ -158,7 +178,7 @@
           </ul>
         </section> <!-- end of flightcontrolsystems sub-section -->
         <section id="chessmapper">
-          <h3>Single-User Chess Game Simulator</h3>
+          <div class="project">Single-User Chess Game Simulator</div>
           <span class="skillshowcase">Java, Swing, JUnit, IntelliJ IDEA, jGRASP</span>
           <span class="timeperiod">March 2026 - Present</span>
           <div class="projectsummary">
@@ -179,7 +199,7 @@
           </ul>
         </section> <!-- end of chessmapper sub-section -->
         <section id="unixvm">
-          <h3>UNIX Virtual Machine</h3>
+          <div class="project">UNIX Virtual Machine</div>
           <span class="skillshowcase">C, Python, TkInter, GNOME Boxes, Vim, SSH</span>
           <span class="timeperiod">September 2025 - December 2025</span>
           <div class="projectsummary">
@@ -195,7 +215,7 @@
           </ul>
         </section> <!-- end of unixvm sub-section -->
         <section id="webpage">
-          <h3>Personal Webpage Build</h3>
+          <div class="project">Personal Webpage Build</div>
           <span class="skillshowcase">JavaScript, HTML/CSS, Git, JSON-LD</span>
           <span class="timeperiod">March 2026</span>
           <div class="projectsummary">
@@ -218,21 +238,20 @@
         <hr>
         <div class="languages">
           <span class="subtitle">Languages: </span>
-          <p>Java, C, C++, Bash Scripting, C Shell Scripting, Python, MicroPython, 
-            JavaScript, HTML/CSS</p>
-        </div>
-        <div class="devtools">
-          <span class="subtitle">Developer Tools: </span>
-          <p>Git, Bash, SSH, JavaDoc, GNOME Boxes, Vim, IntelliJ IDEA, jGRASP, 
-            Arduino IDE, VS Code</p>
+          <span class="skillset">Java, C, C++, Python, MicroPython, JavaScript, HTML/CSS</span>
         </div>
         <div class="frameworks">
           <span class="subtitle">Frameworks: </span>
-          <p>Swing, JUnit, TkInter, JSON-LD</p>
+          <span class="skillset">Swing, JUnit, TkInter, JSON-LD</span>
         </div>
         <div class="libraries">
           <span class="subtitle">Libraries: </span>
-          <p>NumPy</p>
+          <span class="skillset">NumPy</span>
+        </div>
+        <div class="devtools">
+          <span class="subtitle">Developer Tools: </span>
+          <span class="skillset">Git, Bash, C Shell, SSH, JavaDoc, GNOME Boxes, Vim, IntelliJ IDEA, jGRASP, 
+            Arduino IDE, VS Code</span>
         </div>
       </section><!-- end of technical skills section -->
       <section id="certifications">
