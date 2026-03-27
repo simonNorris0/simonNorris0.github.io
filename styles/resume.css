@@ -17,16 +17,29 @@ hr {
   color: #8e7cc3; /* light purple */
 }
 h1 {
+  font-size: 18px;
   margin: 0;
   padding: 0;
 }
 header {
   text-align: center;
 }
-header address a {
-  padding-left: 5px;
-  padding-right: 5px;
+header address {
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
+h2 {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+/** styles for screens smaller than 800px (i.e., Mobile Phones) **/
+@media screen and (max-width: 800px) {
+  
+}
+
 /* site navigation bar: unordered list with the "navbar" ID */
 /* -------------------------------------------------------- */
 ul#navbar {
