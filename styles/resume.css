@@ -7,6 +7,7 @@ html {
 body {
   padding: 20px;
   padding-bottom: 40px; /* must match footer height */
+  font-size: 14px;
 }
 a {
   color: #6850af; /* purple */
@@ -18,14 +19,15 @@ hr {
 }
 h1 {
   font-size: 18px;
-  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 0;
   padding: 0;
 }
 header {
   text-align: center;
 }
 header address {
-  font-size: 14px;
+  font-size: 13px;
 }
 header address a {
   padding-left: 5px;
@@ -34,18 +36,10 @@ header address a {
   margin-right: 5px;
 }
 h2 {
-  font-size: 18px;
-  margin-top: 10px;
+  font-size: 16px;
+  margin-top: 0;
   margin-bottom: 0;
   padding: 0;
-}
-.title {
-  font-size: 16px;
-  color: red;
-}
-section#summary p {
-  font-size: 14px;
-  margin-left: 10px;
 }
 
 /** styles for screens smaller than 800px (i.e., Mobile Phones) **/
