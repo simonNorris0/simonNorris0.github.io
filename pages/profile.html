@@ -139,20 +139,20 @@
     </nav>
     <header>
       <h1>Profile Page | Simon Norris</h1>
-      <h2>Computer Science and Mathematics Student at Athabasca University</h2>
-      <p class="subheading">This page is where I discuss some of my goals, 
-      plans for the future, and interests. It is divided into six sections. 
-      Education and Work, Computer Science, Mathematics, Software Engineering, 
-      Computer Engineering, and Hobbies.</p>
+      <p class="subheading">...</p>
     </header>
     <main>
       <hr>
-      <h3>Career</h3>
-      <p>These sections detail my career and education goals and my academic interests.</p>
-      <br>
+      <h2>Table of Contents</h2>
+      <ul class="toc">
+        <li><a href="/#career">Career</a></li>
+        <li><a href="/#education">Education</a></li>
+        <li><a href="/#hobbies">Hobbies & Interests</a></li>
+      </ul>
       <hr>
-      <section id="career" class="card">
-        <h3>Education and Work</h3>
+      <section id="career">
+        <hr>
+        <h3>Career</h3>
         <p>I am currently finishing the second year of a bachelor of science in 
         computer science. I am highly motivated to gain some information 
         technology work experience and to find a software engineering 
@@ -196,44 +196,39 @@
         remotely. This proven independence is a value which a traditional 
         university does not showcase to such an extreme.</p>
       </section> <!-- end of career section -->
-      <section id="computerscience" class="card">
-        <h3>Computer Science</h3>
+      <section id="education">
+        <hr>
+        <h3>Education</h3>
+        <section class="subsection">
+          <h4>Computer Science</h4>
           <p>My chief interests in computer science are distributed systems, 
           computer networks, numerical algorithms and data structures, 
           computer security, and embedded computers.</p>
-      </section> <!-- end of computer science section -->
-      <section id="math" class="card">
-        <h3>Mathematics</h3>
-          <p>My mathematics education focuses on discrete mathematics, 
-          number theory, and mathematical modelling. However, I will also be 
-          taking multi-variable calculus, ODEs, and real analysis. I will end 
-          up just a few classes and a final project short of a double-major in 
-          mathematics. In a perfect world I would certainly like to pursue 
-          further mathematics education.</p>
-      </section> <!-- end of math section -->
-      <section id="softwareeng" class="card">
-        <h3>Software Engineering</h3>
-
-      </section> <!-- end of software engineering section -->
-      <section id="computereng" class="card">
-        <h3>Computer Engineering</h3>
-          <p>Some of the most intriguing parts of the field of computing to 
-          me take place at the interface between software and hardware. I 
-          feel perhaps most passionate about the design of system-level 
-          software and computer architectures; I hope to end up working 
-          directly with hardware and doing high-level design and/or analysis 
-          of computing infrastructure. Interaction with the physical machine 
-          components through programming is what I enjoy the most.</p>
-      </section> <!-- end of computer engineering section -->
+        </section> <!-- end of computer science subsection -->
+        <section class="subsection">
+          <h4>Mathematics</h4>
+            <p>My mathematics education focuses on discrete mathematics, 
+            number theory, and mathematical modelling. However, I will also be 
+            taking multi-variable calculus, ODEs, and real analysis. I will end 
+            up just a few classes and a final project short of a double-major in 
+            mathematics. In a perfect world I would certainly like to pursue 
+            further mathematics education.</p>
+        </section> <!-- end of math subsection -->
+        <section class="subsection">
+          <h4>Computer Engineering</h4>
+            <p>Some of the most intriguing parts of the field of computing to 
+            me take place at the interface between software and hardware. I 
+            feel perhaps most passionate about the design of system-level 
+            software and computer architectures; I hope to end up working 
+            directly with hardware and doing high-level design and/or analysis 
+            of computing infrastructure. Interaction with the physical machine 
+            components through programming is what I enjoy the most.</p>
+        </section> <!-- end of computer engineering subsection -->
+      </section><!-- end of education section -->
       <section id="hobbies">
         <hr>
-        <h3>Hobbies</h3>
-        <p>This section is just for me to ramble about my hobbies. Many 
-        of the projects that will fill my portfolio run parallel to what I 
-        will write about here.</p>
-        <br>
-        <hr> 
-        <section id="drones" class="card">
+        <h3>Hobbies & Interests</h3>
+        <section class="subsection">
           <h4>Drone Building and Programming</h4>
           <p>I am currently working on programming the flight controller and 
           radio frequency control module for a homemade quad-copter drone. As 
@@ -249,18 +244,18 @@
           controlled by microcontrollers within the motors. These brushless, 
           electronically controlled motors have a high power-to-weight ratio as 
           a result - they were a huge advancement in the story of flight.</p>
-        </section> <!-- end of drones sub-section --> 
-        <section id="microcontrollers" class="card">
+        </section> <!-- end of drones subsection --> 
+        <section class="subsection">
           <h4>Misc. Microcontrollers</h4>
           <p>Various LEDs, sensors, and wires connected to a CPU running an 
           infinite loop.</p>
-        </section> <!-- end of microcontrollers sub-section -->
-        <section id="modelrockets" class="card">
+        </section> <!-- end of microcontrollers subsection -->
+        <section class="subsection">
           <h4>Model Rockets</h4>
           <p>I have built my first rocket and will embark on my first flight 
           as soon as I find a suitable launch location.</p>
-        </section> <!-- end of model rockets sub-section -->
-        <section id="chess" class="card">
+        </section> <!-- end of model rockets subsection -->
+        <section class="subsection">
           <h4>Chess</h4>
           <p>I am currently studying 
           <a href="https://www.goodreads.com/book/show/85086.Logical_Chess">
@@ -272,7 +267,7 @@
           single-user tool for studying chess games.</p>
           <p><a class="button" href="https://www.chess.com/member/mathdaemon">
             My Chess.com Profile</a></p>
-        </section> <!-- end of chess sub-section -->
+        </section> <!-- end of chess subsection -->
       </section> <!-- end of hobbies section -->
     </main>
     <footer> <!-- site footer -->
