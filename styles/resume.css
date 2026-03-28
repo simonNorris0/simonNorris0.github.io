@@ -54,7 +54,7 @@ h2 {
 /** ------------- */
 header {
   text-align: center;
-  margin-top: 15px;
+  padding-top: 15px;
 }
 header h1 {
   font-size: 18px;
@@ -267,13 +267,12 @@ footer a:hover {
     /* create 2 equal columns that meet in the middle */
     grid-template-columns: 50% 50%;
     width: 100%;
-    margin-bottom: 4px;
   }
   .mobilerow > span {
     white-space: nowrap; /* prevents wrapping to a new line */
     overflow: hidden;
     text-overflow: ellipsis;
-    padding: 0 10px; /* small gap from the center line */
+    padding: 5px 10px; /* small gaps */
   }
   /* align first child right to the center line */
   mobilerow > span:nth-child(1) {
