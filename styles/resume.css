@@ -267,7 +267,6 @@ footer a:hover {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     width: 100%;
-    flex-direction: row; /* keep children in row */
   }
   .mobilerow > span {
     white-space: nowrap; /* prevents wrapping to a new line */
