@@ -275,6 +275,7 @@ footer a:hover {
     float: left;
     display: block;
     color: white;
+    font-weight: bold;
     text-align: center;
     padding: 14px 16px; 
   }
@@ -299,6 +300,7 @@ footer a:hover {
   }
   ul#navbar.responsive li {
     float: none;
+    text-align: left;
   }
   ul#navbar.responsive li a {
     display: block;
