@@ -82,8 +82,9 @@ header address a {
 .project {
   font-weight: bold;
 }
-.projecthighlights li {
+.projecthighlights {
   padding-left: 0;
+  margin-left: 0;
 }
 
 /** Technical Skills section */
