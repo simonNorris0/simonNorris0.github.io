@@ -52,36 +52,20 @@ header address a {
 
 /** Education section */
 /** ----------------- */
-/** Institution name is left-aligned */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+}
 .institution {
-  float: left;
+  font-weight: bold;
 }
-/** Location of institution is right-aligned on same line as institution name */
 .location {
-  float: right;
+  font-style: italic;
 }
-/** Diploma name is left-aligned on new line */
-.diploma {
-  float: left;
-}
-/** Graduation date is right-aligned on same line as diploma name */
-.graduation {
-  float: right;
-}
-/** Diploma details are left-aligned on new line */
-.diplomadetails {
-  float: left;
-}
-/** clear floats after each sub-section */
-section#undergrad::after {
-  content: "";
-  display: table;
-  clear both;
-}
-section#secondaryschool::after{
-  content: "";
-  display: table;
-  clear both;
+#undergrad, #highschool {
+  margin-bottom: 15px;
 }
 
 /** Experience section */
@@ -89,53 +73,13 @@ section#secondaryschool::after{
 
 /** Projects section */
 /** ---------------- */
-/** project name is left-aligned */
-.project {
-  float: left;
-}
-/** time period is right-aligned on same line as project name */
-.timeperiod {
-  float: right;
-}
-/** list of skills used is left-aligned on new line */
+/** reduce font-size of skill list slightly */
 .skillshowcase {
-  float: left;
   font-size: 13px;
 }
-/** project summary is left-aligned on new line */
-.projectsummary {
-  float: left;
-}
-/** project highlights are left-aligned on new line */
-.projecthighlights {
-  float: left;
-  margin-left: 0;
-}
-/** clear floats after each sub-section */
-section#flightcontrolsystems::after {
-  content: "";
-  display: table;
-  clear both;
-}
-section#chessmapper::after{
-  content: "";
-  display: table;
-  clear both;
-}
-section#unixvm::after{
-  content: "";
-  display: table;
-  clear both;
-}
-section#webpage::after{
-  content: "";
-  display: table;
-  clear both;
-}
-
 /** Technical Skills section */
 /** ------------------------ */
-/** reduce font-size of skill list slightly **/
+/** reduce font-size of skill list slightly */
 .skillset {
   font-size: 13px;
 }
