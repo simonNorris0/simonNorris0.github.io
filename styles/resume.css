@@ -56,7 +56,7 @@ h2 {
   margin-bottom: 0;
   padding: 0;
 }
-/** inline element with 2 sub elements - push first left and second right */
+/** block element with 2 inline sub-elements - push first left and second right */
 .row {
   display: flex;
   justify-content: space-between;
