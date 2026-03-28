@@ -247,8 +247,8 @@ footer a:hover {
     font-size: 9px;
   }
   header address a {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 0px
+    padding-right: 0px;
   }
   .skillset {
     font-size: 9px;
@@ -264,12 +264,22 @@ footer a:hover {
     /* Use flex to align children in a row */
     display: flex;
     width: 100%;
+    gap: 5px;
     flex-direction: row; /* keep children in row */
   }
   .mobilerow > span {
     flex: 1;  /* each span child takes up 50% width */
+    padding: 0 10px; /* padding between center alignment */
     overflow: hidden;;
     text-overflow: ellipsis;
     white-space: nowrap;
+  }
+  /* align first child right to the center divider */
+  mobilerow > span:first-child {
+    text-align: right;
+  }
+  /* align second child left to the center divider */
+  mobilerow > span:last-child {
+    text-align: left;
   }
 }
