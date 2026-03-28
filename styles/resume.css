@@ -126,7 +126,8 @@ ul#navbar {
   /* position: -webkit-sticky; /* support for safari */
   position: sticky;
   top: 0;
-
+  margin-top: 0;
+  
   /* break out of body margins to full width */
   width: 100vw;
   /* calculates how far to pull the element to the left and right to 
