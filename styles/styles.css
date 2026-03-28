@@ -68,6 +68,11 @@ main:after {
   display: table;
   clear: both;
 }
+/** table of contents **/
+.toc {
+  padding-bottom: 15px;
+}
+/** sections **/
 main section {
   padding-bottom: 10px;
 }
