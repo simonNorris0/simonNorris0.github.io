@@ -49,15 +49,15 @@ header address a {
   margin-left: 5px;
   margin-right: 5px;
 }
-
-/** Education section */
-/** ----------------- */
 .row {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   width: 100%;
 }
+
+/** Education section */
+/** ----------------- */
 .institution {
   font-weight: bold;
 }
@@ -77,6 +77,13 @@ header address a {
 .skillshowcase {
   font-size: 13px;
 }
+.project {
+  font-weight: bold;
+}
+#flightcontrolsystems, #chessmapper, #unixvm, #webpage {
+  margin-bottom: 8px;
+}
+
 /** Technical Skills section */
 /** ------------------------ */
 /** reduce font-size of skill list slightly */
