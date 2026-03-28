@@ -1,3 +1,5 @@
+/** Global Styles */
+/** ------------- */
 * {
   box-sizing: border-box;
 }
@@ -21,6 +23,15 @@ a {
 hr {
   color: #8e7cc3; /* light purple */
 }
+h2 {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+/** Resume Header */
+/** ------------- */
 h1 {
   font-size: 18px;
   margin-top: 10px;
@@ -39,12 +50,7 @@ header address a {
   margin-left: 5px;
   margin-right: 5px;
 }
-h2 {
-  font-size: 16px;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0;
-}
+
 /** Education section */
 /** ----------------- */
 /** Institution name is left-aligned */
@@ -94,10 +100,6 @@ section#education::after {
 }
 /** project summary is left-aligned on new line */
 .projectsummary {
-  float: left;
-}
-/** project links are left-aligned on new line */
-.projectlinks {
   float: left;
 }
 /** project highlights are left-aligned on new line */
