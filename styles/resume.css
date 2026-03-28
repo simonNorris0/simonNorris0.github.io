@@ -6,7 +6,7 @@
     margin-right: 0px;
     margin-bottom: 10px;
   }
-  /** inline element with 2 sub elements - push first left and second right */
+  /** block element with 2 inline sub-elements - push first left and second right */
   .mobilerow {
     display: flex;
     justify-content: space-between;
