@@ -33,6 +33,10 @@ h2 {
 #undergrad, #secondaryschool, #flightcontrolsystems, #chessmapper, #unixvm, #webpage {
   margin-bottom: 12px;
 }
+/** reduce font-size of skill lists slightly */
+.skillset {
+  font-size: 13px;
+}
 
 /** Resume Header */
 /** ------------- */
@@ -75,20 +79,12 @@ header address a {
 
 /** Projects section */
 /** ---------------- */
-/** reduce font-size of skill list slightly */
-.skillshowcase {
-  font-size: 13px;
-}
 .project {
   font-weight: bold;
 }
 
 /** Technical Skills section */
 /** ------------------------ */
-/** reduce font-size of skill list slightly */
-.skillset {
-  font-size: 13px;
-}
 
 /** Certifications section */
 /** ---------------------- */
