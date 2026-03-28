@@ -245,6 +245,8 @@ footer a:hover {
     font-size: 14px
   }
   header address {
+    display: block;
+    width: 100%;
     font-size: 9px;
   }
   header address a {
@@ -264,14 +266,15 @@ footer a:hover {
   .mobilerow {
     display: grid;
     /* create 2 equal columns that meet in the middle */
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: 50% 50%;
     width: 100%;
+    margin-bottom: 4px;
   }
   .mobilerow > span {
     white-space: nowrap; /* prevents wrapping to a new line */
     overflow: hidden;
     text-overflow: ellipsis;
+    padding: 0 10px; /* small gap from the center line */
   }
   /* align first child right to the center line */
   mobilerow > span:nth-child(1) {
