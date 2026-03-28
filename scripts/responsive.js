@@ -4,6 +4,6 @@ function pullDown() {
   if (x.className === "navbar") {
     x.className += " responsive";
   } else {
-    x.className = "";
+    x.className = "navbar";
   }
 } 
