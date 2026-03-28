@@ -20,7 +20,7 @@ body {
   margin-bottom: 25px;
   padding-bottom: 40px; /* must match footer height */
 
-  font-size: 14px;
+  font-size: 16px;
 }
 a {
   color: #6850af; /* purple */
@@ -30,12 +30,11 @@ a {
 hr {
   color: #8e7cc3; /* light purple */
 }
-
 .subheading {
   text-align: center;
-  font-size: small;
-  margin-left: 5px;
-  margin-right: 5px;
+  font-size: 14px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .button {
   background-color: #8e7cc3; /* light purple */
@@ -46,22 +45,6 @@ hr {
   text-align: center;
   text-decoration: none;
   display: block;
-  cursor: pointer;
-}
-.smallbutton {
-  background-color: #8e7cc3; /* light purple */
-  border: 3px solid #636363; /* dark gray */
-  color: white;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin: 5px;
-  height: 75px;
-  width: 150px;
-  overflow: none;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  vertical-align: top;
   cursor: pointer;
 }
 
@@ -82,15 +65,9 @@ hr {
 
 /** header Styles */
 /** ------------- */
-header h1 {
-  text-align: center;
-  padding-top: 10px;
-}
-header h2 {
-  text-align: center;
-}
-header h3 {
-  padding-left: 10px;
+header {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 /** main styles */
@@ -112,13 +89,6 @@ main:after {
   content: "";
   display: table;
   clear: both;
-}
-
-/** hody styles */
-/** ----------- */
-body h4 {
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 /* site navigation bar: unordered list with the "navbar" ID */
@@ -193,7 +163,6 @@ footer {
   table-layout: fixed;
   line-height: 1;
   
-  font-size: small;
   color: white;
   background-color: #636363; /* dark gray */
 }
@@ -246,6 +215,7 @@ footer #mylinks a {
   padding: 7px 7px;
   border: 2px solid #8e7cc3; /* light purple */
   color: white; /* text color */
+  font-size: 14px;
   text-decoration: none; /* removes decoration from the link text 
                           * (underline) */
 }
