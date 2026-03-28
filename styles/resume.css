@@ -262,8 +262,14 @@ footer a:hover {
   /** block element with 2 inline sub-elements */
   .mobilerow {
     /* Use flex to align children in a row */
-    display: flex;       
+    display: flex;
     width: 100%;
-    justify-content: space-around; /* Space items evenly */
+    flex-direction: row; /* keep children in row */
+  }
+  .mobilerow > span {
+    flex: 1;  /* each span child takes up 50% width */
+    overflow: hidden;;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 }
