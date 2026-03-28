@@ -5,6 +5,10 @@ html {
   background-color: #d3d3d3; /* light gray */
 }
 body {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   padding: 20px;
   padding-bottom: 40px; /* must match footer height */
   font-size: 14px;
@@ -41,6 +45,8 @@ h2 {
   margin-bottom: 0;
   padding: 0;
 }
+/** Education section */
+/** ----------------- */
 /** Institution name is left-aligned */
 .institution {
   float: left;
@@ -67,7 +73,57 @@ section#education::after {
   display: table;
   clear both;
 }
-/** styles for screens smaller than 800px (i.e., Mobile Phones) **/
+
+/** Experience section */
+/** ------------------ */
+
+/** Projects section */
+/** ---------------- */
+/** project name is left-aligned */
+.project {
+  float: left;
+}
+/** time period is right-aligned on same line as project name */
+.timeperiod {
+  float: right;
+}
+/** list of skills used is left-aligned on new line */
+.skillshowcase {
+  float: left;
+  font-size: 13px;
+}
+/** project summary is left-aligned on new line */
+.projectsummary {
+  float: left;
+}
+/** project links are left-aligned on new line */
+.projectlinks {
+  float: left;
+}
+/** project highlights are left-aligned on new line */
+.projecthighlights {
+  float:left;
+  margin-left: 0;
+}
+/** clear floats after projects section */
+section#projects::after {
+  content: "";
+  display: table;
+  clear both;
+}
+
+/** Technical Skills section */
+/** ------------------------ */
+/** reduce font-size of skill list slightly **/
+.skillset {
+  font-size: 13px;
+}
+
+/** Certifications section */
+/** ---------------------- */
+
+/** styles for screens smaller than 800px (i.e., Mobile Phones) */
+/** ----------------------------------------------------------- */
 @media screen and (max-width: 800px) {
   
 }
