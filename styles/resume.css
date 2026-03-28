@@ -62,7 +62,7 @@ h2 {
   float: left;
 }
 /** clear floats after education section */
-section#education {
+section#education::after {
   content: "";
   display: table;
   clear both;
