@@ -16,10 +16,16 @@ html {
   background-color: #d3d3d3; /* light gray */
 }
 body {
+  /** hide any content wider than the screen */
+  overflow-x: hidden;
+  
   margin-top: 0px;
   margin-left: 50px;
   margin-right: 50px;
   margin-bottom: 25px;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-bottom: 40px; /* must match footer height */
   font-size: 14px;
 }
@@ -117,12 +123,18 @@ header address a {
 ul#navbar {
   /* Fix the site navigation bar at the top of the screen even 
    * when scrolling */
+  /* position: -webkit-sticky; /* support for safari */
   position: sticky;
   top: 0;
-  width: 100%;
+
+  /* break out of body margins to full width */
+  width: 100vw;
+  /* calculates how far to pull the element to the left and right to 
+     hit the edge of the screen */
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
 
   list-style-type: none; /* removes bullet points from the list items */
-  margin: 0; /* resets default browser margins */
   padding: 0; /* resets default browser paddings */
   overflow: hidden; /* prevents list items from going outside the list */
   border: 2px solid #8e7cc3; /* light purple */
