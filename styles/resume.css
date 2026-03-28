@@ -7,10 +7,9 @@ html {
   background-color: #d3d3d3; /* light gray */
 }
 body {
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
   padding: 20px;
   padding-bottom: 40px; /* must match footer height */
   font-size: 14px;
@@ -34,7 +33,7 @@ h2 {
 /** ------------- */
 h1 {
   font-size: 18px;
-  margin-top: 10px;
+  margin-top: 25px;
   margin-bottom: 0;
   padding: 0;
 }
@@ -73,8 +72,13 @@ header address a {
 .diplomadetails {
   float: left;
 }
-/** clear floats after education section */
-section#education::after {
+/** clear floats after each sub-section */
+section#undergrad::after {
+  content: "";
+  display: table;
+  clear both;
+}
+section#secondaryschool::after{
   content: "";
   display: table;
   clear both;
@@ -107,8 +111,23 @@ section#education::after {
   float: left;
   margin-left: 0;
 }
-/** clear floats after projects section */
-section#projects::after {
+/** clear floats after each sub-section */
+section#flightcontrolsystems::after {
+  content: "";
+  display: table;
+  clear both;
+}
+section#chessmapper::after{
+  content: "";
+  display: table;
+  clear both;
+}
+section#unixvm::after{
+  content: "";
+  display: table;
+  clear both;
+}
+section#webpage::after{
   content: "";
   display: table;
   clear both;
