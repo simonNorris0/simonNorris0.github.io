@@ -94,6 +94,9 @@ main:after {
   display: table;
   clear: both;
 }
+main section {
+  padding-bottom: 10px;
+}
 
 /* site navigation bar: unordered list with the "navbar" ID */
 /* -------------------------------------------------------- */
