@@ -18,7 +18,7 @@ body {
   margin-top: 0px;
   margin-left: 50px;
   margin-right: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   padding-top: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -195,11 +195,10 @@ footer p {
 footer #signature {
   display: table-cell;
   vertical-align: top;
-  float: left;
-  width: 65%;
-  margin-top: 7px;
-  margin-left: 9px; /* match right-margin of links on right-side */
-  font-size: 8px;
+  width: 60%;
+  padding-top: 7px;
+  padding-right: 9px; /* match right-margin of links on right-side */
+  font-size: 12px;
 }
 /* the "lastupdate" <div> element in the site footer */
 footer #lastupdate {
@@ -217,7 +216,7 @@ footer address {
  * element in the site footer */
 footer address a.email {
   color: #9FE2BF; /* seafoam green */
-  font-size: 12px;
+  font-size: 14px;
 }
 /* the "mylinks" <span> element in the site footer */
 footer #mylinks {
@@ -225,8 +224,7 @@ footer #mylinks {
   width: 35%;
   vertical-align: middle;
   text-align: right;
-  padding: 0;
-  margin-right: 9px; /* make room for scroll bar */
+  padding-right: 9px; /* make room for scroll bar */
 }
 /* the links within the "mylinks" <span> element in the site footer */
 footer #mylinks a {
@@ -248,9 +246,28 @@ footer a:hover {
 /** ------------------------------------------------------- */
 @media screen and (max-width: 800px) {
   body {
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
     margin-bottom: 10px;
+    font-size: 12px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+  header h1 {
+    font-size: 16px
+  }
+  header address {
+    font-size: 11px;
+  }
+  .skillset {
+    font-size: 11px;
+  }
+  footer #signature {
+    font-size: 10;
+  }
+  footer address a.email {
+    font-size: 12px;
   }
   /** block element with 2 inline sub-elements - push first left and second right */
   .mobilerow {
