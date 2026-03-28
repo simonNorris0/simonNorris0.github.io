@@ -182,6 +182,7 @@ ul#navbar li a.active {
 /* hide the link that opens and closes the pull-down menu on large screens */
 ul#navbar li .icon {
   display: none;
+  background-color: #8e7cc3; /* light purple */
 }
 /* -------------- site footer ----------------- */
 /* -------------------------------------------- */
