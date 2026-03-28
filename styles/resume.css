@@ -22,12 +22,20 @@ body {
   margin-top: 0px;
   margin-left: 50px;
   margin-right: 50px;
-  margin-bottom: 25px;
+  margin-bottom: 0px;
   padding-top: 0px;
   padding-left: 0px;
   padding-right: 0px;
-  padding-bottom: 40px; /* must match footer height */
+  padding-bottom: 0px;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* takes up full screen height */
   font-size: 14px;
+}
+main {
+  flex: 1 0 auto; /*absorb all extra vertical space and dont 
+                    shrink smaller than content              */
 }
 a {
   color: #6850af; /* purple */
@@ -63,6 +71,7 @@ h2 {
 /** Resume Header */
 /** ------------- */
 header {
+  flex-shrink: 0; /* prevents squishing */
   text-align: center;
   margin-bottom: 10px;
 }
@@ -171,25 +180,23 @@ ul#navbar li a.active {
 /* -------------- site footer ----------------- */
 /* -------------------------------------------- */
 footer {
-  /* fix the site footer at the bottom of the screen */
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 40px;
-
   margin: 0; /* reset default browser margins */
   padding: 0; /* reset default browser padding */
-
+  
+  /* fix the site footer at the bottom of the screen */
+  margin-top: auto;
+  flex-shrink: 0; /* prevents squishing */
+  
+  width: 100%;
   display: flex;
   justify-content: space-between; /* pushes 1st element (signature) left 
                                      and 2nd element (links) right      */
-  align-items: flex-start;        /* aligns items to the top of footer  */
   flex-wrap: wrap;
-  gap: 5px;
-  padding: 5px 5%;
-  font-size: small;
+  padding: 10px 5%;
   
+  align-items: center;
+  
+  font-size: small;  
   color: white; /* text color */
   background-color: #636363; /* dark gray */
 }
@@ -198,7 +205,7 @@ footer {
 footer #signature {
   display: flex;
   flex-direction: column;  /* places signature elements under last update */
-  gap: 5px;
+  gap: 2px;
   min-width: 250px; /* prevents this container from getting too narrow on mobile */
   margin-left: 9px; /* match right-margin of links on right side */
 }
