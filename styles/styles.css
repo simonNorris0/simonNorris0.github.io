@@ -149,11 +149,7 @@ ul#navbar li.pagetitle {
 }
 /* list items in site navigation bar */
 ul#navbar li {
-    float: left; /* makes <li> elements float next to each other */
-    border-right: 3px solid #8e7cc3; /* light purple */
-}
-ul#navbar li:firstchild {
-    border-left: 3px solid #8e7cc3; /* light purple */
+  float: left; /* makes <li> elements float next to each other */
 }
 /* links in list items in site navigation bar */
 ul#navbar li a {
@@ -164,11 +160,13 @@ ul#navbar li a {
   text-decoration: none; /* removes decoration from the link text 
                           * (underline) */
 }
-/* icon in navigation bar for accessing pull-down menu on small screens */
-ul#navbar li a img {
-  height: 28px;
-  width: 32px;
-  padding: 7px 8px;
+/* properties for image in link that opens and closes the pull-down menu */
+ul#navbar li a.menuicon {
+  color: #636363; /* dark gray */
+  padding: 0 0;
+
+  height: 30px;
+  width: 40px;
   background-color: #636363; /* dark gray */
 }
 /* hide the link that opens and closes the pull-down menu on large screens */
@@ -296,8 +294,10 @@ footer a:hover {
     right: 0;
     top: 0;
   }
-  ul#navbar.responsive li a {
+  ul#navbar.responsive li {
     float: none;
+  }
+  ul#navbar.responsive li a {
     display: block;
     text-align: left;
   }
