@@ -251,6 +251,7 @@ footer a:hover {
   header address a {
     padding-left: 0px;
     padding-right: 0px;
+    width: 100%;
   }
   .skillset {
     font-size: 9px;
@@ -272,14 +273,14 @@ footer a:hover {
     white-space: nowrap; /* prevents wrapping to a new line */
     overflow: hidden;
     text-overflow: ellipsis;
-    padding: 5px 10px; /* small gaps */
+    padding: 5px 5px; /* small gaps */
   }
   /* align first child right to the center line */
-  mobilerow > span:nth-child(1) {
+  .mobilerow > span:nth-child(1) {
     text-align: right;
   }
   /* align second child left to the center line */
-  mobilerow > span:nth-child(2) {
+  .mobilerow > span:nth-child(2) {
     text-align: left;
   }
 }
