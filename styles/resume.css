@@ -247,6 +247,9 @@ footer a:hover {
     margin-bottom: 20px;
     font-size: 10px;
   }
+  ul#navbar li {
+    font-size: 14px;
+  }
   h2 {
     font-size: 12px;
   }
