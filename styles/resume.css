@@ -5,6 +5,13 @@
     margin-left: 0px;
     margin-right: 0px;
   }
+  /** inline element with 2 sub elements - push first left and second right */
+  .mobilerow {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+  }
 }
 
 /** Global Styles */
@@ -200,7 +207,7 @@ footer #signature {
   display: table-cell;
   vertical-align: top;
   float: left;
-  width: 75%;
+  width: 60%;
   margin-top: 7px;
 }
 /* the "lastupdate" <div> element in the site footer */
@@ -223,7 +230,7 @@ footer address a.email {
 /* the "mylinks" <span> element in the site footer */
 footer #mylinks {
   display: table-cell;
-  width: 25%;
+  width: 40%;
   vertical-align: middle;
   text-align: right;
   padding: 0;
