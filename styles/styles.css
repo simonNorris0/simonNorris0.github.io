@@ -192,7 +192,8 @@ footer {
   display: table;
   table-layout: fixed;
   line-height: 1;
-  
+
+  font-size: small;
   color: white;
   background-color: #636363; /* dark gray */
 }
