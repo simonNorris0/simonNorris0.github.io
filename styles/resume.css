@@ -90,6 +90,9 @@ header address a {
   margin-left: 5px;
   margin-right: 5px;
 }
+header .postaladdress {
+  margin-top: 5px;
+}
 
 /** Education section */
 /** ----------------- */
