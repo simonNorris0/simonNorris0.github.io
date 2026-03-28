@@ -261,7 +261,8 @@ footer a:hover {
   }
   /** block element with 2 inline sub-elements */
   .mobilerow {
-    display: block;
+    display: grid;
+    row-gap: 10px; /** even spacing between elements in container */
     width: 100%;
   }
 }
