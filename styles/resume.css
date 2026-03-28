@@ -187,7 +187,7 @@ footer {
   line-height: 1;
   
   font-size: small;
-  colot: white;
+  color: white;
   background-color: #636363; /* dark gray */
 }
 /* paragraph elements in the site footer */
@@ -201,6 +201,7 @@ footer #signature {
   display: table-cell;
   vertical-align: top;
   float: left;
+  width: 50%;
   margin-top: 5%;
 }
 /* the "lastupdate" <div> element in the site footer */
