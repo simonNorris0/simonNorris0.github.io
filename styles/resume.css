@@ -189,7 +189,6 @@ footer {
 /* paragraph elements in the site footer */
 footer p {
   display: inline;
-  margin-left: 9px; /* match right-margin of links on right-side */
 }
 /* the "signature" element - contains "last update" and <address> elements 
  * within the site footer */
@@ -197,10 +196,10 @@ footer #signature {
   display: table-cell;
   vertical-align: top;
   float: left;
-  width: 60%;
+  width: 65%;
   margin-top: 7px;
-
-  font-size: 10px;
+  margin-left: 9px; /* match right-margin of links on right-side */
+  font-size: 8px;
 }
 /* the "lastupdate" <div> element in the site footer */
 footer #lastupdate {
@@ -223,7 +222,7 @@ footer address a.email {
 /* the "mylinks" <span> element in the site footer */
 footer #mylinks {
   display: table-cell;
-  width: 40%;
+  width: 35%;
   vertical-align: middle;
   text-align: right;
   padding: 0;
