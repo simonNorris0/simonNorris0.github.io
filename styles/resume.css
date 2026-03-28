@@ -28,14 +28,7 @@ body {
   padding-right: 0px;
   padding-bottom: 0px;
 
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* takes up full screen height */
   font-size: 14px;
-}
-main {
-  flex: 1 0 auto; /*absorb all extra vertical space and dont 
-                    shrink smaller than content              */
 }
 a {
   color: #6850af; /* purple */
@@ -71,7 +64,6 @@ h2 {
 /** Resume Header */
 /** ------------- */
 header {
-  flex-shrink: 0; /* prevents squishing */
   text-align: center;
   margin-bottom: 10px;
 }
@@ -182,50 +174,48 @@ ul#navbar li a.active {
 footer {
   margin: 0; /* reset default browser margins */
   padding: 0; /* reset default browser padding */
-
-  /* fix footer to bottom of screen */
+  /* fix the site footer at the bottom of the screen */
   position: fixed;
+  left: 0;
   bottom: 0;
+  width: 100%;
+  height: 40px;
+
+  /* treat footer like a table row and children like cells */
+  /*  - works with display: table-cell property on children */
+  display: table;
+  table-layout: fixed;
+  line-height: 1;
   
-  /* layout */
-  /* break out of body margins to full width */
-  width: 100vw;
-  /* calculates how far to pull the element to the left and right to 
-     hit the edge of the screen */
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
-  min-height: 40px;
-  height: auto;
-  flex-shrink: 0; /* prevents squishing */ 
-  /* next two lines push 1st element (signature) left and 2nd element (links) right */
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  
-  padding: 10px 5%; 
-  
-  font-size: small;  
-  color: white; /* text color */
+  font-size: small;
+  colot: white;
   background-color: #636363; /* dark gray */
+}
+/* paragraph elements in the site footer */
+footer p {
+  display: inline;
+  margin-left: 5%; /* match right-margin of links on right-side */
 }
 /* the "signature" element - contains "last update" and <address> elements 
  * within the site footer */
 footer #signature {
-  display: flex;
-  padding: 0;
-  flex-direction: column;  /* places signature elements under last update */
-  gap: 2px;
-  min-width: 250px; /* prevents this container from getting too narrow on mobile */
-  margin-left: 5%; /* match right-margin of links on right side */
+  display: table-cell;
+  vertical-align: top;
+  float: left;
+  margin-top: 5%;
 }
+/* the "lastupdate" <div> element in the site footer */
 footer #lastupdate {
   display: block;
-  padding: 0;
+  width: fit-content;
 }
 /* the <address> element in the site footer */
 footer address {
   display: block;
+  width: fit-content;
+  margin-top: 4px;
+  margin-bottom: 5%;
+
   font-style: normal; /* removes default italics */
 }
 /* link with the "email" class within the <address> 
@@ -235,16 +225,18 @@ footer address a.email {
 }
 /* the "mylinks" <span> element in the site footer */
 footer #mylinks {
-  display: flex;
-  gap: 10px;
-  margin-right: 5% /* make some room for the scroll bar */
+  display: table-cell;
+  vertical-align: middle;
+  text-align: right;
+  padding: 0;
+  margin-right: 5%; /* make room for scroll bar */
 }
 /* the links within the "mylinks" <span> element in the site footer */
 footer #mylinks a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  padding: 5px 10px;
+  display: inline-block; /* allows specifying padding, height, width, 
+                          * and margins while still maintaining the 
+                          * elements inline flow */
+  padding: 7px 7px;
   border: 2px solid #8e7cc3; /* light purple */
 }
 /* when a link in the site footer is hovered over with the cursor */
