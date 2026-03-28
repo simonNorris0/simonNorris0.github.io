@@ -30,6 +30,7 @@ a {
 hr {
   color: #8e7cc3; /* light purple */
 }
+
 .subheading {
   text-align: center;
   font-size: small;
@@ -149,6 +150,11 @@ ul#navbar li {
 }
 ul#navbar li:firstchild {
     border-left: 3px solid #8e7cc3; /* light purple */
+}
+ul#navbar li img {
+  height: 28px;
+  width: 32px;
+  padding: 0 0;
 }
 /* links in list items in site navigation bar */
 ul#navbar li a {
