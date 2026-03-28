@@ -144,7 +144,10 @@ ul#navbar {
 /* list items in site navigation bar */
 ul#navbar li {
     float: left; /* makes <li> elements float next to each other */
-    border-right: 2px solid #8e7cc3; /* light purple */
+    border-right: 3px solid #8e7cc3; /* light purple */
+}
+ul#navbar li:firstchild {
+    border-left: 3px solid #8e7cc3; /* light purple */
 }
 /* links in list items in site navigation bar */
 ul#navbar li a {
