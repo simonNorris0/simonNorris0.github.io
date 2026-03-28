@@ -1,3 +1,9 @@
+/** Alternate Styles for small screens (eg., Mobile Phones) */
+/** ------------------------------------------------------- */
+@media screen (max-width: 800px) {
+
+}
+
 /** Global Styles */
 /** ------------- */
 * {
@@ -22,13 +28,20 @@ a {
 hr {
   color: #8e7cc3; /* light purple */
 }
+/** resume section headers */
 h2 {
   font-size: 16px;
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
 }
-
+/** inline element with 2 sub elements - push first left and second right */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+}
 /** add uniform space underneath sub-sections **/
 #undergrad, #secondaryschool, #flightcontrolsystems, #chessmapper, #unixvm, #webpage {
   margin-bottom: 12px;
@@ -40,14 +53,14 @@ h2 {
 
 /** Resume Header */
 /** ------------- */
-h1 {
+header {
+  text-align: center;
+}
+header h1 {
   font-size: 18px;
   margin-top: 25px;
   margin-bottom: 0;
   padding: 0;
-}
-header {
-  text-align: center;
 }
 header address {
   font-size: 13px;
@@ -57,12 +70,6 @@ header address a {
   padding-right: 5px;
   margin-left: 5px;
   margin-right: 5px;
-}
-.row {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  width: 100%;
 }
 
 /** Education section */
@@ -95,12 +102,8 @@ header address a {
 /** Certifications section */
 /** ---------------------- */
 
-/** styles for screens smaller than 800px (i.e., Mobile Phones) */
-/** ----------------------------------------------------------- */
-@media screen and (max-width: 800px) {
-  
-}
-
+/** Site nav bar and site footer -- consistent across all pages on site */
+/** ------------------------------------------------------------------- */
 /* site navigation bar: unordered list with the "navbar" ID */
 /* -------------------------------------------------------- */
 ul#navbar {
@@ -144,8 +147,8 @@ ul#navbar li a:hover {
 ul#navbar li a.active {
   background-color: #8e7cc3; /* light purple */
 }
-/* ~~~ site footer ~~~ */
-/* ------------------- */
+/* -------------- site footer ----------------- */
+/* -------------------------------------------- */
 footer {
   /* fix the site footer at the bottom of the screen */
   position: fixed;
@@ -183,7 +186,6 @@ footer a {
 footer a:hover {
   background-color: #111111 /* black */
 }
-
 /* the "signature" element - contains "last update" and <address> elements 
  * within the site footer */
 footer #signature {
