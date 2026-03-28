@@ -144,7 +144,7 @@ ul#navbar {
 /* list items in site navigation bar */
 ul#navbar li {
     float: left; /* makes <li> elements float next to each other */
-    border: 2px solid #8e7cc3; /* light purple */
+    border-right: 2px solid #8e7cc3; /* light purple */
 }
 /* the last list item in site navigation bar */
 ul#navbar li:last-child {
@@ -201,7 +201,7 @@ footer #signature {
   display: table-cell;
   vertical-align: top;
   float: left;
-  width: 50%;
+  width: 75%;
   margin-top: 5%;
 }
 /* the "lastupdate" <div> element in the site footer */
@@ -226,6 +226,7 @@ footer address a.email {
 /* the "mylinks" <span> element in the site footer */
 footer #mylinks {
   display: table-cell;
+  width: 25%;
   vertical-align: middle;
   text-align: right;
   padding: 0;
