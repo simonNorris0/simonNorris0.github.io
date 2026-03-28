@@ -11,7 +11,7 @@ showcase my ability to develop a static website from raw HTML/CSS/JavaScript -
 ## To-Do:
 <ol>
     <li><s>Resume</s></li>
-    <li>Re-design Home, About Me, Portfolio, and Blog for consisten look/feel
+    <li>Re-design Home, About Me, Portfolio, and Blog for consistent look/feel
         across site <s>using 1 style sheet</s>.</li>
     <li>spelling / grammar check</li>
     <li>re-validate structured data</li>
