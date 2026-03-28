@@ -1,19 +1,4 @@
-/** Alternate Styles for small screens (eg., Mobile Phones) */
-/** ------------------------------------------------------- */
-@media screen (max-width: 800px) {
-  body {
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 10px;
-  }
-  /** block element with 2 inline sub-elements - push first left and second right */
-  .mobilerow {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    width: 100%;
-  }
-}
+/** Default Desktop Styles (wider screens) */
 
 /** Global Styles */
 /** ------------- */
@@ -255,4 +240,21 @@ footer #mylinks a {
 /* when a link in the site footer is hovered over with the cursor */
 footer a:hover {
   background-color: #111111 /* black */
+}
+
+/** Alternate Styles for small screens (eg., Mobile Phones) */
+/** ------------------------------------------------------- */
+@media screen (max-width: 800px) {
+  body {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  /** block element with 2 inline sub-elements - push first left and second right */
+  .mobilerow {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+  }
 }
