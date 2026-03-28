@@ -199,6 +199,8 @@ footer #signature {
   float: left;
   width: 60%;
   margin-top: 7px;
+
+  font-size: 10px;
 }
 /* the "lastupdate" <div> element in the site footer */
 footer #lastupdate {
@@ -216,6 +218,7 @@ footer address {
  * element in the site footer */
 footer address a.email {
   color: #9FE2BF; /* seafoam green */
+  font-size: 12px;
 }
 /* the "mylinks" <span> element in the site footer */
 footer #mylinks {
