@@ -85,6 +85,7 @@ header address a {
 .projecthighlights {
   padding-left: 0;
   margin-left: 0;
+  padding-inline-start: 0;
   list-style-position: inside; /* keep bullets inside container */
 }
 
