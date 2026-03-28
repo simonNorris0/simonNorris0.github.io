@@ -1,7 +1,10 @@
 /** Alternate Styles for small screens (eg., Mobile Phones) */
 /** ------------------------------------------------------- */
 @media screen (max-width: 800px) {
-
+  body {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 /** Global Styles */
