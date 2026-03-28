@@ -125,13 +125,13 @@ ul#navbar {
   overflow: hidden; /* prevents list items from going outside the list */
   background-color: #636363; /* dark gray */
 }
+/* page title for mobile display hidden by default */
+ul#navbar li.pagetitle {
+  display: none;
+}
 /* list items in site navigation bar */
 ul#navbar li {
-    float: left; /* makes <li> elements float next to each other */
-    border-right: 3px solid #8e7cc3; /* light purple */
-}
-ul#navbar li:firstchild {
-    border-left: 3px solid #8e7cc3; /* light purple */
+  float: left; /* makes <li> elements float next to each other */
 }
 /* links in list items in site navigation bar */
 ul#navbar li a {
@@ -141,6 +141,16 @@ ul#navbar li a {
   padding: 14px 16px; 
   text-decoration: none; /* removes decoration from the link text 
                           * (underline) */
+}
+/* properties for image in link that opens and closes the pull-down menu */
+ul#navbar li a img {
+  color: #636363; /* dark gray */
+  height: 30px;
+  width: 40px;
+}
+/* hide the link that opens and closes the pull-down menu on large screens */
+ul#navbar li a.menuicon {
+  display: none;
 }
 /* when a link in list items in site navigation bar is hovered over
 *  with the cursor */
@@ -256,12 +266,6 @@ footer a:hover {
   .skillset {
     font-size: 9px;
   }
-  footer #signature {
-    font-size: 9px;
-  }
-  footer address a.email {
-    font-size: 12px;
-  }
   /** block element with 2 inline sub-elements */
   .mobilerow {
     display: grid;
@@ -281,6 +285,47 @@ footer a:hover {
   }
   /* align second child left to the center line */
   .mobilerow > span:nth-child(2) {
+    text-align: left;
+  }
+  /** hide all navigation links, show page title and the link 
+      that opens and closes the pull-down menu for site nav 
+      (.menuicon) */
+  ul#navbar li a {
+    display: none;
+  }
+  ul#navbar li.pagetitle {
+    float: left;
+    display: block;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px; 
+  }
+  ul#navbar li:has(a.menuicon) {
+    float: right;
+  }
+  ul#navbar li a.menuicon {
+    display: block;
+    padding: 5px 5px;
+    background-color: #636363; /* dark gray */
+  }
+  /** The "responsive" class is added with JavaScript when the 
+      user click on the pull-down menu icon.
+      Displays the links vertically instead of horizontally. */
+  ul#navbar.responsive {
+    position: relative;
+  }
+  ul#navbar.responsive li a.menuicon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul#navbar.responsive li {
+    float: none;
+    text-align: left;
+  }
+  ul#navbar.responsive li a {
+    display: block;
     text-align: left;
   }
 }
