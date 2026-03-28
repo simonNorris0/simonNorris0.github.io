@@ -29,6 +29,11 @@ h2 {
   padding: 0;
 }
 
+/** add uniform space underneath sub-sections **/
+#undergrad, #secondaryschool, #flightcontrolsystems, #chessmapper, #unixvm, #webpage {
+  margin-bottom: 12px;
+}
+
 /** Resume Header */
 /** ------------- */
 h1 {
@@ -64,9 +69,6 @@ header address a {
 .location {
   font-style: italic;
 }
-#undergrad, #secondaryschool {
-  margin-bottom: 8px;
-}
 
 /** Experience section */
 /** ------------------ */
@@ -79,9 +81,6 @@ header address a {
 }
 .project {
   font-weight: bold;
-}
-#flightcontrolsystems, #chessmapper, #unixvm, #webpage {
-  margin-bottom: 8px;
 }
 
 /** Technical Skills section */
