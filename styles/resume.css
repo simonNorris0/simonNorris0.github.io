@@ -278,7 +278,7 @@ footer a:hover {
     white-space: nowrap; /* prevents wrapping to a new line */
     overflow: hidden;
     text-overflow: ellipsis;
-    padding: 5px 5px; /* small gaps */
+    padding: 2px 2px; /* small gaps */
   }
   /* align first child right to the center line */
   .mobilerow > span:nth-child(1) {
