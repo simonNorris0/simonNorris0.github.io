@@ -146,10 +146,6 @@ ul#navbar li {
     float: left; /* makes <li> elements float next to each other */
     border-right: 2px solid #8e7cc3; /* light purple */
 }
-/* the last list item in site navigation bar */
-ul#navbar li:last-child {
-    border-right: none;
-}
 /* links in list items in site navigation bar */
 ul#navbar li a {
   display: block; /* allows specifying padding, height, width, and margins */
