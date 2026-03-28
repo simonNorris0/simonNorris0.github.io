@@ -47,6 +47,9 @@
     <!-- dynamically inserts last update into site footer, 
          see scripts/updateDate.js -->
     <script src="scripts/updateDate.js"></script>
+    <!-- dynamically inserts "responsive" class into site navigation 
+         bar for mobile display. see scripts/responsive.js -->
+    <script src="scripts/responsive.js"></script>
   </head>
   <body>
     <nav> <!-- site navigation bar -->
@@ -57,7 +60,7 @@
         <li><a href="pages/portfolio.html">Project Portfolio</a></li>
         <li><a href="pages/blog.html">Blogs</a></li>
         <li><a href="pages/profile.html">About Me</a></li>
-        <li><a class="menuicon" href="scripts/responsive.js" onclick="pullDown()">
+        <li><a class="menuicon" href="javascript:void(0);" onclick="pullDown()">
           <img src="media/imgs/fafabars.icon" alt="fa fa-bars to access navigation menu">
         </a></li>
       </ul>
