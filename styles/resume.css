@@ -15,13 +15,9 @@ body {
   /** hide any content wider than the screen */
   overflow-x: hidden;
   
-  margin-top: 0px;
   margin-left: 50px;
   margin-right: 50px;
   margin-bottom: 25px;
-  padding-top: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
   padding-bottom: 40px; /* must match footer height */
 
   font-size: 14px;
@@ -37,9 +33,6 @@ hr {
 /** resume section headers */
 h2 {
   font-size: 16px;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0;
 }
 /** block element with 2 inline sub-elements - push first left and second right */
 .row {
@@ -66,8 +59,6 @@ header {
 header h1 {
   font-size: 18px;
   margin-top: 25px;
-  margin-bottom: 0;
-  padding: 0;
 }
 header address {
   font-size: 13px;
@@ -99,11 +90,9 @@ header .postaladdress {
   font-weight: bold;
 }
 .projectsummary {
-  margin-bottom: 0;
+  margin-top: 15px;
 }
 .projecthighlights {
-  padding-left: 0;
-  margin-left: 0;
   padding-inline-start: 0;
   list-style-position: inside; /* keep bullets inside container */
 }
@@ -124,7 +113,6 @@ ul#navbar {
   /* position: -webkit-sticky; /* support for safari */
   position: sticky;
   top: 0;
-  margin-top: 0;
   
   /* break out of body margins to full width */
   width: 100vw;
@@ -134,7 +122,6 @@ ul#navbar {
   margin-right: calc(-50vw + 50%);
 
   list-style-type: none; /* removes bullet points from the list items */
-  padding: 0; /* resets default browser paddings */
   overflow: hidden; /* prevents list items from going outside the list */
   background-color: #636363; /* dark gray */
 }
@@ -184,7 +171,7 @@ footer {
   color: white;
   background-color: #636363; /* dark gray */
 }
-/* paragraph elements in the site footer */
+/* keep paragraph elements in the site footer inline */
 footer p {
   display: inline;
 }
@@ -195,7 +182,7 @@ footer #signature {
   vertical-align: top;
   width: 60%;
   padding-top: 7px;
-  padding-right: 9px; /* match right-margin of links on right-side */
+  padding-left: 9px; /* match right-padding of links on right-side */
   font-size: 12px;
 }
 /* the "lastupdate" <div> element in the site footer */
@@ -205,8 +192,8 @@ footer #lastupdate {
 /* the <address> element in the site footer */
 footer address {
   display: block;
-  margin-top: 4px;
-  margin-bottom: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 
   font-style: normal; /* removes default italics */
 }
@@ -215,11 +202,12 @@ footer address {
 footer address a.email {
   color: #9FE2BF; /* seafoam green */
   font-size: 14px;
+  padding-left: 4px;
 }
 /* the "mylinks" <span> element in the site footer */
 footer #mylinks {
   display: table-cell;
-  width: 35%;
+  width: 40%;
   vertical-align: middle;
   text-align: right;
   padding-right: 9px; /* make room for scroll bar */
@@ -244,38 +232,36 @@ footer a:hover {
 /** ------------------------------------------------------- */
 @media screen and (max-width: 800px) {
   body {
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 10px;
-    font-size: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    font-size: 10px;
   }
   h2 {
-    font-size: 14px;
+    font-size: 12px;
   }
   header h1 {
-    font-size: 16px
+    font-size: 14px
   }
   header address {
-    font-size: 11px;
+    font-size: 9px;
   }
   header address a {
     padding-left: 5px;
     padding-right: 5px;
   }
   .skillset {
-    font-size: 11px;
+    font-size: 9px;
   }
   footer #signature {
-    font-size: 10;
+    font-size: 9px;
   }
   footer address a.email {
     font-size: 12px;
   }
-  /** block element with 2 inline sub-elements - push first left and second right */
+  /** block element with 2 inline sub-elements */
   .mobilerow {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    display: block;
     width: 100%;
   }
 }
