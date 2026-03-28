@@ -185,16 +185,23 @@ footer {
   
   /* fix the site footer at the bottom of the screen */
   margin-top: auto;
-  flex-shrink: 0; /* prevents squishing */
+  flex-shrink: 0; /* prevents squishing */ 
   
-  width: 100%;
+  /* layout */
+  /* pushes 1st element (signature) left and 2nd element 
+     (links) right */
   display: flex;
-  justify-content: space-between; /* pushes 1st element (signature) left 
-                                     and 2nd element (links) right      */
+  justify-content: space-between;
   flex-wrap: wrap;
-  padding: 10px 5%;
-  
   align-items: center;
+  /* break out of body margins to full width */
+  width: 100vw;
+  /* calculates how far to pull the element to the left and right to 
+     hit the edge of the screen */
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  
+  padding: 10px 0; /* vertical padding for footer */
   
   font-size: small;  
   color: white; /* text color */
@@ -207,7 +214,7 @@ footer #signature {
   flex-direction: column;  /* places signature elements under last update */
   gap: 2px;
   min-width: 250px; /* prevents this container from getting too narrow on mobile */
-  margin-left: 9px; /* match right-margin of links on right side */
+  margin-left: 5%; /* match right-margin of links on right side */
 }
 footer #lastupdate {
   display: block
@@ -226,7 +233,7 @@ footer address a.email {
 footer #mylinks {
   display: flex;
   gap: 10px;
-  align-self: center;
+  margin-right: 5% /* make some room for the scroll bar */
 }
 /* the links within the "mylinks" <span> element in the site footer */
 footer #mylinks a {
@@ -235,9 +242,6 @@ footer #mylinks a {
   font-weight: bold;
   padding: 5px 10px;
   border: 2px solid #8e7cc3; /* light purple */
-}
-footer #mylinks a:last-child {
-  margin-right: 9px; /* make some room for the scroll bar */
 }
 /* when a link in the site footer is hovered over with the cursor */
 footer a:hover {
