@@ -272,16 +272,18 @@ footer a:hover {
     display: none;
   }
   ul#navbar li.pagetitle {
-    float: left;
+    position: absolute;
+    left: 0;
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px; 
   }
   ul#navbar li a.menuicon {
-    float: right;
+    position: absolute;
+    right: 0;
     display: block;
-    padding: 0px 0px;
+    padding: 5px 5px;
     background-color: #636363; /* dark gray */
   }
   /** The "responsive" class is added with JavaScript when the 
@@ -289,11 +291,6 @@ footer a:hover {
       Displays the links vertically instead of horizontally. */
   ul#navbar.responsive {
     position: relative;
-  }
-  ul#navbar.responsive li a.menuicon {
-    position: absolute;
-    right: 0;
-    top: 0;
   }
   ul#navbar.responsive li {
     float: none;
