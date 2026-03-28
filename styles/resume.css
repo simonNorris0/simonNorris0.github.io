@@ -269,7 +269,6 @@ footer a:hover {
   }
   .mobilerow > span {
     flex: 1;  /* each span child takes up 50% width */
-    padding: 0 10px; /* padding between center alignment */
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
