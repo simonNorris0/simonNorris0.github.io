@@ -206,13 +206,15 @@ footer {
  * within the site footer */
 footer #signature {
   display: flex;
+  padding: 0;
   flex-direction: column;  /* places signature elements under last update */
   gap: 2px;
   min-width: 250px; /* prevents this container from getting too narrow on mobile */
   margin-left: 5%; /* match right-margin of links on right side */
 }
 footer #lastupdate {
-  display: block
+  display: block;
+  padding: 0;
 }
 /* the <address> element in the site footer */
 footer address {
