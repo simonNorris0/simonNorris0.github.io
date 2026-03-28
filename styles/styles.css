@@ -144,7 +144,7 @@ ul#navbar {
   background-color: #636363; /* dark gray */
 }
 /* page title for mobile display hidden by default */
-ul#navbar .pagetitle {
+ul#navbar li .pagetitle {
   display: none;
 }
 /* list items in site navigation bar */
@@ -272,7 +272,7 @@ footer a:hover {
   /** hide all navigation links, show page title and the link 
       that opens and closes the pull-down menu for site nav 
       (.menuicon) */
-  ul#navbar .pagetitle {
+  ul#navbar li .pagetitle {
     float: left;
     display: block;
   }
