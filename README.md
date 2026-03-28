@@ -1,4 +1,5 @@
 <a href="https://simonNorris0.github.io"><b>simonnorris0.github.io</b></a>
+
 ## Personal Webpage
 <p><b>Project repository for my personal static webpage, which functions as a 
 digital resume, a project portfolio, a self-profile, and a personal blog.</b>
@@ -6,7 +7,7 @@ digital resume, a project portfolio, a self-profile, and a personal blog.</b>
 <p>The website is also a web-programming project in itself, where I can 
 showcase my ability to develop a static website from raw HTML/CSS/JavaScript - 
 <b>no CMS or frameworks are used</b>.</p>
-#
+
 ## To-Do:
 <ol>
     <li><s>Resume</s></li>
@@ -28,6 +29,7 @@ and all html templates are not indexed.</p>
 <p> - Ensure CSS is well formatted across multiple desktop OS and mobile devices.</p>
 <p> - Maintain SEO and structured data, continue to update project portfolio, 
 blog posts, profile, and resume.</p>
+
 ## Notes:
 <b>Website Project / Blog Reflections:</b>
 <ul>
