@@ -177,55 +177,36 @@ footer {
   width: 100%;
   height: 40px;
 
-  /* treat footer like a table row and children like cells */
-  /*  - works with display: table-cell property on children */
-  display: table;
-  table-layout: fixed;
-
   margin: 0; /* reset default browser margins */
   padding: 0; /* reset default browser padding */
-  line-height: 1;
 
-  color: white; /* text color */
+  display: flex;
+  justify-content: space-between; /* pushes 1st element (signature) left 
+                                     and 2nd element (links) right      */
+  align-items: flex-start;        /* aligns items to the top of footer  */
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 15px 5%;
   font-size: small;
-
-  background-color: #636363; /* dark gray */
-}
-/* paragraph elements in the site footer */
-footer p {
-  display: inline;
-  margin-left: 9px; /* match right-margin of links on right side */
-}
-/* all links in the site footer */
-footer a {
+  
   color: white; /* text color */
-  text-decoration: none; /* removes decoration from the link text 
-                          * (underline) */
-}
-/* when a link in the site footer is hovered over with the cursor */
-footer a:hover {
-  background-color: #111111 /* black */
+  background-color: #636363; /* dark gray */
 }
 /* the "signature" element - contains "last update" and <address> elements 
  * within the site footer */
 footer #signature {
-  display: table-cell;
-  vertical-align: top;
-  float: left;
-  margin-top: 7px;
+  display: flex;
+  flex-direction: column;  /* places signature elements under last update */
+  gap: 5px;
+  min-width: 250px; /* prevents this container from getting too narrow on mobile */
+  margin-left: 9px; /* match right-margin of links on right side */
 }
-/* the "lastupdate" <div> element in the site footer */
 footer #lastupdate {
-  display: block;
-  width: fit-content;
+  display: block
 }
 /* the <address> element in the site footer */
 footer address {
   display: block;
-  width: fit-content;
-  margin-top: 4px;
-  margin-bottom: 4px;
-
   font-style: normal; /* removes default italics */
 }
 /* link with the "email" class within the <address> 
@@ -235,19 +216,22 @@ footer address a.email {
 }
 /* the "mylinks" <span> element in the site footer */
 footer #mylinks {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: right;
-  padding: 0;
+  display: flex;
+  gap: 10px;
+  align-self: center;
 }
 /* the links within the "mylinks" <span> element in the site footer */
 footer #mylinks a {
-  display: inline-block; /* allows specifying padding, height, width, 
-                          * and margins while still maintaining the 
-                          * elements inline flow */
-  padding: 7px 7px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
   border: 2px solid #8e7cc3; /* light purple */
 }
 footer #mylinks a:last-child {
   margin-right: 9px; /* make some room for the scroll bar */
+}
+/* when a link in the site footer is hovered over with the cursor */
+footer a:hover {
+  background-color: #111111 /* black */
 }
