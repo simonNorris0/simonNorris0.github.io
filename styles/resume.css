@@ -183,25 +183,20 @@ footer {
   margin: 0; /* reset default browser margins */
   padding: 0; /* reset default browser padding */
   
-  /* fix the site footer at the bottom of the screen */
-  margin-top: auto;
+  margin-top: auto; /* push footer to bottom if content is short */
   flex-shrink: 0; /* prevents squishing */ 
   
   /* layout */
-  /* pushes 1st element (signature) left and 2nd element 
-     (links) right */
+  width: 100%;
+  min-height: 40px;
+  height: auto;
+  /* pushes 1st element (signature) left and 2nd element (links) right */
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  /* break out of body margins to full width */
-  width: 100vw;
-  /* calculates how far to pull the element to the left and right to 
-     hit the edge of the screen */
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
   
-  padding: 10px 0; /* vertical padding for footer */
+  padding: 10px 5%; 
   
   font-size: small;  
   color: white; /* text color */
