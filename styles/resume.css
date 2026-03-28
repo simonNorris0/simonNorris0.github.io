@@ -104,7 +104,7 @@ section#education::after {
 }
 /** project highlights are left-aligned on new line */
 .projecthighlights {
-  float:left;
+  float: left;
   margin-left: 0;
 }
 /** clear floats after projects section */
