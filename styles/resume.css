@@ -139,13 +139,12 @@ ul#navbar {
   list-style-type: none; /* removes bullet points from the list items */
   padding: 0; /* resets default browser paddings */
   overflow: hidden; /* prevents list items from going outside the list */
-  border: 2px solid #8e7cc3; /* light purple */
   background-color: #636363; /* dark gray */
 }
 /* list items in site navigation bar */
 ul#navbar li {
     float: left; /* makes <li> elements float next to each other */
-    border-right: 2px solid #8e7cc3; /* light purple */
+    border: 2px solid #8e7cc3; /* light purple */
 }
 /* the last list item in site navigation bar */
 ul#navbar li:last-child {
