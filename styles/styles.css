@@ -278,8 +278,10 @@ footer a:hover {
     text-align: center;
     padding: 14px 16px; 
   }
-  ul#navbar li a.menuicon {
+  ul#navbar li:has(a.menuicon) {
     float: right;
+  }
+  ul#navbar li a.menuicon {
     display: block;
     padding: 5px 5px;
     background-color: #636363; /* dark gray */
