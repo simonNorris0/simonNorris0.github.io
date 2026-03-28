@@ -2,8 +2,8 @@
 /** ------------------------------------------------------- */
 @media screen (max-width: 800px) {
   body {
-    margin-left: 2px;
-    margin-right: 2px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 
