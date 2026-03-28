@@ -65,6 +65,7 @@ header h1 {
 }
 header address {
   font-size: 13px;
+  font-style: normal;
 }
 header address a {
   padding-left: 5px;
