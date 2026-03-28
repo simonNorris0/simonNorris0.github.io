@@ -264,7 +264,7 @@ footer a:hover {
     /* Use flex to align children in a row */
     display: flex;
     width: 100%;
-    gap: 5px;
+    gap: 2px;
     flex-direction: row; /* keep children in row */
   }
   .mobilerow > span {
