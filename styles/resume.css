@@ -186,8 +186,8 @@ footer {
                                      and 2nd element (links) right      */
   align-items: flex-start;        /* aligns items to the top of footer  */
   flex-wrap: wrap;
-  gap: 10px;
-  padding: 15px 5%;
+  gap: 5px;
+  padding: 5px 5%;
   font-size: small;
   
   color: white; /* text color */
