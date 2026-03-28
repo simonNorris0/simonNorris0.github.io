@@ -1,8 +1,27 @@
+/** Default Desktop Styles (wider screens) */
+
+/** Global Styles */
+/** ------------- */
 * {
   box-sizing: border-box;
+  /** Reset browser default */
+  margin: 0;
+  padding: 0;
 }
 html {
   background-color: #d3d3d3; /* light gray */
+}
+body {
+  /** hide any content wider than the screen */
+  overflow-x: hidden;
+  
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+  padding: 20px; /** for 'cards' */
+  padding-bottom: 40px; /* must match footer height */
+
+  font-size: 14px;
 }
 a {
   color: #6850af; /* purple */
@@ -12,47 +31,12 @@ a {
 hr {
   color: #8e7cc3; /* light purple */
 }
-body {
-  padding: 20px;
-  padding-bottom: 40px; /* must match footer height */
-}
-body h2 {
-  margin: 0;
-}
-body h3 {
-  margin: 0;
-}
-body h4 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-header {
-  padding: 1px;
-  background: white;
-}
-header h1 {
-  text-align: center;
-  margin-top: 1px;
-  margin-bottom: 1px;
-  padding-top: 10px;
-}
-header h2 {
-  text-align: center;
-  margin-top: 1px;
-  margin-bottom: 1px;
-}
-header h3 {
-  padding-left: 10px;
-}
-
 .subheading {
   text-align: center;
   font-size: small;
-  margin-top: 0;
   margin-left: 5px;
   margin-right: 5px;
 }
-
 .button {
   background-color: #8e7cc3; /* light purple */
   border: none;
@@ -66,7 +50,7 @@ header h3 {
 }
 .smallbutton {
   background-color: #8e7cc3; /* light purple */
-  border: 2px solid #636363; /* dark gray */
+  border: 3px solid #636363; /* dark gray */
   color: white;
   padding-bottom: 10px;
   padding-top: 10px;
@@ -96,15 +80,32 @@ header h3 {
   padding: 20px;
 }
 
+/** header Styles */
+/** ------------- */
+header {
+  background: white;
+}
+header h1 {
+  text-align: center;
+  padding-top: 10px;
+}
+header h2 {
+  text-align: center;
+}
+header h3 {
+  padding-left: 10px;
+}
+
+/** main styles */
+/** ----------- */
 /* creates two unequal columns that float next to each other */
-/* --------------------------------------------------------- */
 /* left column */
-.leftcolumn {
+main .leftcolumn {
   float: left;
   width: 65%;
 }
 /* right column */
-.rightcolumn {
+main .rightcolumn {
   float: left;
   width: 35%;
   padding-left: 20px;
@@ -115,38 +116,43 @@ main:after {
   display: table;
   clear: both;
 }
-/* Responsive layout - when the screen is less than 800px wide, make the
- * two columns stack on top of each other instead of next to each other */
- @media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {
-    width: 100%;
-    padding: 0;
-  }
+
+/** hody styles */
+/** ----------- */
+body h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
+
+/** Site nav bar and site footer -- consistent across all pages on site */
+/** ------------------------------------------------------------------- */
 /* site navigation bar: unordered list with the "navbar" ID */
 /* -------------------------------------------------------- */
 ul#navbar {
   /* Fix the site navigation bar at the top of the screen even 
    * when scrolling */
+  /* position: -webkit-sticky; /* support for safari */
   position: sticky;
   top: 0;
-  width: 100%;
+  
+  /* break out of body margins to full width */
+  width: 100vw;
+  /* calculates how far to pull the element to the left and right to 
+     hit the edge of the screen */
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
 
   list-style-type: none; /* removes bullet points from the list items */
-  margin: 0; /* resets default browser margins */
-  padding: 0; /* resets default browser paddings */
   overflow: hidden; /* prevents list items from going outside the list */
-  border: 2px solid #8e7cc3; /* light purple */
   background-color: #636363; /* dark gray */
 }
 /* list items in site navigation bar */
 ul#navbar li {
     float: left; /* makes <li> elements float next to each other */
-    border-right: 2px solid #8e7cc3; /* light purple */
+    border-right: 3px solid #8e7cc3; /* light purple */
 }
-/* the last list item in site navigation bar */
-ul#navbar li:last-child {
-    border-right: none;
+ul#navbar li:firstchild {
+    border-left: 3px solid #8e7cc3; /* light purple */
 }
 /* links in list items in site navigation bar */
 ul#navbar li a {
@@ -166,9 +172,8 @@ ul#navbar li a:hover {
 ul#navbar li a.active {
   background-color: #8e7cc3; /* light purple */
 }
-
-/* ~~~ site footer ~~~ */
-/* ------------------- */
+/* -------------- site footer ----------------- */
+/* -------------------------------------------- */
 footer {
   /* fix the site footer at the bottom of the screen */
   position: fixed;
@@ -181,23 +186,60 @@ footer {
   /*  - works with display: table-cell property on children */
   display: table;
   table-layout: fixed;
-
-  margin: 0; /* reset default browser margins */
-  padding: 0; /* reset default browser padding */
   line-height: 1;
-
-  color: white; /* text color */
+  
   font-size: small;
-
+  color: white;
   background-color: #636363; /* dark gray */
 }
-/* paragraph elements in the site footer */
+/* keep paragraph elements in the site footer inline */
 footer p {
   display: inline;
-  margin-left: 9px; /* match right-margin of links on right-side */
 }
-/* all links in the site footer */
-footer a {
+/* the "signature" element - contains "last update" and <address> elements 
+ * within the site footer */
+footer #signature {
+  display: table-cell;
+  vertical-align: top;
+  width: 60%;
+  padding-top: 7px;
+  padding-left: 9px; /* match right-padding of links on right-side */
+  font-size: 12px;
+}
+/* the "lastupdate" <div> element in the site footer */
+footer #lastupdate {
+  display: block;
+}
+/* the <address> element in the site footer */
+footer address {
+  display: block;
+  padding-top: 4px;
+  padding-bottom: 4px;
+
+  font-style: normal; /* removes default italics */
+}
+/* link with the "email" class within the <address> 
+ * element in the site footer */
+footer address a.email {
+  color: #9FE2BF; /* seafoam green */
+  font-size: 14px;
+  padding-left: 4px;
+}
+/* the "mylinks" <span> element in the site footer */
+footer #mylinks {
+  display: table-cell;
+  width: 40%;
+  vertical-align: middle;
+  text-align: right;
+  padding-right: 9px; /* make room for scroll bar */
+}
+/* the links within the "mylinks" <span> element in the site footer */
+footer #mylinks a {
+  display: inline-block; /* allows specifying padding, height, width, 
+                          * and margins while still maintaining the 
+                          * elements inline flow */
+  padding: 7px 7px;
+  border: 2px solid #8e7cc3; /* light purple */
   color: white; /* text color */
   text-decoration: none; /* removes decoration from the link text 
                           * (underline) */
@@ -207,49 +249,13 @@ footer a:hover {
   background-color: #111111 /* black */
 }
 
-/* the "signature" element - contains "last update" and <address> elements 
- * within the site footer */
-footer #signature {
-  display: table-cell;
-  vertical-align: top;
-  float: left;
-  margin-top: 7px;
-}
-/* the "lastupdate" <div> element in the site footer */
-footer #lastupdate {
-  display: block;
-  width: fit-content;
-}
-/* the <address> element in the site footer */
-footer address {
-  display: block;
-  width: fit-content;
-  margin-top: 4px;
-  margin-bottom: 4px;
-
-  font-style: normal; /* removes default italics */
-}
-/* link with the "email" class within the <address> 
- * element in the site footer */
-footer address a.email {
-  color: #9FE2BF; /* seafoam green */
-}
-/* the "mylinks" <span> element in the site footer */
-footer #mylinks {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: right;
-  padding: 0;
-}
-/* the links within the "mylinks" <span> element in the site footer */
-footer #mylinks a {
-  display: inline-block; /* allows specifying padding, height, width, 
-                          * and margins while still maintaining the 
-                          * elements inline flow */
-  padding: 7px 7px;
-  border: 2px solid #8e7cc3; /* light purple */
-}
-/* the last link within the "mylinks" <span> element in the site footer */
-footer #mylinks a:last-child {
-  margin-right: 9px; /* make some room for the scroll bar */
+/** Alternate Styles for small screens (eg., Mobile Phones) */
+/** ------------------------------------------------------- */
+ @media screen and (max-width: 800px) {
+   /* Responsive layout - when the screen is less than 800px wide, make the
+    * two columns stack on top of each other instead of next to each other */
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
 }
