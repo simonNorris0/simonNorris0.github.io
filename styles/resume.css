@@ -189,7 +189,7 @@ footer {
 /* paragraph elements in the site footer */
 footer p {
   display: inline;
-  margin-left: 5%; /* match right-margin of links on right-side */
+  margin-left: 9px; /* match right-margin of links on right-side */
 }
 /* the "signature" element - contains "last update" and <address> elements 
  * within the site footer */
@@ -198,19 +198,17 @@ footer #signature {
   vertical-align: top;
   float: left;
   width: 75%;
-  margin-top: 5%;
+  margin-top: 4px;
 }
 /* the "lastupdate" <div> element in the site footer */
 footer #lastupdate {
   display: block;
-  width: fit-content;
 }
 /* the <address> element in the site footer */
 footer address {
   display: block;
-  width: fit-content;
   margin-top: 4px;
-  margin-bottom: 5%;
+  margin-bottom: 4px;
 
   font-style: normal; /* removes default italics */
 }
@@ -226,7 +224,7 @@ footer #mylinks {
   vertical-align: middle;
   text-align: right;
   padding: 0;
-  margin-right: 5%; /* make room for scroll bar */
+  margin-right: 9px; /* make room for scroll bar */
 }
 /* the links within the "mylinks" <span> element in the site footer */
 footer #mylinks a {
@@ -235,6 +233,9 @@ footer #mylinks a {
                           * elements inline flow */
   padding: 7px 7px;
   border: 2px solid #8e7cc3; /* light purple */
+  color: white; /* text color */
+  text-decoration: none; /* removes decoration from the link text 
+                          * (underline) */
 }
 /* when a link in the site footer is hovered over with the cursor */
 footer a:hover {
