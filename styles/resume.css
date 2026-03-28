@@ -67,6 +67,7 @@ header address {
 header address a {
   padding-left: 10px;
   padding-right: 10px;
+  margin-bottom: 5px;
 }
 header .postaladdress {
   margin-top: 5px;
@@ -261,24 +262,24 @@ footer a:hover {
   }
   /** block element with 2 inline sub-elements */
   .mobilerow {
-    /* Use flex to align children in a row */
-    display: flex;
+    display: grid;
+    /* create 2 equal columns that meet in the middle */
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
     width: 100%;
-    gap: 2px;
     flex-direction: row; /* keep children in row */
   }
   .mobilerow > span {
-    flex: 1;  /* each span child takes up 50% width */
+    white-space: nowrap; /* prevents wrapping to a new line */
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
   }
-  /* align first child right to the center divider */
-  mobilerow > span:first-child {
+  /* align first child right to the center line */
+  mobilerow > span:nth-child(1) {
     text-align: right;
   }
-  /* align second child left to the center divider */
-  mobilerow > span:last-child {
+  /* align second child left to the center line */
+  mobilerow > span:nth-child(2) {
     text-align: left;
   }
 }
