@@ -161,10 +161,9 @@ ul#navbar li a {
                           * (underline) */
 }
 /* properties for image in link that opens and closes the pull-down menu */
-ul#navbar li a.menuicon {
+ul#navbar li a.menuicon img {
   color: #636363; /* dark gray */
   padding: 0 0;
-
   height: 30px;
   width: 40px;
   background-color: #636363; /* dark gray */
