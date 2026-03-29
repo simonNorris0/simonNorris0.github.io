@@ -1,10 +1,22 @@
-/** Default Desktop Styles (wider screens) */
+/** Resume style based on: 
+https://cdn-careerservices.fas.harvard.edu/wp-content/uploads/sites/161/2025/07/Harvard-College-CS-Resume-Example.pdf
+* Harvard College CS Resume Template
+*/
 
-/** Global Styles */
-/** ------------- */
+/**** CASCADING Style Sheets:  ****/
+/** The lower down the sheet (cascade) the rule is, the 
+    more specific it is. So the rules that need to be 
+    consistent across various pages, i.e., the navigtion 
+    bar, the site footer, and mobile styles, remain at the 
+    BOTTOM of the style sheet. **/
+
+/*** Default Desktop Styles (wider screens) ***/
+/*** -------------------------------------- ***/
+/** Global Styles **/
+/** ------------- **/
 * {
-  box-sizing: border-box;
-  /** Reset browser default */
+  box-sizing: border-box; /** ? */
+  /** Reset browser defaults **/
   margin: 0;
   padding: 0;
 }
@@ -12,9 +24,9 @@ html {
   background-color: #d3d3d3; /* light gray */
 }
 body {
-  /** hide any content wider than the screen */
+  /* hide any content wider than the screen */
   overflow-x: hidden;
-  
+  /* wide margins for resume */ 
   margin-left: 50px;
   margin-right: 50px;
   margin-bottom: 25px;
@@ -22,40 +34,52 @@ body {
 
   font-size: 14px;
 }
-a {
-  color: #6850af; /* purple */
-  font-weight: bold;
-  text-decoration: none;
-}
-hr {
-  color: #8e7cc3; /* light purple */
-}
-/** resume section headers */
+/* resume section headers */
 h2 {
   font-size: 16px;
 }
-/** block element with 2 inline sub-elements - push first left and second right */
-.row {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  width: 100%;
+
+/** global list styles **/
+/** ------------------ **/
+ul {
+  padding-inline-start: 0; /* firefox */
+  list-style-position: inside; /* keep bullets inside container */
+  overflow: hidden; /* prevents list items from going outside the list */
 }
-/** add uniform space underneath sub-sections **/
-#undergrad, #secondaryschool, #flightcontrolsystems, #chessmapper, #unixvm, #webpage {
-  padding-bottom: 15px;
+ol {
+  padding-inline-start: 0;
+  list-style-position: inside; 
+  overflow: hidden;
 }
-/** reduce font-size of skill lists slightly */
-.skillset {
-  font-size: 13px;
-}
+
+/* global class styles */
+/* ------------------- */
 .bold {
   font-weight: bold;
 }
 .italic {
   font-style: italic;
 }
-/** Resume Header */
+/* reduce font-size of skill lists slightly */
+.skillset {
+  font-size: 13px;
+}
+/* block element with 2 inline sub-elements - push first left and second right */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+}
+
+/** id styles **/
+/** --------- **/
+/* add uniform space underneath sub-sections */
+#undergrad, #secondaryschool, #flightcontrolsystems, #chessmapper, #unixvm, #webpage {
+  padding-bottom: 15px;
+}
+
+/** header styles */
 /** ------------- */
 header {
   text-align: center;
@@ -77,34 +101,39 @@ header .postaladdress {
   padding-bottom: 10px;
 }
 
-/** Education section */
-/** ----------------- */
+/** main styles **/
+/** ------------**/
 
-/** Experience section */
-/** ------------------ */
 
-/** Projects section */
-/** ---------------- */
-.projectsummary {
+/* Education section */
+/* ----------------- */
+
+
+/* Experience section */
+/* ------------------ */
+
+
+/* Projects section */
+/* ---------------- */
+main .projectsummary {
   padding-top: 15px;
 }
-.projecthighlights {
-  padding-inline-start: 0;
-  list-style-position: inside; /* keep bullets inside container */
-}
 
-/** Technical Skills section */
-/** ------------------------ */
+/* Technical Skills section */
+/* ------------------------ */
 
-/** Certifications section */
-/** ---------------------- */
 
-/* site navigation bar: unordered list with the "navbar" ID */
-/* -------------------------------------------------------- */
+/* Certifications section */
+/* ---------------------- */
+
+
+/** site navigation bar: unordered list with the "navbar" ID **/
+/** (contained in body                                       **/
+/** -------------------------------------------------------- **/
 ul#navbar {
   /* Fix the site navigation bar at the top of the screen even 
    * when scrolling */
-  /* position: -webkit-sticky; /* support for safari */
+  /* position: -webkit-sticky; /* support for safari(?) */
   position: sticky;
   top: 0;
   
@@ -116,7 +145,6 @@ ul#navbar {
   margin-right: calc(-50vw + 50%);
 
   list-style-type: none; /* removes bullet points from the list items */
-  overflow: hidden; /* prevents list items from going outside the list */
   background-color: #636363; /* dark gray */
 }
 /* page title for mobile display hidden by default */
@@ -125,42 +153,39 @@ ul#navbar li.pagetitle {
 }
 /* list items in site navigation bar */
 ul#navbar li {
-  float: left; /* makes <li> elements float next to each other */
+  font-size: 14px; /* maintain uniform font-size across site */
+  float: left;
 }
 /* links in list items in site navigation bar */
 ul#navbar li a {
   display: block; /* allows specifying padding, height, width, and margins */
-  color: white; /* text color */
+  color: white;
+  text-decoration: none;
   text-align: center;
-  padding: 14px 16px; 
-  text-decoration: none; /* removes decoration from the link text 
-                          * (underline) */
+  padding: 14px 16px;
 }
 /* properties for image in link that opens and closes the pull-down menu */
 ul#navbar li a img {
-  color: #636363; /* dark gray */
+  color: #636363; /* dark gray - fills transparent .svg background */
   height: 30px;
   width: 40px;
 }
-/* hide the link that opens and closes the pull-down menu on large screens */
+/* hide the link that opens and closes the pull-down menu by default */
 ul#navbar li a.menuicon {
   display: none;
 }
-/* when a link in list items in site navigation bar is hovered over
-*  with the cursor */
 ul#navbar li a:hover {
   background-color: #111111 /* black */
 }
-/* "active" class of links in list items in site navigation bar */
 ul#navbar li a.active {
   background-color: #8e7cc3; /* light purple */
 }
-/* -------------- site footer ----------------- */
-/* -------------------------------------------- */
+/** -------------- site footer ----------------- **/
+/** -------------------------------------------- **/
 footer {
   /* fix the site footer at the bottom of the screen */
   position: fixed;
-  left: 0;
+  left: 0; /* elements build from left */
   bottom: 0;
   width: 100%;
   height: 40px;
@@ -169,46 +194,32 @@ footer {
   /*  - works with display: table-cell property on children */
   display: table;
   table-layout: fixed;
-  line-height: 1;
+  line-height: 1; /* alignment fix for table-layout */
   
-  font-size: small;
+  font-size: 12px; /* maintain uniform font-size across site */
   color: white;
   background-color: #636363; /* dark gray */
 }
-/* keep paragraph elements in the site footer inline */
-footer p {
-  display: inline;
-}
 /* the "signature" element - contains "last update" and <address> elements 
- * within the site footer */
+ * 1st child of footer */
 footer #signature {
   display: table-cell;
   vertical-align: top;
   width: 60%;
   padding-top: 7px;
   padding-left: 9px; /* match right-padding of links on right-side */
-  font-size: 12px;
 }
-/* the "lastupdate" <div> element in the site footer */
-footer #lastupdate {
-  display: block;
-}
-/* the <address> element in the site footer */
 footer address {
-  display: block;
   padding-top: 4px;
   padding-bottom: 4px;
-
   font-style: normal; /* removes default italics */
 }
-/* link with the "email" class within the <address> 
- * element in the site footer */
 footer address a.email {
   color: #9FE2BF; /* seafoam green */
   font-size: 14px;
   padding-left: 4px;
 }
-/* the "mylinks" <span> element in the site footer */
+/* 2nd child of footer */
 footer #mylinks {
   display: table-cell;
   width: 40%;
@@ -223,30 +234,36 @@ footer #mylinks a {
                           * elements inline flow */
   padding: 7px 7px;
   border: 2px solid #8e7cc3; /* light purple */
-  color: white; /* text color */
-  text-decoration: none; /* removes decoration from the link text 
-                          * (underline) */
+  color: white;
+  text-decoration: none;
 }
-/* when a link in the site footer is hovered over with the cursor */
 footer a:hover {
   background-color: #111111 /* black */
 }
 
-/** Alternate Styles for small screens (eg., Mobile Phones) */
-/** ------------------------------------------------------- */
+/*** Alternate Styles for small screens (eg., Mobile Phones) ***/
+/*** ------------------------------------------------------- ***/
 @media screen and (max-width: 800px) {
+  /** mobile global styles **/
+  /** -------------------- **/
   body {
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 20px;
     font-size: 10px;
-  }
-  ul#navbar li {
-    font-size: 14px;
-  }
+  } 
   h2 {
     font-size: 12px;
   }
+  
+  /** mobile global class styles **/
+  /** ------------------- **/
+  .skillset {
+    font-size: 9px;
+  }
+  
+  /** mobile header styles **/
+  /** -------------------- **/
   header h1 {
     font-size: 14px
   }
@@ -260,10 +277,9 @@ footer a:hover {
     padding-right: 0px;
     width: 100%;
   }
-  .skillset {
-    font-size: 9px;
-  }
-  /** block element with 2 inline sub-elements */
+  /* block element with 2 inline sub-elements */
+  /* (for address links in resume header)
+  /* ---------------------------------------- */
   .mobilerow {
     display: grid;
     /* create 2 equal columns that meet in the middle */
@@ -284,9 +300,18 @@ footer a:hover {
   .mobilerow > span:nth-child(2) {
     text-align: left;
   }
-  /** hide all navigation links, show page title and the link 
-      that opens and closes the pull-down menu for site nav 
-      (.menuicon) */
+
+  /** mobile main styles **/
+  /** ------------------ **/
+  
+  /** mobile site navigation bar styles **/
+  /** --------------------------------- **/
+  ul#navbar li {
+    font-size: 14px; /* maintain uniform font-size across site */
+  }
+  /* hide all navigation links, show page title and the link 
+     that opens and closes the pull-down menu for site nav 
+     (.menuicon) */
   ul#navbar li a {
     display: none;
   }
@@ -305,9 +330,9 @@ footer a:hover {
     padding: 5px 5px;
     background-color: #636363; /* dark gray */
   }
-  /** The "responsive" class is added with JavaScript when the 
-      user click on the pull-down menu icon.
-      Displays the links vertically instead of horizontally. */
+  /* The "responsive" class is added with JavaScript when the 
+     user click on the pull-down menu icon.
+     Displays the links vertically instead of horizontally. */
   ul#navbar.responsive {
     position: relative;
   }
