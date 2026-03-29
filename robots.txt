@@ -1,0 +1,9 @@
+# Block all crawlers (Adsbot crawlers must be name explicitly)
+User-agent: *
+User-agent: AdsBot-Google
+Disallow: /templates/
+Disallow: /daemonworks/
+Disallow: https://simonnorris0.github.io/README.md
+
+# Sitemap location
+Sitemap: https://simonnorris0.github.io/sitemap.xml
