@@ -49,6 +49,9 @@ h2 {
 .skillset {
   font-size: 13px;
 }
+.subtitle {
+  font-weight: bold;
+}
 
 /** Resume Header */
 /** ------------- */
