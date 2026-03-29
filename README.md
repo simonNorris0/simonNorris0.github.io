@@ -10,28 +10,26 @@ showcase my ability to develop a static website from raw HTML/CSS/JavaScript -
 
 ## To-Do:
 <ol>
-    <li><s>Resume</s></li>
+    <li>Publish first blog post</li>
     <li>Re-design Home, About Me, Portfolio, and Blog for consistent look/feel
-        across site <s>using 1 style sheet</s>.</li>
+        across site</li>
+    <li>Time-stamps for dateCreated</li>
+    <li>dateModified structured data script</li>
+    <li>Publish first project page (the website)</li>
+    <li>------------------------------------------------</li>
+    <li>styles.css footer fix</li>
     <li>spelling / grammar check</li>
     <li>re-validate structured data</li>
-    <li>Publish first blog post (about building the website)</li>
-    <li>Publish first project page (the website)</li>
-    <li>Highlight website blogpost and project on home/index pages</li>
-    <li>Write script to auto-update structured across pages, and include dateModified 
-    in structured data and that script. <b>dateModified</b> and <b>dateCreated</b> 
-    should have time-stamps, need to change format used vs. format used by 
-    lastUpdated element - i.e., need a second function. </li>
     <li>print-friendly resume file / function</li>
+    <li>Ensure Google crawler is able to index the sitemap</li>
+    <li>Ensure that daemonworks.html, contact.html, and all html templates are not indexed.</li>
+    <li>Ensure CSS is well formatted across multiple desktop OS and mobile devices.</li>
 </ol>
-<p> - Ensure the crawler is able to index the sitemap, and that daemonworks.html, contact.html, 
-and all html templates are not indexed.</p>
-<p> - Ensure CSS is well formatted across multiple desktop OS and mobile devices.</p>
-<p> - Maintain SEO and structured data, continue to update project portfolio, 
-blog posts, profile, and resume.</p>
+<p><b>Maintain SEO and structured data, continue to update project portfolio, 
+blog posts, profile, and resume.</b></p>
 
 ## Notes:
-<b>Website Project / Blog Reflections:</b>
+<b>Website Project Reflections:</b>
 <ul>
     <li><b>Part 1: The Story</b></li>
     <li>Static vs Dynamic Pages</li>
