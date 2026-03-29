@@ -25,7 +25,7 @@ showcase my ability to develop a static website from raw HTML/CSS/JavaScript -
     <li>Ensure that daemonworks.html, contact.html, and all html templates are not indexed.</li>
     <li>Ensure CSS is well formatted across multiple desktop OS and mobile devices.</li>
 </ol>
-<p><b>Maintain structured data when adding/modifying content going forward.<b></p>
+<p><b>Maintain structured data when adding/modifying content going forward.</b>b></p>
 
 ## Notes:
 <b>Website Project Reflections:</b>
