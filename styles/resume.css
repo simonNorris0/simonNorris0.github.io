@@ -52,7 +52,9 @@ h2 {
 .bold {
   font-weight: bold;
 }
-
+.italic {
+  font-style: italic;
+}
 /** Resume Header */
 /** ------------- */
 header {
@@ -77,21 +79,12 @@ header .postaladdress {
 
 /** Education section */
 /** ----------------- */
-.institution {
-  font-weight: bold;
-}
-.location {
-  font-style: italic;
-}
 
 /** Experience section */
 /** ------------------ */
 
 /** Projects section */
 /** ---------------- */
-.project {
-  font-weight: bold;
-}
 .projectsummary {
   padding-top: 15px;
 }
@@ -301,7 +294,6 @@ footer a:hover {
     float: left;
     display: block;
     color: white;
-    font-weight: bold;
     text-align: center;
     padding: 14px 16px; 
   }
