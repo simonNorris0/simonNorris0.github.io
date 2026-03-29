@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width" />
     <meta name="author" content="Simon Norris" />
     <meta name="author" content="https://www.github.com/simonNorris0" />
-    <meta name="description" content="Blogs on topics relating to 
-                computer science, software engineering, computer engineering, 
-                mathematics, microelectronics and microcontrollers, 
-                drones, model rockets, and chess." />
-    <title>The Interface</title>
+    <meta name="description" content="Personal blogs on a wide variety of 
+                topics from travel, to arts and culture, to microcontrollers 
+                and chess. All from the perspective of a would be 
+                software engineer." />
+    <title>The BlogDaemon</title>
     <!-- favicon -->
     <link rel="icon" href="../media/imgs/favicon.ico" />
     <link rel="stylesheet" href="../styles/styles.css" />
@@ -19,7 +19,7 @@
       {
         "@context": "https://schema.org/",
         "@type": "Blog",
-        "name": "The Interface",
+        "name": "The BlogDaemon",
         "alternateName": "Simon Norris | Blogs",
         "description": "Personal blogs by Simon Norris. Index page.",
         "dateCreated": "2026-03-26",
@@ -74,6 +74,26 @@
             "@type": "Thing",
             "@id": "https://en.wikipedia.org/wiki/Chess",
             "name": "Chess"
+          },
+          {
+            "@type": "Thing",
+            "@id":  "https://en.wikipedia.org/wiki/Travel",
+            "name":  "Travel"
+          },
+          {
+            "@type": "Thing",
+            "@id": "https://en.wikipedia.org/wiki/The_arts",
+            "name": "Arts"
+          },
+          {
+            "@type": "Thing",
+            "@id": "https://en.wikipedia.org/wiki/Culture",
+            "name": "Culture"
+          },
+          {
+            "@type": "Thing",
+            "@id": "https://en.wikipedia.org/wiki/Ballet",
+            "name": "Ballet"
           }
         ],
         "inLanguage": {
@@ -99,7 +119,8 @@
           "drone blogs",
           "quadcopter blogs", 
           "model rocket blogs", 
-          "chess blogs", 
+          "chess blogs",
+          "arts and culture blogs",
           "simon norris blogs", 
           "simon norris red deer blogs", 
           "simon norris athabasca university blogs", 
@@ -134,51 +155,90 @@
       </ul>
     </nav>
     <header>
-      <h1>The Interface</h1>
+      <h1>The BlogDaemon</h1>
+      <div class="subheading">
+        Personal blogs on a wide variety of topics from travel, 
+        to Arts & Culture, to microcontrollers and chess. 
+        All from the perspective of a would be software engineer.
+      </div>
+      <hr>
     </header>
     <main>
-      <!-- the left column is cards that describe the author and link 
-           to highlighted posts -->
-      <div class="leftcolumn">
-        <article class="card"> <!-- 'about me' card -->
-          <h2 class="aboutme">About Me</h2>
-          <hr>
-          <div class="profileimg" style="height:175px;">
-            Profile Image of Author</div>
-          <p class="smalldescription">Some text about me...</p>
-        </article>
-        <article class="card"> <!-- 'highlighted posts' card -->
-          <h3 class=highlights>Highlighted Posts</h3>
-          <hr>
-          <!-- 'highlighted post template:
-          <div class="blogimg" style=height:75px;">Blog Image</div>
-          <span class="smalltitle"><p>Blog Title</p></span>
-          <span class="smalldescription"><p>Short description..</p>
-          </span>
-          -->
-          <div class="blogimg" style="height:100px;">Blog Image</div>
-          <span class="smalltitle"><p>Blog Title</p></span>
-          <span class="smalldescription"><p>Short description..</p>
-          </span>
-        </article>
-      </div> <!-- end of left column element (about me and highlights) -->
-      <!-- the right column is a series of cards that link to blog posts --> 
+      <!-- the right column is the 'aside' content, stack on top of 
+           the main page content on small screns -->
       <div class="rightcolumn">
+        <article id="aboutme" class="card"> <!-- 'about me' card -->
+          <h2 class="cardtitle">About Me</h2>
+          <div class="profileimg">
+            <img src="" alt="Profile image of author">
+          </div>
+          <div class="carddescription">
+            Some text about me...
+          </div>
+        </article> <!-- end of 'aboutme' article -->
+        <article id="highlights" class="card"> <!-- 'highlighted posts' card -->
+          <h2 class="cardtitle">Highlighted Posts</h2>
+          <!-- 'highlighted post template:
+          <h3>Blog Title</h3>
+          <span class="subheading"> // inline with Blog Title
+            1-2 lines describing the blog post...
+          </span>
+          <div class="blogimg">
+            <a href="">
+              <img src="" alt="Blog image / link to blog post">
+            </a>
+          </div>
+          <div class="blogintro">
+            Short introduction to the blog post...
+          </div> -->
+          <!-- Highlight 1: -->
+          <h3>Blog Title</h3>
+            <span class="subheading">
+              1-2 lines describing the blog post...
+            </div>
+            <div class="blogimg">
+              <a href="">
+                <img src="" alt="Blog image / link to blog post">
+              </a>
+            </div>
+            <div class="blogintro">
+              Short introduction to the blog post...
+            </div>
+        </article> <!-- end of 'highlights' article -->
+      </div> <!-- end of right column element (aboutme and highlights) -->
+      <!-- the left column is the main content of the page --> 
+      <div class="leftcolumn">
+        <h2>Archive Page</h2>
+        <p>
+          You can find simple text links to all my blog posts (sorted by the 
+          date they were published) <a href="">here</a>.
+        </p>
+        <!-- series of cards that link to recent blog posts -->
+        <h2>Recent Blog Posts</h2>
         <!-- card template:
-        <article class="card"> 
-          <h2>BLOG TITLE</h2>
-          <h4>Blog description, Date</h4>
-          <div class="blogimg" style="height:200px;">Blog Image</div>
-          <p>Blog intro...</p>
+        <article class="card blogpostcard"> 
+          <h3 class="cardtitle">Blog Post Title</h3>
+          <div class="blogimg">
+            <a href="">
+              <img src="" alt="Blog image / link to blog post">
+            </a>
+          </div>
+          <div class="blogintro">
+            Short introduction to the blog post...
+          </div> 
+        </article>  -->
+        <article class="card blogpostcard"> 
+          <h3 class="cardtitle">Blog Post Title</h3>
+          <div class="blogimg">
+            <a href="">
+              <img src="" alt="Blog image / link to blog post">
+            </a>
+          </div>
+          <div class="blogintro">
+            Short introduction to the blog post...
+          </div> 
         </article>
-        -->
-        <article class="card">
-          <h2>BLOG TITLE</h2>
-          <h4>Blog description, Date</h4>
-          <div class="blogimg" style="height:200px;">Blog Image</div>
-          <p>Blog intro...</p>
-        </article>
-      </div> <!-- end of right column element -->
+      </div> <!-- end of left column element -->
     </main>
     <footer> <!-- site footer -->
       <div id="signature">
