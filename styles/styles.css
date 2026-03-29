@@ -30,7 +30,12 @@ a {
 hr {
   color: #8e7cc3; /* light purple */
 }
-
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
 /** header Styles */
 /** ------------- */
 header {
@@ -287,7 +292,6 @@ footer a:hover {
     float: left;
     display: block;
     color: white;
-    font-weight: bold;
     text-align: center;
     padding: 14px 16px; 
   }
