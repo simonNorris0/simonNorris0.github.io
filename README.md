@@ -11,22 +11,21 @@ showcase my ability to develop a static website from raw HTML/CSS/JavaScript -
 ## To-Do:
 <ol>
     <li>Publish first blog post</li>
-    <li>Re-design Home, About Me, Portfolio, and Blog for consistent look/feel
-        across site</li>
+    <li>Re-Build Profile / Portfolio content</li>
+    <li>Finish Home / Blog Index content</li>
+    <li>Design Home, Profile, Portfolio, Blog, Blog Posts, and Projects 
+        for consistent look/feel across site</li>
     <li>Time-stamps for dateCreated</li>
     <li>dateModified structured data script</li>
     <li>Publish first project page (the website)</li>
     <li>------------------------------------------------</li>
-    <li>styles.css footer fix</li>
     <li>spelling / grammar check</li>
-    <li>re-validate structured data</li>
     <li>print-friendly resume file / function</li>
     <li>Ensure Google crawler is able to index the sitemap</li>
     <li>Ensure that daemonworks.html, contact.html, and all html templates are not indexed.</li>
     <li>Ensure CSS is well formatted across multiple desktop OS and mobile devices.</li>
 </ol>
-<p><b>Maintain SEO and structured data, continue to update project portfolio, 
-blog posts, profile, and resume.</b></p>
+<p><b>Maintain structured data when adding/modifying content going forward.<b></p>
 
 ## Notes:
 <b>Website Project Reflections:</b>
