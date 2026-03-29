@@ -243,6 +243,11 @@ footer {
   color: white;
   background-color: #636363; /* dark gray */
 }
+/* keep footer links uniform across site */
+footer a {
+  font-weight: bold;
+  text-decoration: none;
+}
 /* the "signature" element - contains "last update" and <address> elements 
  * 1st child of footer */
 footer #signature {
@@ -278,7 +283,6 @@ footer #mylinks a {
   padding: 7px 7px;
   border: 2px solid #8e7cc3; /* light purple */
   color: white;
-  text-decoration: none;
 }
 footer a:hover {
   background-color: #111111 /* black */
