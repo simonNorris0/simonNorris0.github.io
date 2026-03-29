@@ -7,7 +7,9 @@
     <meta name="author" content="https://www.github.com/simonNorris0" />
     <meta name="description" content="html template for blog posts." />
     <meta name="robots" content="noindex" /> <!-- attempts to prevent crawlers -->
-    <title>simonNorris0 | Blog Post</title>
+    <title>
+      Blog Post Title
+    </title>
     <!-- favicon -->
     <link rel="icon" href="../../media/imgs/favicon.ico" />
     <link rel="stylesheet" href="../../styles/styles.css" /> 
@@ -17,8 +19,8 @@
       {
         "@context": "https://schema.org/",
         "@type": "BlogPosting",
-        "headline": "",
-        "name": "",
+        "headline": "Blog post headline...",
+        "name": "Blog Post Title",
         "description": "",
         "datePublished": "",
         "author": {
@@ -47,7 +49,6 @@
         "url": ""
       }
     </script> <!-- end of structured data -->
-
     <!-- dynamically inserts last update into site footer,
          see ../../scripts/updateDate.js -->
     <script src="../../scripts/updateDate.js"></script>
@@ -58,23 +59,49 @@
   <body>
     <nav> <!-- site navigation bar -->
       <ul class="navbar" id="navbar">
-        <li class="pagetitle">Blog Post Title</li>
-        <li><a href="../../index.html">Home</a></li>
-        <li><a href="../resume.html">Resume</a></li>
-        <li><a href="../portfolio.html">Project Portfolio</a></li>
-        <li><a href="../blog.html">Blogs</a></li>
-        <li><a href="../profile.html">About Me</a></li>
-        <li><a class="menuicon" href="javascript:void(0);" onclick="pullDown()">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Menu_%2889650%29_-_The_Noun_Project.svg" 
+        <li class="pagetitle bold">
+          Blog Post Title
+        </li>
+        <li>
+          <a href="../../index.html">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="../resume.html">
+            Resume
+          </a>
+        </li>
+        <li>
+          <a href="../portfolio.html">
+            Project Portfolio
+          </a>
+        </li>
+        <li>
+          <a href="../blog.html">
+            Blogs
+          </a>
+        </li>
+        <li>
+          <a href="../profile.html">
+            About Me
+          </a>
+        </li>
+        <li>
+          <a class="menuicon" href="javascript:void(0);" onclick="pullDown()">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Menu_%2889650%29_-_The_Noun_Project.svg" 
             alt="menu bars to access navigation menu">
-        </a></li>
+          </a>
+        </li>
       </ul>
     </nav>
     <header>
       <div class="headline">
         Blog post headline...
       </div>
-      <h1>Blog Post Title</h1>
+      <h1>
+        Blog Post Title
+      </h1>
     </header>
     <main>
       <!-- main post content -->
@@ -84,18 +111,30 @@
       <!-- container to keep "lastupdate" and <address> elements inline with 
            "mylinks" <span> element -->
         <div id="lastupdate">
-          <p>Last Updated: <span id="updateId">Loading...</span></p>
+          Last Updated: 
+          <span id="updateId">
+            Loading...
+          </span>
         </div>
         <address>
-          <p>Simon Norris</p>
-          <p><a class="email" 
-            href="mailto:simonmjnorris@gmail.com">Send Email</a></p>
+          <span id="name">
+            Simon Norris
+          </span>
+          <span>
+            <a id="sendemail" href="mailto:simonmjnorris@gmail.com">
+              Send Email
+            </a>
+          </span>
         </address>
       </div> <!-- end of signature element -->
       <span id="mylinks">
-        <a href="https://www.github.com/simonNorris0">GitHub</a>
-        <a href="https://www.linkedin.com/in/simonNorris0">LinkedIn</a>
-      </span>
+        <a href="https://www.github.com/simonNorris0">
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/simonNorris0">
+          LinkedIn
+        </a>
+      </span> <!-- end of "mylinks" elements -->
     </footer>
   </body>
 </html>
