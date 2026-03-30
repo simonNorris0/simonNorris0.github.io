@@ -32,10 +32,17 @@ body {
   margin-bottom: 25px;
   padding-bottom: 40px; /* must match footer height */
 
-  font-size: 16px;
+  color: #1a1a1a; /* softened black - reduced eye strain */
+  font-size: 1em;
 }
 hr { /* horiztonal rule */
-  color: #8e7cc3; /* light purple */
+  /* produce double rule */
+  /* ------------------- */
+  border: none; /* remove default styling */
+  border-top: 8px double #8e7cc3;
+  height: 0;
+  margin: 30px 10px;
+ 
 }
 p {
   margin-bottom: 10px;
@@ -97,6 +104,61 @@ li.not(#navbar li) {
                     REQUIRES using flex property selectors, as the 
                     element is no longer considered inline or block. */
 }
+.caption {
+  /* typography: */
+  letter-spacing: 0.02em;
+  font-size: 0.85rem;
+  font-style: italic;
+  
+  /* contrast: */
+  color: #555555; /* slightly lighter than body text so it doesn't 'compete'
+                     for the readers attention. */
+  /* alignment: */
+  text-align: left;
+  border-top: 1px solid #d1d1d1;
+  
+  padding-top: 8px;
+  margin-top: 12px;
+  line-height: 1.4;
+
+}
+
+/** Global Image Styles **/
+/** ------------------- **/
+
+/* 'drop shadow' effects for images */
+/* ------------------------------- */
+
+/* close to the page */
+img.dropshadow {
+  /* horizontal-offset vertical-offset blur-radius spread-radius color */
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 4px; /* tiny rounding of the corners for a softer look */
+}
+/* noticeably higher off the page*/
+img.lifted {
+ 
+  box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.35);
+  border-radius: 4px;
+}
+/* the most dramatic lift for the primary image */
+img.hero {
+  box-shadow: 
+    0px 8px 12px 0 rgba(0, 0, 0, 0.3), /* tight inner shadow */
+    0px 40px 55px 0 rgba(0, 0, 0, 0.35); /* soft outer glow   */
+  border-radius: 4px;
+  margin-bottom: 50px;
+}
+
+/* polaroid effects */
+img.polaroid {
+  /* white frame */
+  background-color: white;
+  padding: 12px;
+  border: 1px solid #ddd; /* subtle edge for the photo */
+  /* lifted shadow with a negative spread for a more realistic photo look */
+  display: inline-block; /* keeps the frame tight to the image */
+}
 
 /* card effect for article links */
 /* ----------------------------- */
@@ -105,6 +167,16 @@ li.not(#navbar li) {
   padding: 5px;
   margin-top: 10px;
 
+  overflow: hidden;
+}
+/* cards for project portfolio don't use the purple background */
+.portfoliocard {
+  background-color: #bababa; /* a medium-light gray */
+  padding: 5px;
+  margin-top: 10px;
+
+
+  
   overflow: hidden;
 }
 .card .subheading {
@@ -121,6 +193,10 @@ li.not(#navbar li) {
   height: 200px;
   margin-top: 5px;
   padding: 5px;
+}
+
+.portfoliocard .articleimg {
+  border: 2px solid white;
 }
 
 .profileimg {
@@ -203,17 +279,172 @@ main:after {
   clear: both;
 }
 
-/** ~~~ PORTFOLIO STYLES ~~~ ***/
-/** ------------------------ ***/
+/** ~~~ PROJECT PAGE STYLES ~~~ ***/
+/** --------------------------- ***/
 
 
-/** ~~~ BLOG STYLES ~~~ **/
+/** ~~~ BLOG POST STYLES ~~~ **/
 /** ------------------- **/
+/* header styles */
+/* ------------- */
+.blogheadline {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  
+  animation: fadeUp 1.2s ease-out forwards;
+}
+.blogtitle {
+  font-size: 1.8em;
+  color: #6850af; /* purple */ 
+}
+.blogsubtitle {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #444;
+  margin-top: 5px;
+  margin-bottom: 10px; 
+}
+.blogheaderimg {
+  height: 400px;
+  width: 100%;
+  margin-top: 20px;
+  
+  animation: fadeUp 1.2s ease-out forwards;
+  animation-delay: 0.7s;
+  opacity: 0;
+}
+.blogheadercaption {
+  animation: fadeUp 1.2s ease-out forwards;
+  animation-delay: 0.7s;
+  opacity: 0; 
+}
 
+/* blog main styles */
+/* ---------------- */
+/* Column layout: two 50/50 columns. Left is main content. Right is asides */
+/* ----------------------------------------------------------------------- */
+.textcolumn {
+  line-height: 1.7;    /* IMPROVES READABILITY */
+  text-align: justify; /* creates clean edges */
+  hyphens: auto;
+  padding-right: 40px;
+  margin-bottom: 25px;
+}
+.imagecolumn {
+  margin-bottom: 25px;
+}
+.imagecolumn img {
+  width: 100%;   /* take up the entire imagecolumn */
+  height: auto;  /* MAINTAINS ORIGINAL ASPECT RATIO OF IMAGE */
+  display: block;
+ 
+  animation: fadeUp 1.2s ease-out forwards;
+  animation-delay: 0.7s;
+  opacity: 0;
+}
+.imagecolumn .firstrow {
+  margin-top: 65px;
+}
+.imagecolumn .secondrow {
+  margin-top: 50px;
+}
+.imagecolumn .thirdrow {
+  margin-top: 60px;
+}
+.imagecolumn .fourthrow {
+  margin-top: 395px;
+}
+.imagecolumn .summary {
+  margin-top: 210px;
+}
 
-/** ~~~ PROJECT STYLES ~~~ **/
-/** ---------------------- **/
+/* blog intro styles */
+/* ----------------- */
+.blogintro {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 50/50 split */
+  column-gap: 20px;
+  align-items: start; /* align the top of both columns (child sections
+                                                        -textcolumn   (left)
+                                                        -imagecolumn) (right)*/
+}
+.blogintro p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+/* 'drop cap' */
+.blogintro .textcolumn p:first-of-type::first-letter {
+  color: #6850af; /* match .blogtitle */
+  font-weight: bold;
+  font-size: 5rem;
+  font-family: serif;
 
+  float: left; /* float so text wraps around the large letter */ 
+  line-height: 0.85; /* adjusts the 'container' of the large letter */
+  margin-top: 6px; /* pushes the letter down */
+  padding-top: 2px; /* nudging the letter down.. */  
+  margin-right: 10px;
+}
+
+/* blog body styles */
+/* ---------------- */
+.blogbody {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 50/50 split */
+  column-gap: 20px;
+  align-items: start; /* align the top of both columns (child section
+                                                        -textcolumn  (left)
+                                                        -imagecolumn (right)*/
+  margin-bottom: 0;
+}
+.blogbody p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+
+}
+.blogbody h2 {
+  font-family: serif;
+  font-size: 1.8rem;
+  line-height: 1.5rem;
+  color: #6850af; /* match .blogtitle */
+
+  margin-top: 40px; /* large space starts a new chapter */
+  border-left: 4px solid #6850af;
+  padding-left: 15px;
+}
+/* classic editorial element that highlights a key sentence */
+.sidequote {
+  flex: 1;
+  line-height: 1.5;
+  font-family: serif;
+  font-style: italic;
+  font-size: 1.4rem;
+  color: #6850af; /* match .blogtitle */
+
+  /* centered with space above and below */ 
+  text-align: center;
+  padding: 30px 20px;
+  /* top and bottom lines */
+  border-top: 2px solid #d1d1d1;
+  border-bottom: 2px solid #d1d1d1;
+  /* very light purple background */
+  background-color: rgba(104, 80, 175, 0.05); 
+}
+
+/** ~~~ SPECIAL RULES and DEFINTIONS ~~~ **/
+/** ------------------------------------ **/
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Starts 20px lower */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);    /* Ends in its natural position */
+    }
+}
 
 /** site navigation bar: unordered list with the "navbar" ID **/
 /** (contained in body)                                      **/

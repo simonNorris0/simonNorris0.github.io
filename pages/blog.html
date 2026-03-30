@@ -6,11 +6,11 @@
     <meta name="author" content="Simon Norris" />
     <meta name="author" content="https://www.github.com/simonNorris0" />
     <meta name="description" content="Personal blogs on a wide variety of 
-                topics from travel, to arts and culture, to microcontrollers 
-                and chess. All from the perspective of a would be 
-                software engineer." />
+                topics ranging from mathematics, arts and culture, to computing 
+                and chess. All from the perspective of a would-be 
+                software engineer just writing down his thoughts." />
     <title>
-      The BlogDaemon
+      The Interface
     </title>
     <!-- favicon -->
     <link rel="icon" href="../media/imgs/favicon.ico" />
@@ -21,7 +21,7 @@
       {
         "@context": "https://schema.org/",
         "@type": "Blog",
-        "name": "The BlogDaemon",
+        "name": "The Interface",
         "alternateName": "Simon Norris | Blogs",
         "description": "Personal blogs by Simon Norris. Index page.",
         "dateCreated": "2026-03-26",
@@ -135,7 +135,7 @@
     </script> <!-- end of structured data -->
     <!-- dynamically inserts last update into site footer, 
          see ../scripts/updatedate.js -->
-    <script src="../scripts/updateDate.js"></script>
+    <script src="../scripts/updateDate.js" defer></script>
     <!-- dynamically inserts "responsive" class into site navigation 
          bar for mobile display. see scripts/responsive.js -->
     <script src="../scripts/responsive.js"></script>
@@ -144,7 +144,7 @@
     <nav> <!-- site navigation bar -->
       <ul class="navbar" id="navbar">
         <li class="pagetitle">
-          The BlogDaemon
+          The Interface
         </li>
         <li>
           <a href="../index.html">
@@ -181,107 +181,76 @@
     </nav>
     <header>
       <h1>
-        The BlogDaemon
+        The Interface
       </h1>
       <div class="subheading">
-        Personal blogs on a wide variety of topics from travel, 
-        to Arts & Culture, to microcontrollers and chess. 
-        All from the perspective of a would be software engineer.
+        Personal blogs on a wide variety of topics ranging 
+        from mathematics, arts and culture, to computing and chess. 
+        All from the perspective of a would-be software engineer just  
+        writing down his thoughts.
       </div>
-      <hr>
+      <div class="subheading bold">
+        Click/tap on any of the images in the 'Recent Blog Posts' or 
+        'Highlighted Posts' cards to be taken to the blog post for that 
+        content.
+      </div>
     </header>
     <main>
-      <!-- the right column is the 'aside' content, stack on top of 
+      <!-- the left column is the 'aside' content, stack on top of 
            the main page content on small screns -->
-      <div class="rightcolumn">
+      <aside class="leftcolumn">
+        <h2>Archive Page</h2>
+          <p>
+            You can find raw text links to all my blog posts (sorted by the
+            date they were published) 
+            <a href="blogs/_dir.html">
+              on this archive page</a>.
+          </p>
         <article id="aboutme" class="card"> <!-- 'about me' card -->
           <h2 class="cardtitle">
             About Me
           </h2>
           <div class="profileimg">
-            <img src="" alt="Profile image of author">
+            <a href="https://simonNorris0.github.io/pages/profile.html">
+              <img src="" 
+                   alt="Profile image of the author.">
+            </a>
           </div>
-          <p>
-            Some text about me...
-          </p>
+          <div class="subheading">
+            A brief description of me...
+          </div>
         </article> <!-- end of 'aboutme' article -->
-        <article id="highlights" class="card"> <!-- 'highlighted posts' card -->
+        <article id="highlights" class="card">
           <h2 class="cardtitle">
             Highlighted Posts
           </h2>
-          <!-- 'highlighted post template:
-          <h3>
-            Blog Title
-          </h3>
-          <span class="subheading"> // inline with Blog Title
-            1-2 lines describing the blog post...
-          </span>
-          <div class="articleimg">
-            <a href="">
-              <img src="" alt="Blog image / link to blog post">
-            </a>
-          </div>
-          <div class="articleintro">
-            Short introduction to the blog post...
-          </div> -->
-          <!-- Highlight 1: -->
-          <h3>
-            Blog Title
-          </h3>
-          <span class="subheading">
-            1-2 lines describing the blog post...
-          </span>
-            <div class="articleimg">
-              <a href="">
-                <img src="" alt="Blog image / link to blog post">
-              </a>
-            </div>
-            <div class="articleintro">
-              Short introduction to the blog post...
-            </div>
+          <hr>
+          <!-- ... highlights go here ... -->
         </article> <!-- end of 'highlights' article -->
-      </div> <!-- end of right column element (aboutme and highlights) -->
-      <!-- the left column is the main content of the page --> 
-      <div class="leftcolumn">
+      </aside> <!-- end of left column element (aside content) -->
+      <!-- the right column is the main content of the page --> 
+      <section class="rightcolumn"> 
         <h2>
-          Archive Page
+          Recent Blog Posts
         </h2>
-        <p>
-          You can find simple text links to all my blog posts (sorted by the 
-          date they were published) <a href="">
-            here
-          </a>.
-        </p>
+        <hr>
         <!-- series of cards that link to recent blog posts -->
-        <h2>Recent Blog Posts</h2>
-        <!-- card template:
-        <article class="card articlecard"> 
+        <article class="card"> 
           <h3 class="cardtitle">
-            Blog Post Title
+            Alberta Ballet: Swan Lake
           </h3>
           <div class="articleimg">
-            <a href="">
-              <img src="" alt="Blog image / link to blog post">
-            </a>
-          </div>
-          <div class="articleintro">
-            Short introduction to the blog post...
-          </div> 
-        </article>  -->
-        <article class="card articlecard"> 
-          <h3 class="cardtitle">
-            Blog Post Title
-          </h3>
-          <div class="articleimg">
-            <a href="">
-              <img src="" alt="Blog image / link to blog post">
+            <a href="https://simonNorris0.github.io/pages/blogs/swanlake.html">
+              <img src="" 
+                   alt="An image of Swan Lake by the Alberta Ballet. The 
+                        image links to the blog post.">
             </a>
           </div>
           <div class="articleintro">
             Short introduction to the blog post...
           </div> 
         </article>
-      </div> <!-- end of left column element -->
+      </section> <!-- end of right column element (main content) -->
     </main>
     <footer> <!-- site footer -->
       <div id="signature">
