@@ -104,6 +104,8 @@ li.not(#navbar li) {
   background-color: #d2cbe7; /* light-er purple */
   padding: 5px;
   margin-top: 10px;
+
+  overflow: hidden;
 }
 .card .subheading {
   display: inline; /* overwrite global .subheading display: flex */
