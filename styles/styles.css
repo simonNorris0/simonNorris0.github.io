@@ -37,6 +37,9 @@ body {
 hr { /* horiztonal rule */
   color: #8e7cc3; /* light purple */
 }
+p {
+  margin-bottom: 10px;
+}
 
 /* global link styles */
 /* ------------------ */
@@ -58,6 +61,13 @@ ol {
   list-style-position: inside;
   overflow: hidden; 
 }
+/* targets all list items EXCEPT list items that belong to the 
+ * parent ul with id="navbar" (the site navigation bar) */
+li.not(#navbar li) {
+  padding-left: 23px; /* creates space for the "hanging" bullet */
+  /* pull the first line (with the bullet) back */
+  text-indent: -23px; /* must be the negative of padding-left */
+}
 
 /* global class styles */
 /* ------------------- */
@@ -67,26 +77,62 @@ ol {
 .italic {
   font-style: italic;
 }
+.halfwidth {
+  width: 50%;
+}
+.thirdwidth {
+  width: 33%;
+}
+.centerblock {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.largetext {
+  font-size: 18px;
+}
+.subheading {
+  display: flex; /* solves unintended whitespace issue from formatting 
+                    links and span elements in subheading code.
+                    REQUIRES using flex property selectors, as the 
+                    element is no longer considered inline or block. */
+}
 
 /* card effect for article links */
 /* ----------------------------- */
 .card {
-  background-color: white;
+  background-color: #d2cbe7; /* light-er purple */
   padding: 5px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
-.card h2 {
-  color: #6850af; /* purple */
+.card .subheading {
+  display: inline; /* overwrite global .subheading display: flex */
 }
+
+.cardtitle {
+  display: inline;
+}
+
 .articleimg {
-  background-color: #aaa;
+  border: 2px solid #636363; /* dark gray */
   width: 100%;
+  height: 200px;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.profileimg {
+  border: 2px solid #636363; /* dark gray */
+  width: 100%;
+  height: 200px;
+  margin-top: 5px;
   padding: 5px;
 }
 
 /* buttons */
 /* ------- */
 .button {
+  display: block;
   background-color: #8e7cc3; /* light purple */
   border: none;
   color: white;
@@ -94,7 +140,6 @@ ol {
   padding-top: 10px;
   text-align: center;
   text-decoration: none;
-  display: block;
   cursor: pointer;
 }
 
@@ -106,13 +151,16 @@ ol {
 /** ------------- */
 header {
   text-align: center;
+  padding-bottom: 15px;
   padding-top: 15px;
 }
 header h1 {
   font-size: 20px;
 }
 header .subheading {
-  text-wrap: balance; /** attempts to balance number of chars on ea line */
+  /* display: flex requires using flex property selectors */
+  justify-content: center; /* centers flex items horizontally */
+  align-items: center; /* centers the element vertically */
   font-size: 14px;
 }
 
@@ -124,31 +172,27 @@ main h2 {
 main h3 {
   font-size: 16px;
 }
-main .subheading {
-  text-wrap: balance; /** attempts to balance number of chars on ea line */
+main .subheading { 
   font-size: 14px;
 }
 main section {
   padding-bottom: 10px;
 }
-.subsection {
-  padding-bottom: 5px;
-}
+
 /* table of contents */
-main .toc {
-  
-}
+
+
 /* column layout */
 /* creates two unequal columns that float next to each other */
 /* --------------------------------------------------------- */
 main .leftcolumn {
   float: left;
-  width: 60%;
+  width: 30%;
 }
 main .rightcolumn {
   float: left;
-  width: 40%;
-  padding-left: 5px;
+  width: 70%;
+  padding-left: 10px;
 }
 /* clear floats after the columns */
 main:after {
