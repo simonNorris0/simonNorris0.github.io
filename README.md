@@ -9,7 +9,6 @@ showcase my ability to develop a static website from raw HTML/CSS/JavaScript -
 <b>no CMS or frameworks are used</b>.</p>
 
 ## Notes:
-<p><b>Maintain structured data when adding/modifying content going forward.</b>b></p>
 <b>PHP, Ruby, Python, and Server-Side Programming in general are not supported 
 by the GitHub Pages service:</b> <a href=
 "https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site">
