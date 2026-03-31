@@ -1,4 +1,4 @@
-# Block all crawlers (Adsbot crawlers must be name explicitly)
+# Block all crawlers (Adsbot crawlers must be named explicitly)
 User-agent: *
 User-agent: AdsBot-Google
 Disallow: /templates/
