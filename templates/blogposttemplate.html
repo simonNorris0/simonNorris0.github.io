@@ -6,7 +6,8 @@
     <meta name="author" content="Simon Norris" />
     <meta name="author" content="https://www.github.com/simonNorris0" />
     <meta name="description" content="html template for blog posts." />
-    <meta name="robots" content="noindex" /> <!-- attempts to prevent crawlers -->
+    <meta name="robots" content="noindex" /> <!-- attempts to 
+                                                  prevent crawlers -->
     <title>
       Blog Post Title
     </title>
@@ -96,15 +97,39 @@
       </ul>
     </nav>
     <header>
-      <div class="headline">
+      <div id="headline">
         Blog post headline...
       </div>
-      <h1>
+      <h1 id="blogtitle">
         Blog Post Title
       </h1>
+      <div id="blogsubtitle">
+      <!-- optional hero image -->
+      </div>
+      <hr>
     </header>
     <main>
-      <!-- main post content -->
+      <section id="blogintro">
+        <!-- main content, left side -->
+        <div class="textcolumn"> 
+        
+        </div> <!-- end of textcolumn element -->
+        <!-- aside content, right side -->
+        <div class="imagecolumn">
+
+        </div> <!-- end of imagecolumn element -->
+      </section> <!-- end of blogintro section -->
+      <section id="blogbody">
+        <!-- LEFT SIDE: the main story content -->
+        <section class="textcolumn">
+
+        </section> <!-- end of textcolumn element -->
+        <!-- RIGHT SIDE: images and pull quotes, the aside content -->
+        <section class="imagecolumn">
+
+        </section> <!-- end of imagecolumn element -->
+      </section> <!-- end of blodbody section -->
+      <hr>
     </main>
     <footer> <!-- site footer -->
       <div id="signature">
