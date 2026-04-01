@@ -583,9 +583,11 @@ footer a:hover {
   /* ------------- */
   /* Responsive layout - when the screen is less than 800px wide, make the
    * two columns stack on top of each other instead of next to each other */
-  main .leftcolumn, .rightcolumn {
+  main .leftcolumn {
     width: 100%;
-    padding: 0;
+  }
+  main .rightcolumn {
+    width: 100%;
   }
   
   /** mobile site navigation bar styles **/
