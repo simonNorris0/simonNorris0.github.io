@@ -287,18 +287,18 @@ main:after {
 /** ------------------- **/
 /* header styles */
 /* ------------- */
-.blogheadline {
+#headline {
   font-size: 2.5em;
   font-weight: bold;
   margin-bottom: 10px;
   
   animation: fadeUp 1.2s ease-out forwards;
 }
-.blogtitle {
+#blogtitle {
   font-size: 1.8em;
   color: #6850af; /* purple */ 
 }
-.blogsubtitle {
+#blogsubtitle {
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -306,7 +306,7 @@ main:after {
   margin-top: 5px;
   margin-bottom: 10px; 
 }
-.blogheaderimg {
+#blogheaderimg {
   height: 400px;
   width: 100%;
   margin-top: 20px;
@@ -315,7 +315,7 @@ main:after {
   animation-delay: 0.7s;
   opacity: 0;
 }
-.blogheadercaption {
+#blogheadercaption {
   animation: fadeUp 1.2s ease-out forwards;
   animation-delay: 0.7s;
   opacity: 0; 
@@ -362,7 +362,7 @@ main:after {
 
 /* blog intro styles */
 /* ----------------- */
-.blogintro {
+#blogintro {
   display: grid;
   grid-template-columns: 1fr 1fr; /* 50/50 split */
   column-gap: 20px;
@@ -370,12 +370,12 @@ main:after {
                                                         -textcolumn   (left)
                                                         -imagecolumn) (right)*/
 }
-.blogintro p {
+#blogintro p {
   font-size: 1.1rem;
   line-height: 1.8;
 }
 /* 'drop cap' */
-.blogintro .textcolumn p:first-of-type::first-letter {
+#blogintro .textcolumn p:first-of-type::first-letter {
   color: #6850af; /* match .blogtitle */
   font-weight: bold;
   font-size: 5rem;
@@ -390,7 +390,7 @@ main:after {
 
 /* blog body styles */
 /* ---------------- */
-.blogbody {
+#blogbody {
   display: grid;
   grid-template-columns: 1fr 1fr; /* 50/50 split */
   column-gap: 20px;
@@ -399,12 +399,12 @@ main:after {
                                                         -imagecolumn (right)*/
   margin-bottom: 0;
 }
-.blogbody p {
+#blogbody p {
   font-size: 1.1rem;
   line-height: 1.8;
 
 }
-.blogbody h2 {
+#blogbody h2 {
   font-family: serif;
   font-size: 1.8rem;
   line-height: 1.5rem;
