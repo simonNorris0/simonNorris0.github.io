@@ -600,9 +600,10 @@ footer a:hover {
   }
   .textcolumn {
     width: 100%;
+    padding-right: 10px;
   }
   .imagecolumn {
-    width: 100%
+    width: 100%;
   }
   
   /** mobile site navigation bar styles **/
