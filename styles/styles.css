@@ -175,8 +175,6 @@ img.polaroid {
   padding: 5px;
   margin-top: 10px;
 
-
-  
   overflow: hidden;
 }
 .card .subheading {
@@ -205,6 +203,11 @@ img.polaroid {
   height: 200px;
   margin-top: 5px;
   padding: 5px;
+}
+
+.card img {
+  height: 200px;
+  width: 100%;
 }
 
 /* buttons */
