@@ -243,7 +243,7 @@ header {
   padding-top: 15px;
 }
 header h1 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 header .subheading {
   /* display: flex requires using flex property selectors */
@@ -526,7 +526,7 @@ footer {
   table-layout: fixed;
   line-height: 1; /* alignment fix for table-layout */
 
-  font-size: 0.6rem; /* maintain uniform font-size across site */
+  font-size: 0.8rem; /* maintain uniform font-size across site */
   color: white;
   background-color: #636363; /* dark gray */
 }
