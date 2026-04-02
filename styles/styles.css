@@ -21,6 +21,7 @@
   padding: 0;
 }
 html {
+  font-size: 16px; /* absolute reference for rem values */
   background-color: #d3d3d3; /* light gray */
 }
 body {
@@ -33,7 +34,10 @@ body {
   padding-bottom: 40px; /* must match footer height */
 
   color: #1a1a1a; /* softened black - reduced eye strain */
-  font-size: 1em;
+  font-size: 1rem;
+}
+body p {
+  line-height: 1.8;
 }
 hr { /* horizontal rule */
   /* produce double rule */
@@ -96,7 +100,7 @@ li.not(#navbar li) {
   margin-right: auto;
 }
 .largetext {
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 .subheading {
   display: flex; /* solves unintended whitespace issue from formatting 
@@ -193,6 +197,11 @@ img.polaroid {
   padding: 5px;
 }
 
+.articleimg img {
+   height: 200px;
+   width: 100%;
+}
+
 .portfoliocard .articleimg {
   border: 2px solid white;
 }
@@ -205,7 +214,7 @@ img.polaroid {
   padding: 5px;
 }
 
-.card img {
+.profileimg img {
   height: 200px;
   width: 100%;
 }
@@ -236,25 +245,25 @@ header {
   padding-top: 15px;
 }
 header h1 {
-  font-size: 20px;
+  font-size: 1.4rem;
 }
 header .subheading {
   /* display: flex requires using flex property selectors */
   justify-content: center; /* centers flex items horizontally */
   align-items: center; /* centers the element vertically */
-  font-size: 14px;
+  font-size: 0.8rem;
 }
 
 /** main styles **/
 /** ----------- **/
 main h2 {
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 main h3 {
-  font-size: 16px;
+  font-size: 1rem;
 }
 main .subheading { 
-  font-size: 14px;
+  font-size: 0.8rem;
 }
 main section {
   padding-bottom: 10px;
@@ -475,7 +484,7 @@ ul#navbar li.pagetitle {
 }
 /* list items in site navigation bar */
 ul#navbar li {
-  font-size: 14px; /* maintain uniform font-size across site */
+  font-size: 0.8rem; /* maintain uniform font-size across site */
   font-weight: bold; /* and weight */
   float: left;
 }
@@ -519,7 +528,7 @@ footer {
   table-layout: fixed;
   line-height: 1; /* alignment fix for table-layout */
 
-  font-size: 12px; /* maintain uniform font-size across site */
+  font-size: 0.6rem; /* maintain uniform font-size across site */
   color: white;
   background-color: #636363; /* dark gray */
 }
@@ -544,7 +553,7 @@ footer address {
 }
 footer address a#sendemail {
   color: #9FE2BF; /* seafoam green */
-  font-size: 14px;
+  font-size: 0.8rem;
   padding-left: 4px;
 }
 /* 2nd child of footer */
@@ -596,7 +605,7 @@ footer a:hover {
   /** mobile site navigation bar styles **/
   /** --------------------------------- **/
   ul#navbar li {
-    font-size: 14px; /* maintain uniform font-size across site */
+    font-size: 0.8rem; /* maintain uniform font-size across site */
   }
   /* hide all navigation links, show page title and the link 
      that opens and closes the pull-down menu for site nav 
