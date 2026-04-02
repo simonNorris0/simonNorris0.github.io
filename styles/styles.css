@@ -1,13 +1,13 @@
 /**** CASCADING Style Sheets:  ****/
 /** The lower down the sheet (cascade) the rule is, the 
     more specific it is. So the rules that need to be 
-    consistent across various pages, i.e., the navigtion 
+    consistent across various pages, i.e., the navigation
     bar, the site footer, and mobile styles, remain at the 
     BOTTOM of the style sheet.
     The next tiers of specificity required would then be 
     PORTFOLIO, BLOG, and PROJECT styles, as those will likely 
     require unique effects and may need to overwrite the styles 
-    used by the more textualy based pages.  
+    used by the more textually based pages.
 **/
 
 /*** Default Desktop Styles (wider screens) ***/
@@ -35,7 +35,7 @@ body {
   color: #1a1a1a; /* softened black - reduced eye strain */
   font-size: 1em;
 }
-hr { /* horiztonal rule */
+hr { /* horizontal rule */
   /* produce double rule */
   /* ------------------- */
   border: none; /* remove default styling */
@@ -433,7 +433,7 @@ main:after {
   background-color: rgba(104, 80, 175, 0.05); 
 }
 
-/** ~~~ SPECIAL RULES and DEFINTIONS ~~~ **/
+/** ~~~ SPECIAL RULES and DEFINITIONS ~~~ **/
 /** ------------------------------------ **/
 @keyframes fadeUp {
     from {
