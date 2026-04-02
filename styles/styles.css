@@ -208,12 +208,11 @@ img.polaroid {
   border: 2px solid #636363; /* dark gray */
   width: 100%;
   height: 200px;
-  margin-top: 5px;
   padding: 5px;
 }
 
 .profileimg img {
-  height: 200px;
+  height: 190px;
   width: 100%;
 }
 
@@ -598,6 +597,12 @@ footer a:hover {
   }
   main .rightcolumn {
     width: 100%;
+  }
+  .textcolumn {
+    width: 100%;
+  }
+  .imagecolumn {
+    width: 100%
   }
   
   /** mobile site navigation bar styles **/
