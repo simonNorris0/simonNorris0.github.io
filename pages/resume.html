@@ -159,7 +159,7 @@
             </span> 
         </span>
         <!-- a row of 2 links on mobile screens, ignored on larger screens -->
-        <span class="mobilerow">
+        <!-- <span class="mobilerow"> -->
           <span id="linkedin">
             <a href="https://www.linkedin.com/in/simonNorris0">
               linkedin.in/simonNorris0
@@ -170,7 +170,7 @@
               github.com/simonNorris0
             </a>
           </span>
-        </span>
+        <!-- </span> -->
         <div class="postalAddress">
           Red Deer, AB
         </div>
@@ -182,7 +182,7 @@
           Education
         </h2>
         <hr>
-        <section id="undergrad">
+        <section class="subsection">
           <!-- 1st row: institution and location -->
           <div class="row">
             <span class="institution bold">
@@ -217,15 +217,15 @@
                 comp272 Data Structures & Algorithms
               </li>
               <li>
-                comp268/comp308 Java  Programming
+                comp268 / comp308 Java  Programming
               </li>
-              <li
+              <li>
                 comp314 Operating Systems
               </li>
             </ul>
           </div>
         </section> <!-- end of undergrad subsection -->
-        <section id="secondaryschool">
+        <section class="subsection">
           <!-- 1st row: institution and location -->
           <div class="row">
             <span class="institution bold">
@@ -250,7 +250,9 @@
          <h2>
            Organizations
          </h2>
-         <div class="row">
+         <hr>
+        <section class="subsection"> <!-- CMS subsection -->
+          <div class="row">
             <span class="institution bold">
               Canadian Mathematical Society
             </span>
@@ -261,16 +263,20 @@
           <div>
             Student member
           </div>
-      </section>
+          </section> <!-- end of CMS subsection -->
+      </section> <!-- end of organizations section -->
       <section id="experience">
-        <!-- ... work experience ... -->
+        <h2>
+          Work Experience
+        </h2>
+        <hr>
       </section> <!-- end of experience section -->
       <section id="projects">
         <h2>
           Projects
         </h2>
         <hr>
-        <section id="unixvm">
+        <section class="subsection">
           <!-- row - project name and time period -->
           <div class="row">
             <span class="project bold">
@@ -297,8 +303,8 @@
               Developed basic X11 GUI program in Python with TkInter framework.
             </li>
           </ul>
-        </section> <!-- end of unixvm subsection -->
-        <section id="webpage">
+        </section> <!-- end of unix vm subsection -->
+        <section class="subsection">
           <!-- row - project name and time period -->
           <div class="row">
             <span class="project bold">
@@ -326,55 +332,6 @@
             </li>
           </ul>
         </section> <!-- end of webpage subsection -->
-        <section id="chessmapper">
-          <!-- row - project name and time period -->
-          <div class="row">
-            <span class="project bold">
-              Chess Study Tool
-            </span>
-            <span class="timeperiod">
-              Mar 2026 - Present
-            </span>
-          </div>
-          <div class="skillset">
-            Java, Swing, JUnit, IntelliJ IDEA, jGRASP
-          </div>
-          <div class="projectsummary">
-            <p>
-              Ongoing OOP Java project developing a ches simulator.
-            </p>
-          </div>
-          <ul class="projecthighlights">
-            <li>
-              GUI built with Swing framework.
-            </li>
-            <li>
-              Concurrently programmed; supports persistent game objects.
-            </li>
-          </ul>
-        </section> <!-- end of chessmapper subsection -->
-        <section id="flightcontrolsystems">
-          <!-- row - project name and time period -->
-          <div class="row">
-            <span class="project bold">
-              Flight Control Systems
-            </span>
-            <span class="timeperiod">
-              Dec 2025 - Present
-            </span>
-          </div>
-          <div class="skillset">
-            C, C++, MicroPython, NumPy, Arduino IDE
-          </div>
-          <div class="projectsummary">
-            <p>
-              Ongoing microcontroller project developing a flight controller
-              and radio control module for an Arduino Nano 33 BLE Rev2.
-            </p>
-          </div>
-          <ul class="projecthighlights">
-          </ul>
-        </section> <!-- end of flightcontrolsystems subsection -->
       </section><!-- end of projects section -->
       <section id="skills">
         <h2>
@@ -416,6 +373,10 @@
         </div>
       </section><!-- end of technical skills section -->
       <section id="certifications">
+        <h2>
+          Certifications and Licenses
+        </h2>
+        <hr>
         <!-- ... -->
       </section> <!-- end of certifications / licenses section -->
     </main>

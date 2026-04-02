@@ -72,10 +72,8 @@ ol {
   width: 100%;
 }
 
-/** id styles **/
-/** --------- **/
-/* add uniform space underneath sub-sections */
-#undergrad, #secondaryschool, #flightcontrolsystems, #chessmapper, #unixvm, #webpage {
+/* add uniform space undearth sub-sections */
+.subsection {
   padding-bottom: 15px;
 }
 
@@ -108,6 +106,8 @@ header .postaladdress {
 /* Education section */
 /* ----------------- */
 
+/* Organizations section */
+/* --------------------- */
 
 /* Experience section */
 /* ------------------ */
