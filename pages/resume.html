@@ -1,8 +1,9 @@
-<!doctype html>
-<!-- resume layout and style based on: 
+<!-- resume layout and style based on:
   https://cdn-careerservices.fas.harvard.edu/wp-content/uploads/sites/161/2025/07/Harvard-College-CS-Resume-Example.pdf
 -->
+<!doctype html>
 <html lang="en-US">
+<!-- head element: meta-data, file linkage -->
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -104,39 +105,16 @@
   <body>
     <nav> <!-- site navigation bar -->
       <ul class="navbar" id="navbar">
-        <li class="pagetitle">
-          Resume: Simon Norris
-        </li>
-        <li>
-          <a href="../index.html">
-            Home
-          </a>
-        </li>
-        <li>
-          <a class="active" href="resume.html">
-            Resume
-          </a>
-        </li>
-        <li>
-          <a href="portfolio.html">
-            Project Portfolio
-          </a>
-        </li>
-        <li>
-          <a href="blog.html">
-            Blogs
-          </a>
-        </li>
-        <li>
-          <a href="profile.html">
-            About Me
-          </a>
-        </li>
-        <li>
-          <a class="menuicon" href="javascript:void(0);" onclick="pullDown()">
+        <li class="pagetitle">Resume: Simon Norris</li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a class="active" href="resume.html">Resume</a></li>
+        <li><a href="portfolio.html">Project Portfolio</a></li>
+        <li><a href="blog.html">Blogs</a></li>
+        <li><a href="profile.html">About Me</a></li>
+        <li><a class="menuicon" href="javascript:void(0);" onclick="pullDown()">
             <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Menu_%2889650%29_-_The_Noun_Project.svg" 
-              alt="menu bars to access navigation menu">
-          </a>
+                 alt="menu bars to access navigation menu">
+            </a>
         </li>
       </ul>
     </nav>
@@ -158,8 +136,6 @@
               </a>
             </span> 
         </span>
-        <!-- a row of 2 links on mobile screens, ignored on larger screens -->
-        <!-- <span class="mobilerow"> -->
           <span id="linkedin">
             <a href="https://www.linkedin.com/in/simonNorris0">
               linkedin.in/simonNorris0
@@ -170,7 +146,6 @@
               github.com/simonNorris0
             </a>
           </span>
-        <!-- </span> -->
         <div class="postalAddress">
           Red Deer, AB
         </div>
@@ -195,14 +170,14 @@
           <!-- 2nd row: diploma and graduation date -->
           <div class="row">
             <span class="diploma">
-              BSc. Computing and Information Systems. Current GPA
-              <span class="gpa">
-                GPA 4.0
-              </span>
+              BSc. Computing and Information Systems.
             </span>
             <span class="graduation">
               Expected Mar 2027
             </span>
+          </div>
+          <div class="diplomadetails">
+            Current GPA: 4.0
           </div>
           <div class="diplomadetails">
               Minor in Applied Mathematics.
@@ -211,17 +186,24 @@
             Relevant Coursework:
             <ul>
               <li>
-                math216 Computer-Oriented Approach to Statistics
-              </li>
+                <a href="https://www.athabascau.ca/syllabi/math/math216.html">
+                  math216 Computer-Oriented Approach to Statistic
+                </a></li>
               <li>
-                comp272 Data Structures & Algorithms
-              </li>
+                <a href="https://www.athabascau.ca/syllabi/comp/comp272.html">
+                  comp272 Data Structures & Algorithms
+                </a></li>
               <li>
-                comp268 / comp308 Java  Programming
-              </li>
+                <a href="https://www.athabascau.ca/syllabi/comp/comp268.html">
+                  comp268 Introduction to Computer Programming (Java)
+                </a>, and
+                <a href="https://www.athabascau.ca/syllabi/comp/comp308.html">
+                  comp308 Java for Programmers
+                </a></li>
               <li>
-                comp314 Operating Systems
-              </li>
+                <a href="https://www.athabascau.ca/syllabi/comp/comp314.html">
+                  comp314 Operating Systems
+                </a></li>
             </ul>
           </div>
         </section> <!-- end of undergrad subsection -->
@@ -254,16 +236,42 @@
         <section class="subsection"> <!-- CMS subsection -->
           <div class="row">
             <span class="institution bold">
-              Canadian Mathematical Society
+              Canadian Mathematical Society (CMS)
             </span>
             <span class="timeperiod">
-              Apr 2026 - Dec 2026
+              2026
             </span>
           </div>
           <div>
-            Student member
+            Student Member
           </div>
           </section> <!-- end of CMS subsection -->
+        <section class="subsection"> <!-- CSCAN subsection -->
+          <div class="row">
+            <span class="institution bold">
+              Computer Science Canada|Informatique Canada (CS-Can|Info-Can)
+            </span>
+            <span class="timeperiod">
+              2026
+            </span>
+          </div>
+          <div>
+            (applied) Member Undergraduate Student
+          </div>
+        </section> <!-- end of CSCAN subsection -->
+        <section class="subsection"> <!-- CIPS subsection -->
+          <div class="row">
+            <span class="institution bold">
+              Canadian Information Processing Society (CIPS)
+            </span>
+            <span class="timeperiod">
+              2026
+            </span>
+          </div>
+          <div>
+            CIPS Alberta Student
+          </div>
+        </section> <!-- end of CIPS subsection -->
       </section> <!-- end of organizations section -->
       <section id="experience">
         <h2>
