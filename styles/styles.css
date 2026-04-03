@@ -77,6 +77,9 @@ ul.toc {
     width: 50%;
     padding-right: 10px;
 }
+ul.toic li {
+    width: 50%;
+}
 /* targets all list items EXCEPT list items that belong to the 
  * parent ul with id="navbar" (the site navigation bar) */
 li.not(#navbar li) {
@@ -613,10 +616,10 @@ footer a:hover {
   /* ------------- */
   /* Responsive layout - when the screen is less than 800px wide, make the
    * two columns stack on top of each other instead of next to each other */
-  .leftcolumn {
+  main .leftcolumn {
     width: 100%;
   }
-  .rightcolumn {
+  main .rightcolumn {
     width: 100%;
   }
   .textcolumn {
@@ -625,6 +628,14 @@ footer a:hover {
   }
   .imagecolumn {
     width: 100%;
+  }
+
+  #blogintro {
+    display: block;
+  }
+
+  #blogbody {
+    display: block;
   }
   
   /** mobile site navigation bar styles **/
