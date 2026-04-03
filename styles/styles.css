@@ -251,6 +251,16 @@ header .subheading {
   font-size: 0.8rem;
 }
 
+subheader {
+
+}
+subheader toc {
+    width: 50%;
+}
+subheader profileimage {
+    width: 50%;
+}
+
 /** main styles **/
 /** ----------- **/
 main h2 {
