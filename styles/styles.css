@@ -269,6 +269,10 @@ header .subheading {
 .subheader .profileimg img {
     height: auto;
 }
+.profilecaption {
+    float: right;
+    text-align: left;
+}
 
 /** main styles **/
 /** ----------- **/
@@ -336,7 +340,7 @@ main:after {
 }
 #blogheaderimg {
   height: auto;
-  width: 100%;
+  width: 75%;
   margin-top: 20px;
   
   animation: fadeUp 1.2s ease-out forwards;
@@ -617,11 +621,11 @@ footer a:hover {
   main .rightcolumn {
     width: 100%;
   }
-  .textcolumn {
+  main .textcolumn {
     width: 100%;
     padding-right: 10px;
   }
-  .imagecolumn {
+  main .imagecolumn {
     width: 100%;
   }
   
