@@ -254,20 +254,20 @@ header .subheading {
   font-size: 0.8rem;
 }
 
-subheader {
+.subheader {
 
 }
-subheader .toc {
+.subheader .toc {
     width: 50%;
     border:
     padding-right: 10px;
 }
-subheader .profileimg {
+.subheader .profileimg {
     border: none;
     width: 50%;
     height: auto;
 }
-subheader .profileimg img {
+.subheader .profileimg img {
     height: auto;
 }
 
