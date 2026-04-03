@@ -257,9 +257,8 @@ header .subheading {
 .subheader {
 
 }
-.subheader .toc {
+.subheader #toc {
     width: 50%;
-    border:
     padding-right: 10px;
 }
 .subheader .profileimg {
@@ -336,7 +335,7 @@ main:after {
   margin-bottom: 10px; 
 }
 #blogheaderimg {
-  height: 400px;
+  height: auto;
   width: 100%;
   margin-top: 20px;
   
