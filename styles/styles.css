@@ -72,22 +72,6 @@ ol {
   list-style-position: inside;
   overflow: hidden; 
 }
-ul.toc {
-    list-style-type: none;
-    flex: 1;
-    padding-right: 10px;
-
-    position: sticky;
-    top: 50px; /* clear the navbar */
-}
-ul.toc li {
-    padding: 6px 0;
-    font-size: 1.2rem;
-    letter-spacing: 0.03em;
-}
-ul.toc li:not(:first-child) {
-    padding-left: 12px;
-}
 /* targets all list items EXCEPT list items that belong to the 
  * parent ul with id="navbar" (the site navigation bar) */
 li:not(#navbar li) {
@@ -117,12 +101,6 @@ li:not(#navbar li) {
 }
 .largetext {
   font-size: 1.2rem;
-}
-.subheading {
-  display: flex; /* solves unintended whitespace issue from formatting 
-                    links and span elements in subheading code.
-                    REQUIRES using flex property selectors, as the 
-                    element is no longer considered inline or block. */
 }
 .caption {
   /* typography: */
@@ -196,9 +174,6 @@ img.polaroid {
 
   overflow: hidden;
 }
-.card .subheading {
-  display: inline; /* overwrite global .subheading display: flex */
-}
 
 .cardtitle {
   display: inline;
@@ -249,10 +224,6 @@ header h1 {
   font-size: 1.5rem;
 }
 header .subheading {
-  display: flex;
-  flex-wrap: wrap; /* allows items to wrap onto the next line on small screens */
-  justify-content: center; /* centers flex items horizontally */
-  align-items: center; /* centers the element vertically */
   font-size: 0.8rem;
 }
 
@@ -287,15 +258,32 @@ main section {
   padding-bottom: 10px;
 }
 
-/* table of contents */
+/** table of contents styles */
+ul.toc {
+    list-style-type: none;
+    flex: 1;
+    padding-right: 10px;
 
-
+    position: sticky;
+    top: 50px; /* clear the navbar */
+}
+ul.toc li {
+    padding: 6px 0;
+    font-size: 1.2rem;
+    letter-spacing: 0.03em;
+}
+ul.toc li:not(:first-child) {
+    padding-left: 12px;
+}
 /* column layout */
 /* creates two unequal columns that float next to each other */
 /* --------------------------------------------------------- */
 main .leftcolumn {
   float: left;
   width: 35%;
+
+  position: sticky;
+  top: 50px; /* clear the navbar */
 }
 main .rightcolumn {
   float: left;
@@ -606,10 +594,7 @@ footer a:hover {
 
   /** mobile header styles **/
   /** -------------------- **/
- .subheading {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+
   /** mobile main styles **/
   /** ------------------ **/
   /* column layout */
@@ -617,6 +602,7 @@ footer a:hover {
   /* Responsive layout - when the screen is less than 800px wide, make the
    * two columns stack on top of each other instead of next to each other */
   main .leftcolumn {
+    position: static;
     width: 100%;
   }
   main .rightcolumn {
