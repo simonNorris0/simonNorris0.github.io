@@ -262,12 +262,12 @@ header .subheading {
 .subheader {
 
 }
-profileimg {
+.subheader .profileimg {
     border: none;
     width: 50%;
     height: auto;
 }
-.profileimg img {
+.subheader .profileimg img {
     height: auto;
 }
 .profilecaption {
