@@ -283,7 +283,7 @@ main .leftcolumn {
   width: 35%;
 
   position: sticky;
-  top: 50px; /* clear the navbar */
+  top: 145px;
 }
 main .rightcolumn {
   float: left;
