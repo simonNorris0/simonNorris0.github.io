@@ -72,6 +72,9 @@ ol {
   list-style-position: inside;
   overflow: hidden; 
 }
+ul.toc {
+    list-style-type: none;
+}
 /* targets all list items EXCEPT list items that belong to the 
  * parent ul with id="navbar" (the site navigation bar) */
 li.not(#navbar li) {
@@ -259,9 +262,6 @@ subheader .toc {
     border:
     padding-right: 10px;
 }
-subheader .toc ul {
-    list-style-type: none;
-}
 subheader .profileimage {
     border: none;
     width: 50%;
@@ -294,11 +294,11 @@ main section {
 /* --------------------------------------------------------- */
 main .leftcolumn {
   float: left;
-  width: 30%;
+  width: 35%;
 }
 main .rightcolumn {
   float: left;
-  width: 70%;
+  width: 65%;
   padding-left: 10px;
 }
 /* clear floats after the columns */
