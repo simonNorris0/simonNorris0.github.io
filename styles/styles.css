@@ -262,12 +262,12 @@ subheader .toc {
     border:
     padding-right: 10px;
 }
-subheader .profileimage {
+subheader .profileimg {
     border: none;
     width: 50%;
     height: auto;
 }
-subheader .profileimage img {
+subheader .profileimg img {
     height: auto;
 }
 
