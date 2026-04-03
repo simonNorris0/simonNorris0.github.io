@@ -74,6 +74,8 @@ ol {
 }
 ul.toc {
     list-style-type: none;
+    width: 50%;
+    padding-right: 10px;
 }
 /* targets all list items EXCEPT list items that belong to the 
  * parent ul with id="navbar" (the site navigation bar) */
@@ -257,16 +259,12 @@ header .subheading {
 .subheader {
 
 }
-.subheader #toc {
-    width: 50%;
-    padding-right: 10px;
-}
-.subheader .profileimg {
+profileimg {
     border: none;
     width: 50%;
     height: auto;
 }
-.subheader .profileimg img {
+.profileimg img {
     height: auto;
 }
 .profilecaption {
@@ -615,17 +613,17 @@ footer a:hover {
   /* ------------- */
   /* Responsive layout - when the screen is less than 800px wide, make the
    * two columns stack on top of each other instead of next to each other */
-  main .leftcolumn {
+  .leftcolumn {
     width: 100%;
   }
-  main .rightcolumn {
+  .rightcolumn {
     width: 100%;
   }
-  main .textcolumn {
+  .textcolumn {
     width: 100%;
     padding-right: 10px;
   }
-  main .imagecolumn {
+  .imagecolumn {
     width: 100%;
   }
   
