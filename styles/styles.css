@@ -247,7 +247,7 @@ header .subheading {
 /** ----------- **/
 main {
     display: flex;
-    flex-direction: flex-start;
+    align-items: flex-start;
 }
 main.nosplit {
     display: flex;
