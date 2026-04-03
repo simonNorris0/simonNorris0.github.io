@@ -249,6 +249,10 @@ main {
     display: flex;
     align-items: flex-start;
 }
+main.nosplit {
+    display: flex;
+    align-items: column;
+}
 main h2 {
   font-size: 1.2rem;
 }
