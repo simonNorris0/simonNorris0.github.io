@@ -247,11 +247,11 @@ header .subheading {
 /** ----------- **/
 main {
     display: flex;
-    align-items: flex-start;
+    flex-direction: flex-start;
 }
 main.nosplit {
     display: flex;
-    align-items: column;
+    flex-direction: column;
 }
 main h2 {
   font-size: 1.2rem;
@@ -292,13 +292,7 @@ main .leftcolumn {
 }
 main .rightcolumn {
   flex: 1;
-  padding-left: 10px;
-}
-/* clear floats after the columns */
-main:after {
-  content: "";
-  display: table;
-  clear: both;
+  padding-left: 5vw;
 }
 
 /** ~~~ PROJECT PAGE STYLES ~~~ ***/
