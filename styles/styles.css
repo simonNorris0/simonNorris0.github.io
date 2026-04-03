@@ -74,11 +74,8 @@ ol {
 }
 ul.toc {
     list-style-type: none;
-    width: 50%;
+    flex: 1;
     padding-right: 10px;
-}
-ul.toic li {
-    width: 50%;
 }
 /* targets all list items EXCEPT list items that belong to the 
  * parent ul with id="navbar" (the site navigation bar) */
@@ -241,7 +238,7 @@ header h1 {
   font-size: 1.5rem;
 }
 header .subheading {
-  /* display: flex requires using flex property selectors */
+  display: flex;
   flex-wrap: wrap; /* allows items to wrap onto the next line on small screens */
   justify-content: center; /* centers flex items horizontally */
   align-items: center; /* centers the element vertically */
@@ -599,7 +596,7 @@ footer a:hover {
 
   /** mobile header styles **/
   /** -------------------- **/
-  header .subheading {
+ .subheading {
     flex-direction: column;
     align-items: flex-start;
   }
