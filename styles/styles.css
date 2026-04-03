@@ -599,11 +599,10 @@ footer a:hover {
   /* ------------- */
   /* Responsive layout - when the screen is less than 800px wide, make the
    * two columns stack on top of each other instead of next to each other */
-  main .leftcolumn {
+  main {
     flex-direction: column;
   }
   main .rightcolumn {
-    flex-direction: column;
     padding-left: 0px;
   }
 
@@ -616,11 +615,9 @@ footer a:hover {
   .imagecolumn {
     width: 100%;
   }
-
   #blogintro {
     display: block;
   }
-
   #blogbody {
     display: block;
   }
