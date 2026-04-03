@@ -273,7 +273,7 @@ ul.toc li {
     letter-spacing: 0.03em;
 }
 ul.toc li:not(:first-child) {
-    padding-left: 12px;
+    padding-left: 25px;
 }
 /* column layout */
 /* creates two unequal columns that float next to each other */
