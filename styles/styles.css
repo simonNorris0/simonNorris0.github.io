@@ -76,10 +76,21 @@ ul.toc {
     list-style-type: none;
     flex: 1;
     padding-right: 10px;
+
+    position: sticky;
+    top: 50px; /* clear the navbar */
+}
+ul.toc li {
+    padding: 6px 0;
+    font-size: 1.2rem;
+    letter-spacing: 0.03em;
+}
+ul.toc li:not(:first-child) {
+    padding-left: 12px;
 }
 /* targets all list items EXCEPT list items that belong to the 
  * parent ul with id="navbar" (the site navigation bar) */
-li.not(#navbar li) {
+li:not(#navbar li) {
   padding-left: 23px; /* creates space for the "hanging" bullet */
   /* pull the first line (with the bullet) back */
   text-indent: -23px; /* must be the negative of padding-left */
@@ -255,7 +266,6 @@ header .subheading {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: auto;
 }
 .profileimg img {
     width: 100%;
@@ -629,24 +639,6 @@ footer a:hover {
 
   #blogbody {
     display: block;
-  }
-
-  /* temp fix - have to redo the css layout of the blog post columns anyway,
-     cant be forcing each element as each blog will have different elements ... */
-  .imagecolumn .firstrow {
-    margin-top: 20px;
-  }
-  .imagecolumn .secondrow {
-    margin-top: 20px;
-  }
-  .imagecolumn .thirdrow {
-    margin-top: 20px;
-  }
-  .imagecolumn .fourthrow {
-    margin-top: 20px;
-  }
-  .imagecolumn .summary {
-    margin-top: 20px;
   }
   
   /** mobile site navigation bar styles **/
