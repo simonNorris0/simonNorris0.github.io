@@ -262,6 +262,7 @@ main section {
 ul.toc {
     list-style-type: none;
     flex: 1;
+    padding-left: 0px;
     padding-right: 10px;
 
     position: sticky;
