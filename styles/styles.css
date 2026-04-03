@@ -245,6 +245,10 @@ header .subheading {
 
 /** main styles **/
 /** ----------- **/
+main {
+    display: flex;
+    align-items: flex-start;
+}
 main h2 {
   font-size: 1.2rem;
 }
@@ -273,7 +277,7 @@ ul.toc li {
     font-size: 1.2rem;
     letter-spacing: 0.03em;
 }
-ul.toc li:not(:first-child) {
+ul.toc li:has(a) {
     padding-left: 25px;
 }
 /* column layout */
