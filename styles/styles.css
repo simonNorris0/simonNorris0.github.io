@@ -360,21 +360,6 @@ main .rightcolumn {
   animation-delay: 0.7s;
   opacity: 0;
 }
-.imagecolumn .firstrow {
-  margin-top: 65px;
-}
-.imagecolumn .secondrow {
-  margin-top: 50px;
-}
-.imagecolumn .thirdrow {
-  margin-top: 60px;
-}
-.imagecolumn .fourthrow {
-  margin-top: 395px;
-}
-.imagecolumn .summary {
-  margin-top: 210px;
-}
 
 /* blog intro styles */
 /* ----------------- */
