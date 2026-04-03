@@ -254,11 +254,21 @@ header .subheading {
 subheader {
 
 }
-subheader toc {
+subheader .toc {
     width: 50%;
+    border:
+    padding-right: 10px;
 }
-subheader profileimage {
+subheader .toc ul {
+    list-style-type: none;
+}
+subheader .profileimage {
+    border: none;
     width: 50%;
+    height: auto;
+}
+subheader .profileimage img {
+    height: auto;
 }
 
 /** main styles **/
