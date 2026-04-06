@@ -565,6 +565,7 @@ footer #mylinks a {
 footer #mylinks img {
     display: inline-block;
     height: 40px;
+    width: 80px;
 }
 footer a:hover {
   background-color: #111111 /* black */
