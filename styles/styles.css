@@ -249,6 +249,10 @@ main {
     display: flex;
     align-items: flex-start;
 }
+main.nosplit {
+    display: flex;
+    flex-direction: column;
+}
 main h2 {
   font-size: 1.2rem;
 }
@@ -284,22 +288,11 @@ ul.toc li:has(a) {
 /* creates two unequal columns that float next to each other */
 /* --------------------------------------------------------- */
 main .leftcolumn {
-  float: left;
-  width: 35%;
-
-  position: sticky;
-  top: 145px;
+  flex: 0 0 35vw;
 }
 main .rightcolumn {
-  float: left;
-  width: 65%;
-  padding-left: 10px;
-}
-/* clear floats after the columns */
-main:after {
-  content: "";
-  display: table;
-  clear: both;
+  flex: 1;
+  padding-left: 5vw;
 }
 
 /** ~~~ PROJECT PAGE STYLES ~~~ ***/
@@ -366,21 +359,6 @@ main:after {
   animation: fadeUp 1.2s ease-out forwards;
   animation-delay: 0.7s;
   opacity: 0;
-}
-.imagecolumn .firstrow {
-  margin-top: 65px;
-}
-.imagecolumn .secondrow {
-  margin-top: 50px;
-}
-.imagecolumn .thirdrow {
-  margin-top: 60px;
-}
-.imagecolumn .fourthrow {
-  margin-top: 395px;
-}
-.imagecolumn .summary {
-  margin-top: 210px;
 }
 
 /* blog intro styles */
@@ -606,12 +584,11 @@ footer a:hover {
   /* ------------- */
   /* Responsive layout - when the screen is less than 800px wide, make the
    * two columns stack on top of each other instead of next to each other */
-  main .leftcolumn {
-    position: static;
-    width: 100%;
+  main {
+    flex-direction: column;
   }
   main .rightcolumn {
-    width: 100%;
+    padding-left: 0px;
   }
 
   /** mobile blog styles **/
@@ -623,11 +600,9 @@ footer a:hover {
   .imagecolumn {
     width: 100%;
   }
-
   #blogintro {
     display: block;
   }
-
   #blogbody {
     display: block;
   }
