@@ -562,7 +562,7 @@ footer #mylinks a {
   border: 2px solid #8e7cc3; /* light purple */
   color: white;
 }
-footer #mylinks .cipscard {
+footer #mylinks img {
     display: inline-block;
     height: 40px;
 }
