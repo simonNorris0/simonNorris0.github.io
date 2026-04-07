@@ -579,12 +579,12 @@ footer #mylinks a {
 .cipscard {
     display: inline-block;
     height: 100%;
+    border: none;
 }
 .cipscard img {
     height: 100%;
     width: auto;
     display: inline-block;
-    border: none;
     vertical-align: middle;
 }
 footer a:hover {
