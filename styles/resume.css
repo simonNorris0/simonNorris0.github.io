@@ -196,8 +196,8 @@ footer {
   display: table;
   table-layout: fixed;
   line-height: 1; /* alignment fix for table-layout */
-  
-  font-size: 12px; /* maintain uniform font-size across site */
+
+  font-size: 0.8rem; /* maintain uniform font-size across site */
   color: white;
   background-color: #636363; /* dark gray */
 }
@@ -206,7 +206,7 @@ footer a {
   font-weight: bold;
   text-decoration: none;
 }
-/* the "signature" element - contains "last update" and <address> elements 
+/* the "signature" element - contains "last update" and <address> elements
  * 1st child of footer */
 footer #signature {
   display: table-cell;
@@ -222,7 +222,7 @@ footer address {
 }
 footer address a#sendemail {
   color: #9FE2BF; /* seafoam green */
-  font-size: 14px;
+  font-size: 0.8rem;
   padding-left: 4px;
 }
 /* 2nd child of footer */
@@ -235,12 +235,27 @@ footer #mylinks {
 }
 /* the links within the "mylinks" <span> element in the site footer */
 footer #mylinks a {
-  display: inline-block; /* allows specifying padding, height, width, 
-                          * and margins while still maintaining the 
+  display: inline-block; /* allows specifying padding, height, width,
+                          * and margins while still maintaining the
                           * elements inline flow */
-  padding: 7px 7px;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 0px 2px;
   border: 2px solid #8e7cc3; /* light purple */
   color: white;
+  line-height: 18px;
+  vertical-align: middle;
+}
+.cipscard {
+    display: inline-block;
+    height: 100%;
+}
+.cipscard img {
+    height: 100%;
+    width: auto;
+    display: inline-block;
+    border: none;
+    vertical-align: middle;
 }
 footer a:hover {
   background-color: #111111 /* black */
