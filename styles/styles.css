@@ -558,18 +558,23 @@ footer #mylinks a {
   display: inline-block; /* allows specifying padding, height, width, 
                           * and margins while still maintaining the 
                           * elements inline flow */
-  padding: 7px 7px;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 4px 7px;
   border: 2px solid #8e7cc3; /* light purple */
   color: white;
+  vertical-align: middle;
 }
-footer .cipscard {
-    width: 80px;
-    height: 40px;
-}
-footer #mylinks img {
+.cipscard {
     display: inline-block;
-    max-width: 100%;
-    height: auto
+    height: 100%;
+}
+.cipscard img {
+    height: 100%;
+    width: auto;
+    display: inline-block;
+    border: none;
+    vertical-align: middle;
 }
 footer a:hover {
   background-color: #111111 /* black */
