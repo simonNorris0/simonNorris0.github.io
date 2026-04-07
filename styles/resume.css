@@ -211,7 +211,7 @@ footer a {
 footer #signature {
   display: table-cell;
   vertical-align: top;
-  width: 60%;
+  width: 40%;
   padding-top: 7px;
   padding-left: 9px; /* match right-padding of links on right-side */
 }
@@ -228,7 +228,7 @@ footer address a#sendemail {
 /* 2nd child of footer */
 footer #mylinks {
   display: table-cell;
-  width: 40%;
+  width: 60%;
   vertical-align: middle;
   text-align: right;
   padding-right: 9px; /* make room for scroll bar */
