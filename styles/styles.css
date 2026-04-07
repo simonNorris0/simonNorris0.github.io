@@ -124,6 +124,16 @@ li:not(#navbar li) {
 /** Global Image Styles **/
 /** ------------------- **/
 
+.medium {
+    display: block;
+    height: 240px;
+}
+.medium img {
+    height: 100%;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
 /* 'drop shadow' effects for images */
 /* ------------------------------- */
 
