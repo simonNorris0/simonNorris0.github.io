@@ -560,11 +560,11 @@ footer #mylinks a {
                           * elements inline flow */
   height: 40px;
   box-sizing: border-box;
-  padding: 4px 7px;
+  padding: 0px 2px;
   border: 2px solid #8e7cc3; /* light purple */
   color: white;
+  line-height: 18px;
   vertical-align: middle;
-  horizontal-align: middle;
 }
 .cipscard {
     display: inline-block;
